@@ -13,10 +13,7 @@ export default function Navbar() {
     fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
     filter: 'brightness(150%)',
     transitionDelay: '0.8s',
-    textDecoration: 'none', // remove underline
-    outline: 'none', // remove outline
-    boxShadow: 'none', // remove box shadow
-    useEvents: 'auto' // enable pointer events
+    userSelect: "none"
   }
   return (
     <Box
