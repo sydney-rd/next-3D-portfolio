@@ -11,7 +11,7 @@ export default function index() {
         camera={{ position: [0, 5, 30] }}
         style={{ width: '100vw', height: '100vh' }}
       >
-        <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} />
+        {/* <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} /> */}
         <Sky sunPosition={[0, 0, 0]} />
         <Stars fade />
         <Html fullscreen transform>
@@ -21,16 +21,16 @@ export default function index() {
             WebkitTextStrokeColor="blue"
             align="center"
             justify="center"
-            color="white"
+            color="red"
             fontSize="3rem"
             fontWeight="bold"
-            cursor="pointer"
+            textShadow="0px 0px 10px white"
           >
-            SYDNEY-R-D software developer
+            sydney-rd | software developer
           </Flex>
-          <ScrollEffect currentPage="index" />
         </Html>
       </Canvas>
+          <ScrollEffect currentPage="index" />
     </>
   )
 }

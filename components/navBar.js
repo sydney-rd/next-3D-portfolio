@@ -12,8 +12,12 @@ export default function Navbar() {
     fontWeight: 'bold',
     fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
     filter: 'brightness(150%)',
-    transitionDelay: '0.8s'
-  } 
+    transitionDelay: '0.8s',
+    textDecoration: 'none', // remove underline
+    outline: 'none', // remove outline
+    boxShadow: 'none', // remove box shadow
+    useEvents: 'auto' // enable pointer events
+  }
   return (
     <Box
       position="fixed"
@@ -28,7 +32,7 @@ export default function Navbar() {
       zIndex="1"
     >
       <VStack spacing={20} align="flex-end">
-        <Box pr="4" pt="8">
+        <Box pr="4" pt="12">
           <Box transform="rotate(90deg)" whiteSpace="pre">
             <Link href="/about" style={navBarStyle}>
               ABOUT
