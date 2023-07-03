@@ -1,5 +1,6 @@
 import { Box, Link, VStack } from '@chakra-ui/react'
 import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
+import { motion } from "framer-motion"
 import { Canvas } from '@react-three/fiber';
 import AboutNavbar from "../components/aboutNavbar"
 
@@ -15,7 +16,7 @@ export default function About() {
         <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} />
         <Sky sunPosition={[0, 0, 0]} />
         <Stars fade />
-        <Html fullscreen transform></Html>
+        {/* <Html fullscreen transform></Html> */}
       </Canvas>
       <Box
         sx={{

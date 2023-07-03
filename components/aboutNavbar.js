@@ -1,7 +1,8 @@
 import React from 'react'
 import { Box, VStack } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
-import NavBar from './navBar'
+import NavBar from './navbar'
+import { motion } from 'framer-motion';
 
 export default function AboutNavbar() {
   const navBarStyle = {
@@ -13,7 +14,7 @@ export default function AboutNavbar() {
     fontWeight: 'bold',
     fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
     filter: 'brightness(150%)',
-    transitionDelay: '0.8s'
+    transitionDelay: '1s'
   }
 
   const iconStyle = {
@@ -35,38 +36,45 @@ export default function AboutNavbar() {
       zIndex="1"
     >
       <NavBar />
-      <VStack spacing={10} align="flex-end">
-        <Box pr="6" pt="96">
-          <a
-            href="https://www.linkedin.com/in/sydneydavid/"
-            style={navBarStyle}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin style={iconStyle} />
-          </a>
-        </Box>
-        <Box pr="6">
-          <a
-            href="https://github.com/sydney-rd"
-            style={navBarStyle}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub style={iconStyle} />
-          </a>
-        </Box>
-        <Box pr="6">
-          <a
-            href="mailto:sydneydavid56@gmail.com"
-            style={navBarStyle}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaEnvelope style={iconStyle} />
-          </a>
+      <VStack align="flex-end">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Box pr="6" pt="96">
+            <a
+              href="https://www.linkedin.com/in/sydneydavid/"
+              style={navBarStyle}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin style={iconStyle} />
+            </a>
           </Box>
+          <Box pr="6" pt="8">
+            <a
+              href="https://github.com/sydney-rd"
+              style={navBarStyle}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub style={iconStyle} />
+            </a>
+          </Box>
+          <Box pr="6" pt="8">
+            <a
+              href="mailto:sydneydavid56@gmail.com"
+              style={navBarStyle}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope style={iconStyle} />
+            </a>
+          </Box>
+        </motion.div>
       </VStack>
-        </Box>
+    </Box>
   )
 }
+
