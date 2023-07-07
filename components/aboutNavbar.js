@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
-import Navbar from './Navbar'
+import NavBar from './navBar'
 import { motion } from 'framer-motion';
 
 export default function AboutNavbar() {
@@ -22,7 +22,7 @@ export default function AboutNavbar() {
       paddingRight={['.2', '4']}
       zIndex="1"
     >
-      <Navbar />
+      <NavBar />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

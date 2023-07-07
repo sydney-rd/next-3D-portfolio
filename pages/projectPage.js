@@ -5,7 +5,7 @@ import { projects } from '../utilities/projects'
 import { motion } from 'framer-motion'
 import ProjectCategories from '../components/ProjectCategories'
 import ProjectModal from '../components/projectmodal'
-import Navbar from '../components/Navbar'
+import NavBar from '../components/navBar'
 import {
   Flex,
   useDisclosure,
@@ -33,7 +33,7 @@ export default function ProjectPage() {
 
   return (
     <>
-      {!isOpen && <Navbar />}
+      {!isOpen && <NavBar />}
       <Flex minHeight="100vh" width="100vw" position="relative">
         {!isOpen && (
           <ProjectCategories
