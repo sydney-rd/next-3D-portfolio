@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex } from '@chakra-ui/react';
-import { OrbitControls, Sky, Stars, Html } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 import { Link } from 'react-scroll';
 import { Canvas } from '@react-three/fiber';
 import { ChevronDownIcon as Down } from '@chakra-ui/icons';

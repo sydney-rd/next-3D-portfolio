@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, Link, VStack } from '@chakra-ui/react'
-import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
-import { motion } from 'framer-motion'
+import { Box } from '@chakra-ui/react'
+import { OrbitControls, Sky, Stars } from '@react-three/drei'
+// import { motion } from 'framer-motion'
 import { Canvas } from '@react-three/fiber'
 import AboutNavbar from '../components/aboutNavbar'
 
