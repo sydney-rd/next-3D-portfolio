@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
-import Navbar from './navbar'
+import Navbar from './Navbar'
 import { motion } from 'framer-motion';
 
 export default function AboutNavbar() {
