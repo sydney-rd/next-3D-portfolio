@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, VStack } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import NavBar from './navbar'
 import { motion } from 'framer-motion';

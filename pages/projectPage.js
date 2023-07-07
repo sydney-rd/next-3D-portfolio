@@ -17,7 +17,7 @@ const MotionChakraLink = motion(ChakraLink)
 
 export default function ProjectPage() {
   const [selectedCategory, setSelectedCategory] = useState('WEB')
-  const [hoveredItem, setHoveredItem] = useState('')
+  const [hoveredItem] = useState('')
   const [selectedProject, setSelectedProject] = useState(null)
   const { isOpen, onOpen, onClose } = useDisclosure()
 
