@@ -5,7 +5,7 @@ import { projects } from '../utilities/projects'
 import { motion } from 'framer-motion'
 import ProjectCategories from '../components/ProjectCategories'
 import ProjectModal from '../components/projectmodal'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import {
   Flex,
   useDisclosure,
