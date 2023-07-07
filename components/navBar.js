@@ -45,7 +45,7 @@ export default function Navbar() {
           </Box>
         </Box>
         )
-        <Box p="3">
+        <Box p="3"> 
           <Box
             className="navBar"
             transform="rotate(90deg)"
