@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
 import { projects } from '../utilities/projects'
 import { motion } from 'framer-motion'
-import ProjectCategories from '../components/ProjectCategories'
+import ProjectCategories from '../components/projectCategories'
 import ProjectModal from '../components/projectmodal'
 import NavBar from '../components/navBar'
 import {

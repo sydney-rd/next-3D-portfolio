@@ -4,7 +4,7 @@ import { Html } from '@react-three/drei';
 import { Link } from 'react-scroll';
 import { Canvas } from '@react-three/fiber';
 import { ChevronDownIcon as Down } from '@chakra-ui/icons';
-import ProjectPage from '../pages/ProjectPage'; // Update the file path and name
+import ProjectPage from '../pages/projectPage'; // Update the file path and name
 
 export default function Index() {
   return (
