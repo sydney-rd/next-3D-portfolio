@@ -1,3 +1,4 @@
+import React from 'react'
 import { Box, Link, VStack } from '@chakra-ui/react'
 import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
 import { motion } from "framer-motion"
@@ -16,7 +17,6 @@ export default function About() {
         <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} />
         <Sky sunPosition={[0, 0, 0]} />
         <Stars fade />
-        {/* <Html fullscreen transform></Html> */}
       </Canvas>
       <Box
         sx={{
@@ -30,17 +30,27 @@ export default function About() {
           justifyContent: 'center',
           alignItems: 'flex-start',
           padding: '4',
-          pointerEvents: 'none' // Disable pointer events on the container box
+          pointerEvents: 'none'
         }}
       >
         <Box
           flex="2"
+          fontFamily='Ailerons'
           display="flex"
-          alignItems="center"
-          justifyContent="center"
+          fontSize="90"
           pointerEvents="auto"
-        >
+          color="white"
+>
           Events &rarr; Fullstack Developer
+        </Box>
+        <Box
+          flex="1"
+          pointerEvents="auto"
+          color="white" // Set the text color to white
+          fontSize="18"
+          fontFamily="Verdana, Geneva, Tahoma, sans-serif"
+          >
+          W E L C O M E | my name is Sydney. I am a fullstack developer from NYC.
         </Box>
       </Box>
     </Box>

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
 import { projects } from '../utilities/projects'
-import ScrollEffect from '../components/scrollEffect'
 import { motion } from 'framer-motion'
 import ProjectCategories from '../components/ProjectCategories'
 import ProjectModal from '../components/projectmodal'
@@ -42,7 +41,6 @@ export default function ProjectPage() {
             onCategoryClick={setSelectedCategory}
           />
         )}
-        <ScrollEffect currentPage="projectPage" />
         <Canvas
           camera={{ position: [0, 5, 30] }}
           style={{ width: '100vw', height: '100vh' }}

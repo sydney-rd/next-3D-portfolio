@@ -37,7 +37,7 @@ export default function Navbar() {
           </Box>
         </Box>
         )
-        <Box p="1">
+        <Box p="1" pt="2">
           <Box transform="rotate(90deg)" whiteSpace="pre">
             <Link href="/projectPage" style={navBarStyle}>
               PROJECTS

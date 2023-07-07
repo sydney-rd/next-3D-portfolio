@@ -1,19 +1,20 @@
-import React from 'react'
-import { Flex } from '@chakra-ui/react'
-import ScrollEffect from '../components/scrollEffect'
-import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
+import React from 'react';
+import { Box, Flex } from '@chakra-ui/react';
+import { OrbitControls, Sky, Stars, Html } from '@react-three/drei';
+import { Link } from 'react-scroll';
+import { Canvas } from '@react-three/fiber';
+import { ChevronDownIcon as Down } from '@chakra-ui/icons';
+import ProjectPage from '../pages/ProjectPage'; // Update the file path and name
 
-export default function index() {
+export default function Index() {
   return (
     <>
       <Canvas
         camera={{ position: [0, 5, 30] }}
         style={{ width: '100vw', height: '100vh' }}
       >
-        {/* <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} /> */}
-        <Sky sunPosition={[0, 0, 0]} />
-        <Stars fade />
+        {/* <Sky sunPosition={[0, 0, 0]} />
+        <Stars fade /> */}
         <Html fullscreen transform>
           <Flex
             fontFamily="Ailerons"
@@ -30,7 +31,26 @@ export default function index() {
           </Flex>
         </Html>
       </Canvas>
-          <ScrollEffect currentPage="index" />
+          <Link to="/projectPage" smooth={true} duration={500} ignoreCancelEvents={true}>
+            <Box
+              position="fixed"
+              bottom="2rem"
+              right="1rem"
+              zIndex={999}
+              fontSize="2rem"
+              fontWeight="bold"
+              color="white"
+              backgroundColor="black"
+              borderRadius="50%"
+              padding="0.5rem"
+              cursor="pointer"
+            >
+              <Down />
+            </Box>
+          </Link>
+      <Box id="projectPage">
+        <ProjectPage />
+      </Box>
     </>
-  )
+  );
 }
