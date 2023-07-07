@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Link, VStack } from '@chakra-ui/react'
 import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
-import { motion } from "framer-motion"
-import { Canvas } from '@react-three/fiber';
-import AboutNavbar from "../components/aboutNavbar"
+import { motion } from 'framer-motion'
+import { Canvas } from '@react-three/fiber'
+import AboutNavbar from '../components/aboutNavbar'
 
 // make links open to a new tab
 export default function About() {
@@ -11,7 +11,6 @@ export default function About() {
     <Box position="relative" height="100vh">
       <AboutNavbar />
       <Canvas
-        camera={{ position: [0, 5, 30] }}
         style={{ width: '100vw', height: '100vh' }}
       >
         <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} />
@@ -25,32 +24,29 @@ export default function About() {
           left: 0,
           width: '100%',
           height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'flex-start',
           padding: '4',
           pointerEvents: 'none'
         }}
       >
-        <Box
-          flex="2"
-          fontFamily='Ailerons'
-          display="flex"
-          fontSize="90"
-          pointerEvents="auto"
-          color="white"
->
+        <Box fontFamily="Ailerons" fontSize="50" color="white">
           Events &rarr; Fullstack Developer
         </Box>
         <Box
-          flex="1"
-          pointerEvents="auto"
           color="white" // Set the text color to white
           fontSize="18"
           fontFamily="Verdana, Geneva, Tahoma, sans-serif"
-          >
-          W E L C O M E | my name is Sydney. I am a fullstack developer from NYC.
+          paddingTop="5"
+          maxW="40rem"
+        >
+          Welcome, my name is Sydney. I am a fullstack developer from NYC.
+          Welcome, my name is Sydney. I am a fullstack developer from NYC.
+          Welcome, my name is Sydney. I am a fullstack developer from NYC.
+          Welcome, my name is Sydney. I am a fullstack developer from NYC.
+          Welcome, my name is Sydney. I am a fullstack developer from NYC.
+          Welcome, my name is Sydney. I am a fullstack developer from NYC.
+
         </Box>
       </Box>
     </Box>

@@ -13,7 +13,7 @@ export const projects = [
   {
     name: 'NASA API',
     category: 'WEB',
-    color: '#39FF14',
+    color: 'white',
     description:
       'A project utilizing an API and fetching that data into a play on envelope',
     github: '/gitui',
@@ -24,7 +24,7 @@ export const projects = [
   {
     name: 'TIC TAC TOE',
     category: 'WEB',
-    color: '#39FF14',
+    color: 'white',
     description:
       'A project utilizing an API and fetching that data into a play on envelope',
     github: '/gitui',
@@ -35,7 +35,7 @@ export const projects = [
     name: 'TEXT ADVENTURE',
     description: 'testing',
     category: 'WEB',
-    color: '#39FF14',
+    color: 'white',
     description:
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
@@ -45,7 +45,7 @@ export const projects = [
   {
     name: 'ACCOUNT MANAGER',
     category: 'C++',
-    color: 'purple',
+    color: 'blue',
     description:
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',

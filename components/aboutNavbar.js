@@ -8,7 +8,7 @@ export default function AboutNavbar() {
   const iconStyle = {
     fontSize: '1.1rem',
     color: 'white',
-    cursor: "pointer"
+    cursor: "pointer",
   }
 
   return (

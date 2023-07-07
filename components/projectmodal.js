@@ -132,7 +132,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               </a>
             </motion.div>
           </Flex>
-          <p style={{ marginTop: '1rem', textShadow: `0px 0px 5px ${color}` }}>{description}</p>
+          <p style={{ marginTop: '1rem'}}>{description}</p>
         </ModalBody>
       </MotionModalContent>
     </MotionModal>
