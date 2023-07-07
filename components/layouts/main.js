@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import { Container, Flex, Box } from '@chakra-ui/react'
-const Main = ({ children, router }) => {
+import { Flex, Box } from '@chakra-ui/react'
+const Main = ({ children }) => {
     return (
         <Flex as="main">
             <Head>
