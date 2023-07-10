@@ -10,9 +10,7 @@ export default function About() {
   return (
     <Box position="relative" height="100vh">
       <AboutNavbar />
-      <Canvas
-        style={{ width: '100vw', height: '100vh' }}
-      >
+      <Canvas style={{ width: '100vw', height: '100vh' }}>
         <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} />
         <Sky sunPosition={[0, 0, 0]} />
         <Stars fade />
@@ -20,14 +18,14 @@ export default function About() {
       <Box
         sx={{
           position: 'absolute',
-          top: 0,
-          left: 0,
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
           width: '100%',
           height: '100%',
+          display: 'flex',
           justifyContent: 'center',
-          alignItems: 'flex-start',
-          padding: '4',
-          pointerEvents: 'none'
+          alignItems: 'center'
         }}
       >
         <Box fontFamily="Ailerons" fontSize="50" color="white">
@@ -46,7 +44,6 @@ export default function About() {
           Welcome, my name is Sydney. I am a fullstack developer from NYC.
           Welcome, my name is Sydney. I am a fullstack developer from NYC.
           Welcome, my name is Sydney. I am a fullstack developer from NYC.
-
         </Box>
       </Box>
     </Box>

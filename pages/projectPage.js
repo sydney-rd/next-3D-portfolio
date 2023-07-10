@@ -5,6 +5,7 @@ import { projects } from '../utilities/projects'
 import { motion } from 'framer-motion'
 import ProjectCategories from '../components/projectCategories'
 import ProjectModal from '../components/projectmodal'
+import { ChevronDownIcon as Down } from '@chakra-ui/icons'
 import NavBar from '../components/navBar'
 import {
   Flex,
@@ -93,13 +94,14 @@ export default function ProjectPage() {
         </Canvas>
         {selectedProject && (
           <ProjectModal
-            isOpen={isOpen}
-            onClose={onClose}
-            project={selectedProject}
-            zIndex={10}
+          isOpen={isOpen}
+          onClose={onClose}
+          project={selectedProject}
+          zIndex={10}
           />
-        )}
+          )}
       </Flex>
+          <Down/>
     </>
   )
 }
