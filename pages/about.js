@@ -45,7 +45,8 @@ export default function About() {
 
         >
           Welcome, my name is Sydney and I am a fullstack developer from NYC.
-          My journey began 
+          My journey began with a simple HTML/CSS tutorial, and since I have
+          
    
         </Box>
       </Box>

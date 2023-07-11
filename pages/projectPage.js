@@ -78,7 +78,7 @@ export default function ProjectPage() {
                     WebkitTextStrokeColor: project.color,
                     _hover: {
                       color: project.color,
-                      textShadow: `1px 1px 7px ${project.color}`,
+                      textShadow: `2px 2px 8px ${project.color}`,
                       transition: '1s' 
                     }
                   }}

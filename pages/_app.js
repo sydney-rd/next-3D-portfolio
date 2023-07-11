@@ -1,43 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import { useRouter } from 'next/router'
+import { ChakraProvider, useDisclosure } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
-import "../styles.css"
-import LoadingScreen from '../components/loadingScreen'
+import '../styles.css'
 
-const Website = ({ Component, pageProps }) => {
-  const [isLoading, setIsLoading] = useState(false)
-  const router = useRouter()
-
-  useEffect(() => {
-    const handleStart = () => {
-      setIsLoading(true)
-    }
-
-    const handleComplete = () => {
-      setIsLoading(false)
-    }
-
-    router.events.on('routeChangeStart', handleStart)
-    router.events.on('routeChangeComplete', handleComplete)
-    router.events.on('routeChangeError', handleComplete)
-
-    return () => {
-      router.events.off('routeChangeStart', handleStart)
-      router.events.off('routeChangeComplete', handleComplete)
-      router.events.off('routeChangeError', handleComplete)
-    }
-  }, [])
-
+const Website = ({ Component, pageProps, router }) => {
   return (
     <ChakraProvider>
-      {isLoading ? (
-        <LoadingScreen />
-      ) : (
-        <Layout router={router}>
-          <Component {...pageProps} />
-        </Layout>
-      )}
+      <Layout router={router}>
+        <Component {...pageProps} key={router.route} />
+      </Layout>
     </ChakraProvider>
   )
 }
