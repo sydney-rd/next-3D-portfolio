@@ -27,7 +27,9 @@ export default function About() {
           display: 'flex',
           flexDirection: "column",
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          userSelect:"none"
+
         }}
       >
         <Box letterSpacing="10px" fontWeight="bold" fontFamily="Ailerons" fontSize="65" textShadow="3px 3px 5px pink" color="white">
