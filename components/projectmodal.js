@@ -140,3 +140,5 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 };
 
 export default ProjectModal;
+
+// higher scale or hoover 

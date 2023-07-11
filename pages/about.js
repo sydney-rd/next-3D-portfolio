@@ -3,6 +3,7 @@ import { Box } from '@chakra-ui/react'
 import { OrbitControls, Sky, Stars } from '@react-three/drei'
 // import { motion } from 'framer-motion'
 import { Canvas } from '@react-three/fiber'
+import Title from '../components/title'
 import AboutNavbar from '../components/aboutNavbar'
 
 // make links open to a new tab
@@ -18,32 +19,32 @@ export default function About() {
       <Box
         sx={{
           position: 'absolute',
-          top: '50%',
+          top: '20%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           width: '100%',
           height: '100%',
           display: 'flex',
+          flexDirection: "column",
           justifyContent: 'center',
           alignItems: 'center'
         }}
       >
-        <Box fontFamily="Ailerons" fontSize="50" color="white">
+        <Box letterSpacing="10px" fontWeight="bold" fontFamily="Ailerons" fontSize="65" textShadow="3px 3px 5px pink" color="white">
           Events &rarr; Fullstack Developer
         </Box>
         <Box
           color="white" // Set the text color to white
           fontSize="18"
           fontFamily="Verdana, Geneva, Tahoma, sans-serif"
-          paddingTop="5"
-          maxW="40rem"
+          paddingTop="10"
+          maxW="38rem"
+          textAlign="center"
+
         >
-          Welcome, my name is Sydney. I am a fullstack developer from NYC.
-          Welcome, my name is Sydney. I am a fullstack developer from NYC.
-          Welcome, my name is Sydney. I am a fullstack developer from NYC.
-          Welcome, my name is Sydney. I am a fullstack developer from NYC.
-          Welcome, my name is Sydney. I am a fullstack developer from NYC.
-          Welcome, my name is Sydney. I am a fullstack developer from NYC.
+          Welcome, my name is Sydney and I am a fullstack developer from NYC.
+          My journey began 
+   
         </Box>
       </Box>
     </Box>

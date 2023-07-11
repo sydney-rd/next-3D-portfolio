@@ -5,7 +5,6 @@ import { projects } from '../utilities/projects'
 import { motion } from 'framer-motion'
 import ProjectCategories from '../components/projectCategories'
 import ProjectModal from '../components/projectmodal'
-import { ChevronDownIcon as Down } from '@chakra-ui/icons'
 import NavBar from '../components/navBar'
 import {
   Flex,
@@ -51,12 +50,10 @@ export default function ProjectPage() {
           <Stars fade />
           <Html fullscreen transform>
             <VStack
-              id="projectPage"
               align="flex-end"
               flexGrow={1}
               pr={['4rem', '7rem']}
               zIndex={0}
-              spacing={-1}
               maxH="100vh"
               position="relative"
               visibility={isOpen ? 'hidden' : 'visible'}
@@ -101,7 +98,6 @@ export default function ProjectPage() {
           />
           )}
       </Flex>
-          <Down/>
     </>
   )
 }
