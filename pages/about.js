@@ -32,7 +32,7 @@ export default function About() {
 
         }}
       >
-        <Box letterSpacing="10px" fontWeight="bold" fontFamily="Ailerons" fontSize="65" textShadow="3px 3px 5px pink" color="white">
+        <Box letterSpacing="10px" fontWeight="bold" fontFamily="Ailerons" fontSize="65" textShadow="1px 1px 3px pink" color="white">
           Events &rarr; Fullstack Developer
         </Box>
         <Box

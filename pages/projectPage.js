@@ -79,7 +79,7 @@ export default function ProjectPage() {
                     _hover: {
                       color: project.color,
                       textShadow: `1px 1px 7px ${project.color}`,
-                      transition: 'text-shadow 0.5s ease' // no work
+                      transition: '1s' 
                     }
                   }}
                   onClick={() => handleClick(project)}
