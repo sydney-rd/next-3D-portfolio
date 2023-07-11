@@ -68,6 +68,7 @@ export default function ProjectPage() {
                     fontSize: ['3rem', '9rem'],
                     whiteSpace: ['normal', 'nowrap'],
                     textAlign: 'right',
+                    cursor: 'pointer',
                     filter: 'brightness(150%)',
                     color:
                       hoveredItem === project.name
