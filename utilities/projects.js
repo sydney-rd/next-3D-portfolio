@@ -1,5 +1,14 @@
 export const projects = [
   {
+    name: 'MERN STACK',
+    category: 'WEB',
+    description:
+      'A project udfatilzing an API and fetching that data into a play on envelope',
+    github: '/gitijljui',
+    link: 'netlify',
+    color: '#DE91BE',
+  },
+  {
     name: 'UI PATTERN',
     category: 'WEB',
     color: '#4B0090',
@@ -15,7 +24,7 @@ export const projects = [
     category: 'WEB',
     color: '#4B0082',
     description:
-      "This API allows you to seamlessly create a front-end utilizing the data pulled from NASA's Astronomy Picture of the Day API. Endless",
+      "",
     github: '/gitui',
     link: 'netlify',
     projectBg:
@@ -24,7 +33,7 @@ export const projects = [
   {
     name: 'TIC TAC TOE',
     category: 'WEB',
-    color: '#800080',
+    color: '#5D3FD3',
     description:
       'A project utilizing an API and fetching that data into a play on envelope',
     github: '/gitui',
@@ -75,19 +84,9 @@ export const projects = [
     name: 'UGLY SOUP',
     category: 'PYTHON',
     description:
-      'A project utilzing an API and fetching that data into a play on envelope',
-    github: '/gitui',
+      'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
+    github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'netlify',
     color: 'white'
   },
-  {
-    name: 'MERN STACK',
-    category: 'WEB',
-    description:
-      'A project udfatilzing an API and fetching that data into a play on envelope',
-    github: '/gitijljui',
-    link: 'netlify',
-    color: '#DE91BE',
-  }
 ]
-
