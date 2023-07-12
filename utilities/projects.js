@@ -3,10 +3,10 @@ export const projects = [
     name: 'MERN STACK',
     category: 'WEB',
     description:
-      'A project udfatilzing an API and fetching that data into a play on envelope',
-    github: '/gitijljui',
-    link: 'netlify',
-    color: '#DE91BE',
+      'Looking for a date for your dog? PawMeets finds eligble bachelors and bachelorettes around NYC to match with!',
+    github: '',
+    link: '',
+    color: '#DE91BE'
   },
   {
     name: 'UI PATTERN',
@@ -14,8 +14,8 @@ export const projects = [
     color: '#4B0090',
     description:
       "I'm a travel, geography, and map enthusiast. Inspired by a postcard I found from an old friend studying in 🇬🇧 London, I styled my project to emulate just that. Utilzing data from an API, each stamp on the envelope will reveal a country. When you click a stamp, it pulls specific facts about the country in the form of a handwritten note.",
-    github: "https://github.com/sydney-rd/ui-pattern",
-    link: "https://sydney-rd.github.io/ui-pattern/",
+    github: 'https://github.com/sydney-rd/ui-pattern',
+    link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/my_portfolio/main/public/assets/background/ui.gif'
   },
@@ -23,8 +23,7 @@ export const projects = [
     name: 'NASA API',
     category: 'WEB',
     color: '#4B0082',
-    description:
-      "",
+    description: '',
     github: '/gitui',
     link: 'netlify',
     projectBg:
@@ -35,7 +34,7 @@ export const projects = [
     category: 'WEB',
     color: '#5D3FD3',
     description:
-      'A project utilizing an API and fetching that data into a play on envelope',
+      'A rendition of the classic game, TIC-TAC-TOE.',
     github: '/gitui',
     link: 'netlify',
     projectBg: '/asset/background/uipattern.png'
@@ -46,9 +45,9 @@ export const projects = [
     category: 'WEB',
     color: '#9370DB',
     description:
-      'A project utilzing an API and fetching that data into a play on envelope',
-    github: '/gitui',
-    link: 'netlify',
+      'Inspired by arcade games, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the paths to your journey!',
+    github: 'https://github.com/sydney-rd/text-adventure-game',
+    link: 'https://sydney-rd.github.io/text-adventure-game/',
     projectBg: '../asset/background/uipattern.png'
   },
   {
@@ -88,5 +87,5 @@ export const projects = [
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'netlify',
     color: 'white'
-  },
+  }
 ]
