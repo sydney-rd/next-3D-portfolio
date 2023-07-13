@@ -52,7 +52,7 @@ export default function ProjectPage() {
             <VStack
               align="flex-end"
               flexGrow={1}
-              pr={['4rem', '7rem']}
+              pr='7rem'
               zIndex={0}
               maxH="100vh"
               position="relative"
@@ -65,8 +65,8 @@ export default function ProjectPage() {
                   sx={{
                     opacity: '1',
                     fontFamily: 'Ailerons',
-                    fontSize: ['3rem', '9rem'],
-                    whiteSpace: ['normal', 'nowrap'],
+                    fontSize: '9rem',
+                    whiteSpace: 'nowrap',
                     textAlign: 'right',
                     cursor: 'pointer',
                     filter: 'brightness(150%)',
