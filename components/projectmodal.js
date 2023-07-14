@@ -1,4 +1,4 @@
-import { Modal, ModalContent, ModalHeader, Box, ModalCloseButton, ModalBody, ModalOverlay, Flex } from '@chakra-ui/react';
+import { Modal, ModalContent, ModalHeader, Box, ModalCloseButton, ModalBody, ModalOverlay, Flex, useBreakpointValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 const MotionModal = motion(Modal);
@@ -6,6 +6,21 @@ const MotionModalContent = motion(ModalContent);
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   const { name, description, projectBg, color, github, link } = project;
+  
+  const titleFontSize = useBreakpointValue({
+    base: '4.5rem',
+    md: '8rem'
+  })
+
+  const gifHeight = useBreakpointValue({
+    base: '25vh',
+    md: '45vh',
+  });
+  
+  const gifWidth = useBreakpointValue({
+    base: '60vw',
+    md: '45vw',
+  });
 
   return (
     <MotionModal
@@ -33,7 +48,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <ModalHeader
           sx={{
             fontFamily: 'Ailerons',
-            fontSize: '8rem',
+            fontSize: titleFontSize,
             textAlign: 'center',
             color: color,
             textShadow: `0px 0px 10px ${color}`
@@ -64,8 +79,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               backgroundImage: `url(${projectBg})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '45vh',
-              width: '45vw',
+              height: gifHeight,
+              width: gifWidth,
               borderRadius: '2rem',
               zIndex: 2
             }}
