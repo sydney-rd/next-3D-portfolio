@@ -3,6 +3,7 @@ import { Box, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
 
 export default function Navbar() {
+
   const navBarStyle = {
     color: 'white',
     whiteSpace: 'pre',

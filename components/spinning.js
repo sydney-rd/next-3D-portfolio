@@ -1,6 +1,6 @@
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import * as THREE from 'three'
-import { useLoader, useFrame } from '@react-three/fiber'
+import { useLoader } from '@react-three/fiber'
 
 export const Planet = ({
   textureUrl,

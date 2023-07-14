@@ -10,7 +10,8 @@ import {
   Flex,
   useDisclosure,
   VStack,
-  Link as ChakraLink
+  Link as ChakraLink,
+  useBreakpointValue
 } from '@chakra-ui/react'
 
 const MotionChakraLink = motion(ChakraLink)
@@ -30,6 +31,11 @@ export default function ProjectPage() {
   const filteredProjects = projects.filter(
     project => project.category === selectedCategory
   )
+
+  const projectFontSize = useBreakpointValue({
+    base: '6rem',
+    md: '9rem'
+  })
 
   return (
     <>
@@ -52,12 +58,13 @@ export default function ProjectPage() {
             <VStack
               align="flex-end"
               flexGrow={1}
-              pr='7rem'
+              pr="7rem"
               zIndex={0}
               maxH="100vh"
               position="relative"
               visibility={isOpen ? 'hidden' : 'visible'}
               userSelect="none"
+              marginTop="-30vh"
             >
               {filteredProjects.map((project, index) => (
                 <MotionChakraLink
@@ -65,9 +72,10 @@ export default function ProjectPage() {
                   sx={{
                     opacity: '1',
                     fontFamily: 'Ailerons',
-                    fontSize: '9rem',
+                    fontSize: projectFontSize,
+
                     whiteSpace: 'nowrap',
-                    textAlign: 'right',
+
                     cursor: 'pointer',
                     filter: 'brightness(150%)',
                     color:
@@ -79,7 +87,7 @@ export default function ProjectPage() {
                     _hover: {
                       color: project.color,
                       textShadow: `2px 2px 8px ${project.color}`,
-                      transition: '1s' 
+                      transition: '1s'
                     }
                   }}
                   onClick={() => handleClick(project)}
@@ -92,12 +100,12 @@ export default function ProjectPage() {
         </Canvas>
         {selectedProject && (
           <ProjectModal
-          isOpen={isOpen}
-          onClose={onClose}
-          project={selectedProject}
-          zIndex={10}
+            isOpen={isOpen}
+            onClose={onClose}
+            project={selectedProject}
+            zIndex={10}
           />
-          )}
+        )}
       </Flex>
     </>
   )

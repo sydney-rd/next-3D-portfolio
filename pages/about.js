@@ -16,7 +16,7 @@ export default function About() {
       <Box
         sx={{
           position: 'absolute',
-          top: '50%',
+          top: '48%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           width: '100%',
@@ -32,7 +32,7 @@ export default function About() {
           letterSpacing="1rem"
           fontWeight="bold"
           fontFamily="Ailerons"
-          fontSize="3.5rem"
+          fontSize={["1rem", "3.5rem"]}
           textShadow="1px 1px 3px pink"
           color="white"
           textAlign="center"
@@ -41,7 +41,7 @@ export default function About() {
         </Box>
         <Text
           color="white"
-          fontSize="15"
+          fontSize=".9rem"
           fontFamily="Verdana, Geneva, Tahoma, sans-serif"
           paddingTop="10"
           maxW="40rem"
@@ -67,12 +67,17 @@ export default function About() {
           <br />
           <br />
         </Text>
-        <Text fontSize="25" fontFamily="Ailerons" color="white" fontWeight="bold">
-          What you'll find me coding in
+        <Text
+          fontSize="2rem"
+          fontFamily="Ailerons"
+          color="white"
+          fontWeight="bold"
+        >
+          What you&apos;ll find me coding in
         </Text>
         <Text
           color="white"
-          fontSize="15"
+          fontSize=".9rem"
           fontFamily="Verdana, Geneva, Tahoma, sans-serif"
           maxW="40rem"
           textAlign="center"
@@ -81,11 +86,12 @@ export default function About() {
           <strong>Languages</strong> <br /> JavaScript, Python, C/C++
           <br />
           <br />
-         <strong>Databases</strong> <br /> MongoDB, SQL
+          <strong>Databases</strong> <br /> MongoDB, SQL
           <br />
           <br />
-          <strong>Web Dev</strong> <br /> React, Next.js, Express, React-Fiber-Three, HTML, <br /> CSS,
-          Tailwind, Chakra-UI, Framer Motion
+          <strong>Web Dev</strong> <br /> React, Next.js, Express,
+          React-Fiber-Three, HTML, <br /> CSS, Tailwind, Chakra-UI, Framer
+          Motion
         </Text>
       </Box>
     </Box>

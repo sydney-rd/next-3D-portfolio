@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, VStack } from '@chakra-ui/react'
+import { Box, VStack, useBreakpointValue } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { projects } from '../utilities/projects'
 
@@ -11,6 +11,10 @@ export default function ProjectCategories({
 }) {
   const categories = [...new Set(projects.map(project => project.category))]
 
+  const topPosition = useBreakpointValue({
+    base: '2%',
+    md: '45%'
+  })
   return (
     <VStack
       display="flex"
@@ -18,7 +22,7 @@ export default function ProjectCategories({
       alignItems="flex-start"
       justifyContent="center"
       position="fixed"
-      top="45%"
+      top={topPosition}
       left="4"
       backgroundColor="transparent"
       zIndex="10"

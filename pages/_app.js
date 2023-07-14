@@ -1,11 +1,14 @@
 import React from 'react'
-import { ChakraProvider, useDisclosure } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 import Layout from '../components/layouts/main'
 import '../styles.css'
 
-const Website = ({ Component, pageProps, router }) => {
+const Website = ({ Component, pageProps }) => {
+  const router = useRouter()
+
   const pageTransition = {
     initial: {
       opacity: 0,
@@ -39,7 +42,7 @@ const Website = ({ Component, pageProps, router }) => {
         exit="exit"
         variants={pageTransition}
       >
-        <Layout router={router}>
+        <Layout>
           <Component {...pageProps} key={router.route} />
         </Layout>
       </Box>
