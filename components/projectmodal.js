@@ -1,31 +1,37 @@
-import { Modal, ModalContent, ModalHeader, Box, ModalCloseButton, ModalOverlay, Flex, useBreakpointValue } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  Box,
+  ModalCloseButton,
+  ModalOverlay,
+  Flex,
+  useBreakpointValue
+} from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
-const MotionModal = motion(Modal);
-const MotionModalContent = motion(ModalContent);
+const MotionModal = motion(Modal)
+const MotionModalContent = motion(ModalContent)
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
-  const { name, description, projectBg, color, github, link } = project;
+  const { name, description, projectBg, color, github, link } = project
 
-  const modalBodyWidth = useBreakpointValue({
-    base: '30rem',
-    md: '40rem',
-  });
-
-  const titleFontSize = useBreakpointValue({
-    base: '4.5rem',
-    md: '8rem',
-  });
-
-  const gifHeight = useBreakpointValue({
-    base: '25vh',
-    md: '45vh',
-  });
-
-  const gifWidth = useBreakpointValue({
-    base: '60vw',
-    md: '45vw',
-  });
+  const responsiveStyles = useBreakpointValue({
+    base: {
+      titleFontSize: '4.5rem',
+      gifHeight: '25vh',
+      gifWidth: '60vw',
+      top: '21rem',
+      contentFontSize: '.9rem',
+      showBorder: true
+    },
+    md: {
+      titleFontSize: '8rem',
+      gifHeight: '45vh',
+      gifWidth: '45vw',
+      contentFontSize: '1rem',
+    }
+  })
 
   return (
     <MotionModal
@@ -53,10 +59,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <ModalHeader
           sx={{
             fontFamily: 'Ailerons',
-            fontSize: titleFontSize,
+            fontSize: responsiveStyles?.titleFontSize,
             textAlign: 'center',
             color: color,
-            textShadow: `0px 0px 10px ${color}`,
+            textShadow: `0px 0px 10px ${color}`
           }}
         >
           {name}
@@ -73,8 +79,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             color: color,
             zIndex: 10,
             '&:focus': {
-              boxShadow: 'none',
-            },
+              boxShadow: 'none'
+            }
           }}
         />
         {/* gif */}
@@ -84,10 +90,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               backgroundImage: `url(${projectBg})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: gifHeight,
-              width: gifWidth,
+              height: responsiveStyles?.gifHeight,
+              width: responsiveStyles?.gifWidth,
               borderRadius: '2rem',
-              zIndex: 2,
+              zIndex: 2
             }}
           />
         </Box>
@@ -96,14 +102,22 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             position: 'absolute',
             left: '50%',
             transform: 'translateX(-50%)',
-            bottom: '2rem',
-            fontSize: '1rem',
+            top: responsiveStyles?.top,
+            bottom: '3rem',
+            fontSize: responsiveStyles?.contentFontSize,
             color: 'white',
             fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            maxW: modalBodyWidth,
+            overflowY: responsiveStyles?.showBorder ? 'scroll' : 'visible',
+            borderTop: responsiveStyles?.showBorder
+              ? `1px solid ${color}`
+              : 'none',
+            borderBottom: responsiveStyles?.showBorder
+              ? `1px solid ${color}`
+              : 'none',
+            padding: responsiveStyles?.showBorder ? '1rem' : 0
           }}
         >
           <Flex flexDirection="row">
@@ -112,7 +126,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               style={{
                 display: 'inline-block',
                 marginRight: '.8rem',
-                paddingBottom: '.5rem',
+                paddingBottom: '.5rem'
               }}
             >
               <a
@@ -123,7 +137,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   fontWeight: 'bold',
                   textDecoration: 'none',
                   color: 'white',
-                  textShadow: `0px 0px 5px ${color}`, // Add text shadow effect
+                  textShadow: `0px 0px 5px ${color}` // Add text shadow effect
                 }}
               >
                 GITHUB
@@ -134,7 +148,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               style={{
                 display: 'inline-block',
                 marginRight: '.8rem',
-                paddingBottom: '.5rem',
+                paddingBottom: '.5rem'
               }}
             >
               <a
@@ -145,7 +159,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   fontWeight: 'bold',
                   textDecoration: 'none',
                   color: 'white',
-                  textShadow: `0px 0px 5px ${color}`, // Add text shadow effect
+                  textShadow: `0px 0px 5px ${color}` // Add text shadow effect
                 }}
               >
                 LINK
@@ -156,7 +170,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         </Box>
       </MotionModalContent>
     </MotionModal>
-  );
-};
+  )
+}
 
-export default ProjectModal;
+export default ProjectModal
