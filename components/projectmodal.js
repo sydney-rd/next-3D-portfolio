@@ -1,4 +1,4 @@
-import { Modal, ModalContent, ModalHeader, Box, ModalCloseButton, ModalBody, ModalOverlay, Flex, useBreakpointValue } from '@chakra-ui/react';
+import { Modal, ModalContent, ModalHeader, Box, ModalCloseButton, ModalOverlay, Flex, useBreakpointValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 const MotionModal = motion(Modal);
@@ -6,17 +6,22 @@ const MotionModalContent = motion(ModalContent);
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   const { name, description, projectBg, color, github, link } = project;
-  
+
+  const modalBodyWidth = useBreakpointValue({
+    base: '30rem',
+    md: '40rem',
+  });
+
   const titleFontSize = useBreakpointValue({
     base: '4.5rem',
-    md: '8rem'
-  })
+    md: '8rem',
+  });
 
   const gifHeight = useBreakpointValue({
     base: '25vh',
     md: '45vh',
   });
-  
+
   const gifWidth = useBreakpointValue({
     base: '60vw',
     md: '45vw',
@@ -41,7 +46,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         backgroundColor="transparent"
         border="solid"
         borderColor={color}
-        borderRadius= "2rem"
+        borderRadius="2rem"
         zIndex={1}
         position="relative"
       >
@@ -51,7 +56,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             fontSize: titleFontSize,
             textAlign: 'center',
             color: color,
-            textShadow: `0px 0px 10px ${color}`
+            textShadow: `0px 0px 10px ${color}`,
           }}
         >
           {name}
@@ -68,8 +73,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             color: color,
             zIndex: 10,
             '&:focus': {
-              boxShadow: 'none'
-            }
+              boxShadow: 'none',
+            },
           }}
         />
         {/* gif */}
@@ -82,11 +87,11 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               height: gifHeight,
               width: gifWidth,
               borderRadius: '2rem',
-              zIndex: 2
+              zIndex: 2,
             }}
           />
         </Box>
-        <ModalBody
+        <Box
           sx={{
             position: 'absolute',
             left: '50%',
@@ -94,11 +99,11 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             bottom: '2rem',
             fontSize: '1rem',
             color: 'white',
-            maxW: '40rem',
             fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            maxW: modalBodyWidth,
           }}
         >
           <Flex flexDirection="row">
@@ -118,7 +123,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   fontWeight: 'bold',
                   textDecoration: 'none',
                   color: 'white',
-                  textShadow: `0px 0px 5px ${color}` // Add text shadow effect
+                  textShadow: `0px 0px 5px ${color}`, // Add text shadow effect
                 }}
               >
                 GITHUB
@@ -140,20 +145,18 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   fontWeight: 'bold',
                   textDecoration: 'none',
                   color: 'white',
-                  textShadow: `0px 0px 5px ${color}` // Add text shadow effect
+                  textShadow: `0px 0px 5px ${color}`, // Add text shadow effect
                 }}
               >
                 LINK
               </a>
             </motion.div>
           </Flex>
-          <p style={{ marginTop: '1rem'}}>{description}</p>
-        </ModalBody>
+          <p style={{ marginTop: '1rem' }}>{description}</p>
+        </Box>
       </MotionModalContent>
     </MotionModal>
   );
 };
 
 export default ProjectModal;
-
-// higher scale or hoover 
