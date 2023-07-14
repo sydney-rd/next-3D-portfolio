@@ -30,7 +30,7 @@ export default function Navbar() {
       zIndex="1"
     >
       <VStack spacing={20} align="flex-end">
-        <Box pr="4" pt="12">
+        <Box pr="3.5" pt="12">
           <Box transform="rotate(90deg)" whiteSpace="pre">
             <Link href="/about" style={navBarStyle}>
               ABOUT
