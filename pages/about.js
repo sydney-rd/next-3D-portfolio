@@ -1,11 +1,9 @@
 import React from 'react'
 import { Box, Text } from '@chakra-ui/react'
 import { OrbitControls, Sky, Stars } from '@react-three/drei'
-// import { motion } from 'framer-motion'
 import { Canvas } from '@react-three/fiber'
 import AboutNavbar from '../components/aboutNavbar'
 
-// make links open to a new tab
 export default function About() {
   return (
     <Box position="relative" height="100vh">
@@ -49,7 +47,6 @@ export default function About() {
           maxW="40rem"
           textAlign="center"
         >
-          <br />
           Hi! My name is Sydney and I am a fullstack developer from NYC. My
           journey began with a simple HTML/CSS tutorial. Since that moment - I
           challenged myself to transition my career path to the ever-changing
@@ -69,27 +66,26 @@ export default function About() {
           advocate!
           <br />
           <br />
-          <Text fontSize="25" fontFamily="Ailerons">
-            What you'll find me coding in
-          </Text>
+        </Text>
+        <Text fontSize="25" fontFamily="Ailerons" color="white" fontWeight="bold">
+          What you'll find me coding in
+        </Text>
+        <Text
+          color="white"
+          fontSize="15"
+          fontFamily="Verdana, Geneva, Tahoma, sans-serif"
+          maxW="40rem"
+          textAlign="center"
+          paddingTop=".8rem"
+        >
+          <strong>Languages</strong> <br /> JavaScript, Python, C/C++
           <br />
-          <Text textAlign="center">
-            <Text fontWeight="bold">
-            Languages
-              </Text> JavaScript, Python, C/C++
-          </Text>
           <br />
-          <Text textAlign="center">
-           <Text fontWeight="bold">
-           Databases
-             </Text> MongoDB, SQL
-          </Text>
+         <strong>Databases</strong> <br /> MongoDB, SQL
           <br />
-          <Text textAlign="center">
-            <Text fontWeight="bold">Web Dev</Text> React, Next.js, Express,
-            React-Fiber-Three, <br /> HTML, CSS, Tailwind, Chakra-UI, Framer
-            Motion
-          </Text>
+          <br />
+          <strong>Web Dev</strong> <br /> React, Next.js, Express, React-Fiber-Three, HTML, <br /> CSS,
+          Tailwind, Chakra-UI, Framer Motion
         </Text>
       </Box>
     </Box>
