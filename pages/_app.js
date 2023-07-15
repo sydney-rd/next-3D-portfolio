@@ -1,53 +1,75 @@
-import React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import { Box } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
-import { useRouter } from 'next/router'
-import Layout from '../components/layouts/main'
-import '../styles.css'
+import React, { useState, useEffect } from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import Layout from '../components/layouts/main';
+import '../styles.css';
 
-const Website = ({ Component, pageProps }) => {
-  const router = useRouter()
+const Website = ({ Component, pageProps, router }) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [countdown, setCountdown] = useState(3);
 
-  const pageTransition = {
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown(prevCountdown => prevCountdown - 1);
+    }, 1000);
+
+    setTimeout(() => {
+      clearInterval(timer);
+      setIsLoading(false);
+    }, 3000); // Adjust the countdown time and delay time as needed
+  }, []);
+
+  const pageVariants = {
     initial: {
       opacity: 0,
-      x: '-50%',
     },
     animate: {
       opacity: 1,
-      x: '0%',
-      transition: {
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
     },
     exit: {
       opacity: 0,
-      x: '50%',
-      transition: {
-        duration: 0.3,
-        ease: 'easeInOut',
-      },
     },
-  }
+  };
+
+  const pageTransition = {
+    duration: 0.7,
+    backgroundColor: 'black',
+  };
 
   return (
     <ChakraProvider>
-      <Box
-        as={motion.div}
-        key={router.route}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        variants={pageTransition}
-      >
-        <Layout>
-          <Component {...pageProps} key={router.route} />
-        </Layout>
-      </Box>
+      {isLoading ? (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100vw',
+            height: '100vh',
+            backgroundColor: 'black',
+            color: 'white',
+            fontSize: '2rem',
+          }}
+        >
+          {countdown}
+        </div>
+      ) : (
+        <motion.div
+          key={router.route}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={pageVariants}
+          transition={pageTransition}
+          style={{ backgroundColor: 'black' }}
+        >
+          <Layout router={router}>
+            <Component {...pageProps} key={router.route} />
+          </Layout>
+        </motion.div>
+      )}
     </ChakraProvider>
-  )
-}
+  );
+};
 
-export default Website
+export default Website;

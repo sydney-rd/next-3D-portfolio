@@ -1,8 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Box, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 
 const Title = () => {
+  const router = useRouter();
+
+  const navigateToProjectPage = () => {
+    router.push('/projectPage') 
+  }
   return (
     <Box placeItems="center" textAlign="center">
       <Box
@@ -44,8 +50,9 @@ const Title = () => {
         <motion.span
           animate={{ color: ['#3D8DAE', '#DF8453', '#E4A9A8'] }}
           transition={{ duration: 4, repeat: Infinity }}
+          onClick={navigateToProjectPage}
         >
-          <Text fontFamily="Ailerons" fontSize="3rem">
+          <Text fontFamily="Ailerons" fontSize="3rem" cursor="pointer">
             ENTER
           </Text>
         </motion.span>
