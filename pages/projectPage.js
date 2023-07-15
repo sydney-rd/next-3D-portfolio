@@ -74,9 +74,7 @@ export default function ProjectPage() {
                       opacity: '1',
                       fontFamily: 'Ailerons',
                       fontSize: projectFontSize,
-
                       whiteSpace: 'nowrap',
-
                       cursor: 'pointer',
                       filter: 'brightness(150%)',
                       color:
