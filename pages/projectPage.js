@@ -1,41 +1,41 @@
-import React, { useState } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
-import { projects } from '../utilities/projects'
-import { motion } from 'framer-motion'
-import ProjectCategories from '../components/projectCategories'
-import ProjectModal from '../components/projectmodal'
-import NavBar from '../components/navBar'
+import React, { useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Sky, Stars, Html } from '@react-three/drei';
+import { projects } from '../utilities/projects';
+import { motion } from 'framer-motion';
+import ProjectCategories from '../components/projectCategories';
+import ProjectModal from '../components/projectmodal';
+import NavBar from '../components/navBar';
 import {
   Flex,
   useDisclosure,
   VStack,
   Link as ChakraLink,
   useBreakpointValue
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
-const MotionChakraLink = motion(ChakraLink)
+const MotionChakraLink = motion(ChakraLink);
 
 export default function ProjectPage() {
-  const [selectedCategory, setSelectedCategory] = useState('WEB')
-  const [hoveredItem] = useState('')
-  const [selectedProject, setSelectedProject] = useState(null)
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [selectedCategory, setSelectedCategory] = useState('WEB');
+  const [hoveredItem] = useState('');
+  const [selectedProject, setSelectedProject] = useState(null);
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   // Modal
   const handleClick = project => {
-    setSelectedProject(project)
-    onOpen()
-  }
+    setSelectedProject(project);
+    onOpen();
+  };
 
   const filteredProjects = projects.filter(
     project => project.category === selectedCategory
-  )
+  );
 
   const projectFontSize = useBreakpointValue({
     base: '6rem',
     md: '9rem'
-  })
+  });
 
   return (
     <>
@@ -66,35 +66,36 @@ export default function ProjectPage() {
               userSelect="none"
               marginTop="-30vh"
             >
-              {filteredProjects.map((project, index) => (
-                <MotionChakraLink
-                  key={index}
-                  sx={{
-                    opacity: '1',
-                    fontFamily: 'Ailerons',
-                    fontSize: projectFontSize,
+              {!isOpen &&
+                filteredProjects.map((project, index) => (
+                  <MotionChakraLink
+                    key={index}
+                    sx={{
+                      opacity: '1',
+                      fontFamily: 'Ailerons',
+                      fontSize: projectFontSize,
 
-                    whiteSpace: 'nowrap',
+                      whiteSpace: 'nowrap',
 
-                    cursor: 'pointer',
-                    filter: 'brightness(150%)',
-                    color:
-                      hoveredItem === project.name
-                        ? project.color
-                        : 'transparent',
-                    WebkitTextStroke: '2px',
-                    WebkitTextStrokeColor: project.color,
-                    _hover: {
-                      color: project.color,
-                      textShadow: `2px 2px 8px ${project.color}`,
-                      transition: '1s'
-                    }
-                  }}
-                  onClick={() => handleClick(project)}
-                >
-                  {project.name}
-                </MotionChakraLink>
-              ))}
+                      cursor: 'pointer',
+                      filter: 'brightness(150%)',
+                      color:
+                        hoveredItem === project.name
+                          ? project.color
+                          : 'transparent',
+                      WebkitTextStroke: '2px',
+                      WebkitTextStrokeColor: project.color,
+                      _hover: {
+                        color: project.color,
+                        textShadow: `2px 2px 8px ${project.color}`,
+                        transition: '1s'
+                      }
+                    }}
+                    onClick={() => handleClick(project)}
+                  >
+                    {project.name}
+                  </MotionChakraLink>
+                ))}
             </VStack>
           </Html>
         </Canvas>
@@ -108,5 +109,5 @@ export default function ProjectPage() {
         )}
       </Flex>
     </>
-  )
+  );
 }

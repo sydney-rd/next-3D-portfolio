@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 import Layout from '../components/layouts/main';
 import '../styles.css';
 
-const Website = ({ Component, pageProps, router }) => {
+const Website = ({ Component, pageProps }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [countdown, setCountdown] = useState(3);
+  const router = useRouter();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -18,23 +19,6 @@ const Website = ({ Component, pageProps, router }) => {
       setIsLoading(false);
     }, 3000); // Adjust the countdown time and delay time as needed
   }, []);
-
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-    },
-    animate: {
-      opacity: 1,
-    },
-    exit: {
-      opacity: 0,
-    },
-  };
-
-  const pageTransition = {
-    duration: 0.7,
-    backgroundColor: 'black',
-  };
 
   return (
     <ChakraProvider>
@@ -54,19 +38,9 @@ const Website = ({ Component, pageProps, router }) => {
           {countdown}
         </div>
       ) : (
-        <motion.div
-          key={router.route}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          variants={pageVariants}
-          transition={pageTransition}
-          style={{ backgroundColor: 'black' }}
-        >
-          <Layout router={router}>
-            <Component {...pageProps} key={router.route} />
-          </Layout>
-        </motion.div>
+        <Layout>
+          <Component {...pageProps} key={router.route} />
+        </Layout>
       )}
     </ChakraProvider>
   );

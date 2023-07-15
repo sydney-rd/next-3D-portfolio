@@ -7,14 +7,14 @@ import {
   ModalOverlay,
   Flex,
   useBreakpointValue
-} from '@chakra-ui/react'
-import { motion } from 'framer-motion'
+} from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
-const MotionModal = motion(Modal)
-const MotionModalContent = motion(ModalContent)
+const MotionModal = motion(Modal);
+const MotionModalContent = motion(ModalContent);
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
-  const { name, description, projectBg, color, github, link } = project
+  const { name, description, projectBg, color, github, link } = project;
 
   const responsiveStyles = useBreakpointValue({
     base: {
@@ -26,7 +26,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       showBorder: true,
       CloseBtnPosTop: '1.5rem',
       CloseBtnPosRight: '45%'
-
     },
     md: {
       titleFontSize: '8rem',
@@ -35,10 +34,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       contentFontSize: '1rem',
       CloseBtnPosTop: '2rem',
       CloseBtnPosRight: '50%'
-
-
     }
-  })
+  });
 
   return (
     <MotionModal
@@ -56,12 +53,13 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.1 }}
         textAlign="center"
-        backgroundColor="transparent"
+        backgroundColor="black"
         border="solid"
         borderColor={color}
         borderRadius="2rem"
         zIndex={1}
         position="relative"
+        userSelect="none"
       >
         <ModalHeader
           sx={{
@@ -177,7 +175,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         </Box>
       </MotionModalContent>
     </MotionModal>
-  )
-}
+  );
+};
 
-export default ProjectModal
+export default ProjectModal;
+
