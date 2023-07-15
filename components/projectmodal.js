@@ -20,16 +20,23 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     base: {
       titleFontSize: '4.5rem',
       gifHeight: '25vh',
-      gifWidth: '60vw',
+      gifWidth: '70vw',
       top: '21rem',
       contentFontSize: '.9rem',
-      showBorder: true
+      showBorder: true,
+      CloseBtnPosTop: '1.5rem',
+      CloseBtnPosRight: '45%'
+
     },
     md: {
       titleFontSize: '8rem',
       gifHeight: '45vh',
       gifWidth: '45vw',
       contentFontSize: '1rem',
+      CloseBtnPosTop: '2rem',
+      CloseBtnPosRight: '50%'
+
+
     }
   })
 
@@ -72,8 +79,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             position: 'absolute',
             display: 'flex',
             alignItems: 'center',
-            top: '2rem',
-            right: '50%',
+            top: responsiveStyles?.CloseBtnPosTop,
+            right: responsiveStyles?.CloseBtnPosRight,
             transform: 'translateY(-50%)',
             size: 'xl',
             color: color,
