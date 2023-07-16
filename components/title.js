@@ -3,52 +3,59 @@ import { motion } from 'framer-motion'
 import { Box, Text } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
+const AnimatedText = ({ text, colors }) => {
+  return (
+    <motion.span
+      animate={{ color: colors }}
+      transition={{ duration: 4, repeat: Infinity }}
+    >
+      <Text fontFamily="Ailerons">{text}</Text>
+    </motion.span>
+  )
+}
+
 const Title = () => {
-  const router = useRouter();
+  const router = useRouter()
 
   const navigateToProjectPage = () => {
-    router.push('/projectPage') 
+    router.push('/projectPage')
   }
+
   return (
-    <Box placeItems="center" textAlign="center">
+    <Box placeItems="center" textAlign="center" justifyContent="center">
       <Box
         display="flex"
         flexDirection="column"
-        paddingTop="12rem"
-        fontSize="2rem"
+        paddingTop="15rem"
+        fontSize="1.7rem"
       >
+        <Box display="flex" justifyContent="center">
+          <AnimatedText
+            text="SYDNEY"
+            colors={['#DE91BE', '#4B0090', '#DE91BE']}
+          />
+          <Box marginX=".3rem"></Box>
+          <AnimatedText
+            text="DAVID"
+            colors={['#DE91BE', '#4B0090', '#DE91BE']}
+          />
+        </Box>
+
+        <Box display="flex" justifyContent="center">
+          <AnimatedText
+            text="SOFTWARE"
+            colors={['#4B0090', '#DE91BE', '#4B0090']}
+          />
+          <Box marginX=".7rem">
+            <AnimatedText
+              text="DEVELOPER"
+              colors={['#4B0090', '#DE91BE', '#4B0090']}
+              />
+          </Box>
+        </Box>
+
         <motion.span
-          animate={{ color: ['#DF8453', '#3D8DAE', '#E4A9A8'] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        >
-          <Text fontFamily="Ailerons">SYDNEY</Text>
-        </motion.span>
-        <motion.span
-          animate={{ color: ['#DBAD4A', '#ACCFCB', '#17494D'] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        >
-          <Text fontSize="2.5rem" fontFamily="Ailerons">|</Text>
-        </motion.span>
-        <motion.span
-          animate={{ color: ['#ACCFCB', '#E4A9A8', '#ACCFCB'] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        >
-          <Text fontFamily="Ailerons">DAVID</Text>
-        </motion.span>
-        <motion.span
-          animate={{ color: ['#ACCFCB', '#E4A9A8', '#ACCFCB'] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        >
-          <Text fontFamily="Ailerons">SOFTWARE</Text>
-        </motion.span>
-        <motion.span
-          animate={{ color: ['#ACCFCB', '#E4A9A8', '#ACCFCB'] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        >
-          <Text fontFamily="Ailerons">DEVELOPER</Text>
-        </motion.span>
-        <motion.span
-          animate={{ color: ['#3D8DAE', '#DF8453', '#E4A9A8'] }}
+          animate={{ color: ['#9370DB', '#4B0090', '#9370DB'] }}
           transition={{ duration: 4, repeat: Infinity }}
           onClick={navigateToProjectPage}
         >
