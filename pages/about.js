@@ -1,10 +1,28 @@
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Text, useBreakpointValue } from '@chakra-ui/react'
 import { OrbitControls, Sky, Stars } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import AboutNavbar from '../components/aboutNavbar'
 
 export default function About() {
+
+  const responsiveStyles = useBreakpointValue({
+    base: {
+      titleFontSize: '1.5rem',
+      textFontSize: '.5rem',
+      maxW: '50rem',
+      secTitleFontSize: '1rem'
+    },
+    md: {
+      titleFontSize: '3.5rem',
+      textFontSize: '.9rem',
+      maxW: '40rem',
+      secTitleFontSize: '2rem'
+
+
+    }
+  })
+
   return (
     <Box position='relative' height='100vh'>
       <AboutNavbar />
@@ -32,7 +50,7 @@ export default function About() {
           letterSpacing='1rem'
           fontWeight='bold'
           fontFamily='Ailerons'
-          fontSize='3.5rem'
+          fontSize={responsiveStyles?.titleFontSize}
           textShadow='1px 2px 4px pink'
           color='white'
           textAlign='center'
@@ -41,10 +59,10 @@ export default function About() {
         </Box>
         <Text
           color='white'
-          fontSize='.9rem'
+          fontSize={responsiveStyles?.textFontSize}
           fontFamily='Verdana, Geneva, Tahoma, sans-serif'
           paddingTop='10'
-          maxW='40rem'
+          maxW={responsiveStyles?.maxW}
           textAlign='center'
         >
           Hi! My name is Sydney and I am a fullstack developer from NYC. My
@@ -68,7 +86,7 @@ export default function About() {
           <br />
         </Text>
         <Text
-          fontSize="2rem"
+          fontSize={responsiveStyles?.secTitleFontSize}
           fontFamily="Ailerons"
           color="white"
           fontWeight="bold"

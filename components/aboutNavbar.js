@@ -11,22 +11,16 @@ export default function AboutNavbar() {
     cursor: 'pointer',
   };
 
-  const pinkIconStyle = {
-    fontSize: '1.1rem',
-    color: 'pink',
-    cursor: 'pointer',
-  };
-
   return (
     <Box
-      position="fixed"
-      top="10"
-      right="0"
-      h="50vh"
-      display="flex"
-      flexDirection="column"
+      position='fixed'
+      top='10'
+      right='0'
+      h='50vh'
+      display='flex'
+      flexDirection='column'
       paddingRight={['.2', '4']}
-      zIndex="1"
+      zIndex='1'
     >
       <NavBar />
       <motion.div
@@ -34,12 +28,12 @@ export default function AboutNavbar() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <Box pr="7" pt="96">
-          <Box pt="6">
+        <Box pr='7' pt='96'>
+          <Box pt='6'>
             <a
-              href="https://www.linkedin.com/in/sydneydavid/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.linkedin.com/in/sydneydavid/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <motion.span
                 whileHover={{ color: 'pink' }}
@@ -50,29 +44,31 @@ export default function AboutNavbar() {
             </a>
           </Box>
         </Box>
-        <Box pt="8">
+        <Box pt='8'>
           <a
-            href="https://github.com/sydney-rd"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://github.com/sydney-rd'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <motion.span
               whileHover={{ color: 'pink' }}
               style={iconStyle}
+
             >
               <FaGithub />
             </motion.span>
           </a>
         </Box>
-        <Box pt="8">
+        <Box pt='8'>
           <a
-            href="mailto:sydneydavid56@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='mailto:sydneydavid56@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <motion.span
               whileHover={{ color: 'pink' }}
               style={iconStyle}
+
             >
               <FaEnvelope />
             </motion.span>
