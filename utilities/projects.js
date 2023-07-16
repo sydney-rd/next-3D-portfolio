@@ -6,12 +6,12 @@ export const projects = [
       'Looking for a date for your dog? PawMeets finds eligble bachelors and bachelorettes around NYC to match with!',
     github: '',
     link: '',
-    color: '#DE91BE'
+    color: '#4B0082',
   },
   {
     name: 'UI PATTERN',
     category: 'WEB',
-    color: '#4B0090',
+    color: '#551A8B',
     description:
       "I'm a travel, geography, and map enthusiast. Inspired by a postcard I found from an old friend studying in 🇬🇧 London, I styled my project to emulate just that. Utilzing data from an API, each stamp on the envelope will reveal a country. When you click a stamp, it pulls specific facts about the country in the form of a handwritten note.",
     github: 'https://github.com/sydney-rd/ui-pattern',
@@ -22,7 +22,7 @@ export const projects = [
   {
     name: 'NASA API',
     category: 'WEB',
-    color: '#4B0082',
+    color: '#6F2DA8',
     description: '',
     github: '/gitui',
     link: 'netlify',
@@ -32,7 +32,7 @@ export const projects = [
   {
     name: 'TIC TAC TOE',
     category: 'WEB',
-    color: '#5D3FD3',
+    color: '#7851A9',
     description:
       'A rendition of the classic game, TIC-TAC-TOE.',
     github: '/gitui',
@@ -67,7 +67,8 @@ export const projects = [
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
     link: 'netlify',
-    color: '#EE82EE',
+    color: '#DA70D6',
+
     bg: 'https://rare-gallery.com/mocahbig/434051-road-mist-dark-night-rain-nature.jpg'
   },
   {
@@ -77,7 +78,7 @@ export const projects = [
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
     link: 'netlify',
-    color: 'white'
+    color: '#EE82EE',
   },
   {
     name: 'UGLY SOUP',
@@ -86,6 +87,6 @@ export const projects = [
       'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'netlify',
-    color: 'white'
+    color: '#CF9FFF'
   }
 ]
