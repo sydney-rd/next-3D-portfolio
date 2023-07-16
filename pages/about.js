@@ -6,7 +6,7 @@ import AboutNavbar from '../components/aboutNavbar'
 
 export default function About() {
   return (
-    <Box position="relative" height="100vh">
+    <Box position='relative' height='100vh'>
       <AboutNavbar />
       <Canvas style={{ width: '100vw', height: '100vh' }}>
         <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} />
@@ -29,23 +29,23 @@ export default function About() {
         }}
       >
         <Box
-          letterSpacing="1rem"
-          fontWeight="bold"
-          fontFamily="Ailerons"
-          fontSize={["1rem", "3.5rem"]}
-          textShadow="1px 1px 3px pink"
-          color="white"
-          textAlign="center"
+          letterSpacing='1rem'
+          fontWeight='bold'
+          fontFamily='Ailerons'
+          fontSize='3.5rem'
+          textShadow='1px 2px 4px pink'
+          color='white'
+          textAlign='center'
         >
           Events &rarr; Fullstack Developer
         </Box>
         <Text
-          color="white"
-          fontSize=".9rem"
-          fontFamily="Verdana, Geneva, Tahoma, sans-serif"
-          paddingTop="10"
-          maxW="40rem"
-          textAlign="center"
+          color='white'
+          fontSize='.9rem'
+          fontFamily='Verdana, Geneva, Tahoma, sans-serif'
+          paddingTop='10'
+          maxW='40rem'
+          textAlign='center'
         >
           Hi! My name is Sydney and I am a fullstack developer from NYC. My
           journey began with a simple HTML/CSS tutorial. Since that moment - I
@@ -72,16 +72,18 @@ export default function About() {
           fontFamily="Ailerons"
           color="white"
           fontWeight="bold"
+          textShadow="1px 2px 4px pink"
+
         >
           What you&apos;ll find me coding in
         </Text>
         <Text
-          color="white"
-          fontSize=".9rem"
-          fontFamily="Verdana, Geneva, Tahoma, sans-serif"
-          maxW="40rem"
-          textAlign="center"
-          paddingTop=".8rem"
+          color='white'
+          fontSize='.9rem'
+          fontFamily='verdana, Geneva, Tahoma, sans-serif'
+          maxW='40rem'
+          textAlign='center'
+          paddingTop='.8rem'
         >
           <strong>Languages</strong> <br /> JavaScript, Python, C/C++
           <br />

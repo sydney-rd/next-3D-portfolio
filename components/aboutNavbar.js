@@ -1,15 +1,21 @@
-import React from 'react'
-import { Box } from '@chakra-ui/react'
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
-import NavBar from './navBar'
+import React from 'react';
+import { Box } from '@chakra-ui/react';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import NavBar from './navBar';
 import { motion } from 'framer-motion';
 
 export default function AboutNavbar() {
   const iconStyle = {
     fontSize: '1.1rem',
     color: 'white',
-    cursor: "pointer",
-  }
+    cursor: 'pointer',
+  };
+
+  const pinkIconStyle = {
+    fontSize: '1.1rem',
+    color: 'pink',
+    cursor: 'pointer',
+  };
 
   return (
     <Box
@@ -23,41 +29,56 @@ export default function AboutNavbar() {
       zIndex="1"
     >
       <NavBar />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <Box pr="7" pt="96">
-            <Box pt="6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Box pr="7" pt="96">
+          <Box pt="6">
             <a
               href="https://www.linkedin.com/in/sydneydavid/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin style={iconStyle} />
+              <motion.span
+                whileHover={{ color: 'pink' }}
+                style={iconStyle}
+              >
+                <FaLinkedin />
+              </motion.span>
             </a>
-            </Box>
           </Box>
-          <Box pt="8">
-            <a
-              href="https://github.com/sydney-rd"
-              target="_blank"
-              rel="noopener noreferrer"
+        </Box>
+        <Box pt="8">
+          <a
+            href="https://github.com/sydney-rd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.span
+              whileHover={{ color: 'pink' }}
+              style={iconStyle}
             >
-              <FaGithub style={iconStyle} />
-            </a>
-          </Box>
-          <Box pt="8">
-            <a
-              href="mailto:sydneydavid56@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              <FaGithub />
+            </motion.span>
+          </a>
+        </Box>
+        <Box pt="8">
+          <a
+            href="mailto:sydneydavid56@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.span
+              whileHover={{ color: 'pink' }}
+              style={iconStyle}
             >
-              <FaEnvelope style={iconStyle} />
-            </a>
-          </Box>
-        </motion.div>
+              <FaEnvelope />
+            </motion.span>
+          </a>
+        </Box>
+      </motion.div>
     </Box>
-  )
+  );
 }
