@@ -32,7 +32,7 @@ const Website = ({ Component, pageProps, router }) => {
   };
 
   const pageTransition = {
-    duration: 1, // play around
+    duration: 1,
   };
 
   return (
