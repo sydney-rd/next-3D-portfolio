@@ -43,7 +43,7 @@ const Title = () => {
         fontSize={responsiveStyles?.textFontSize}
         filter='brightness(150%)'
       >
-        <Box display="flex" justifyContent="center">
+        <Box display="flex" justifyContent="center" paddingRight="1rem">
           <AnimatedText
             text="SYDNEY"
             colors={['#DE91BE', '#4B0090', '#DE91BE']}
@@ -74,7 +74,7 @@ const Title = () => {
           transition={{ duration: 4, repeat: Infinity }}
           onClick={navigateToProjectPage}
         >
-          <Text fontFamily="Ailerons" fontSize={responsiveStyles?.enterFontSize} cursor="pointer">
+          <Text fontFamily="Ailerons" fontSize={responsiveStyles?.enterFontSize} cursor="pointer"  paddingRight="1rem">
             ENTER
           </Text>
         </motion.span>

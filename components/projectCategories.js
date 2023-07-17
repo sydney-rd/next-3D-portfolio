@@ -19,6 +19,7 @@ export default function ProjectCategories({ selectedCategory, onCategoryClick })
   return (
     <VStack
       position="fixed"
+      cursor="crosshair"
       top={topPosition}
       align="left"
       left="4"
