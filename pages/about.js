@@ -55,6 +55,11 @@ export default function About() {
           textShadow='1px 2px 4px pink'
           color='white'
           textAlign='center'
+          position='fixed'
+          top='0'
+          left='0'
+          right='0'
+
         >
           Events &rarr; Fullstack Developer
         </Box>

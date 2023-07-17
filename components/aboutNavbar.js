@@ -8,7 +8,7 @@ export default function AboutNavbar() {
   
   const responsiveStyles = useBreakpointValue({
     base: {
-      iconSize: '.8rem'
+      iconSize: '.9rem'
     },
     md: {
       iconSize: '1.1rem'
