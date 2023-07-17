@@ -1,9 +1,6 @@
 import React from 'react';
-import { Canvas } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Html } from '@react-three/drei';
-import Logo from '../public/assets/SD-1.png'
-
-
 
 const SpinningLogo = () => {
   return (
@@ -11,16 +8,15 @@ const SpinningLogo = () => {
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <OrbitControls />
-      <mesh rotation={[0, 0, 0]}>
-        <planeBufferGeometry args={[2, 2]} />
-        <meshBasicMaterial>
-          <Html position={[0, 0, 0]} transform>
-            <div style={{ width: '100%', height: '100%' }}>
-              <img src={Logo} alt="Logo" style={{ width: '100%', height: '100%' }} />
-            </div>
-          </Html>
-        </meshBasicMaterial>
-      </mesh>
+      <Html position={[0, 0, 0]} transform>
+        <div style={{ width: '100%', height: '50vh', display: 'flex', paddingBottom: '3rem', paddingRight: '3rem', justifyContent: 'center', alignItems: 'center', userSelect: 'none' }}>
+          <img
+            src="https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/SD-1.png?token=GHSAT0AAAAAAB7BNBVYFRLK5QOSYFBYYGGIZFVQXKQ"
+            alt="Logo"
+            style={{ width: '80%', height: '70%' }}
+          />
+        </div>
+      </Html>
     </Canvas>
   );
 };

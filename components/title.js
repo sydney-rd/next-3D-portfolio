@@ -39,6 +39,7 @@ const Title = () => {
         flexDirection="column"
         paddingTop="15rem"
         fontSize={responsiveStyles?.textFontSize}
+        userSelect='none'
         filter='brightness(150%)'
       >
         <Box display="flex" justifyContent="center" paddingRight="1rem">
@@ -68,6 +69,7 @@ const Title = () => {
 
         <Text
           fontFamily="Ailerons"
+          userSelect='none'
           color="white"
           fontSize={responsiveStyles?.enterFontSize}
           cursor="crosshair"
