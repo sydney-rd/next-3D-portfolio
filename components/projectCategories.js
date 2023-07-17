@@ -20,6 +20,7 @@ export default function ProjectCategories({ selectedCategory, onCategoryClick })
     <VStack
       position="fixed"
       top={topPosition}
+      align="left"
       left="4"
       zIndex="10"
       fontFamily="Verdana, Geneva, Tahoma, sans-serif"
