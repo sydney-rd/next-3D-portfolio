@@ -53,7 +53,8 @@ export const projects = [
   {
     name: 'ACCOUNT MANAGER',
     category: 'C++',
-    color: '#9966CC',
+    color: '#9370DB',
+    
     description:
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
@@ -67,7 +68,8 @@ export const projects = [
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
     link: 'netlify',
-    color: '#DA70D6',
+    color: '#9966CC',
+
 
     bg: 'https://rare-gallery.com/mocahbig/434051-road-mist-dark-night-rain-nature.jpg'
   },
@@ -78,7 +80,8 @@ export const projects = [
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
     link: 'netlify',
-    color: '#EE82EE',
+    color: '#DA70D6',
+
   },
   {
     name: 'UGLY SOUP',
@@ -87,6 +90,6 @@ export const projects = [
       'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'netlify',
-    color: '#CBC3E3'
+    color: '#EE82EE',
   }
 ]
