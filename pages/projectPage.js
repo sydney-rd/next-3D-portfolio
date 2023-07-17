@@ -33,7 +33,7 @@ export default function ProjectPage() {
   );
 
   const projectFontSize = useBreakpointValue({
-    base: '6rem',
+    base: '7rem',
     md: '9rem'
   });
 

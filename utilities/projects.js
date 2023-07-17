@@ -6,7 +6,7 @@ export const projects = [
       'Looking for a date for your dog? PawMeets finds eligble bachelors and bachelorettes around NYC to match with!',
     github: '',
     link: '',
-    color: '#4B0082',
+    color: '#4B0082'
   },
   {
     name: 'UI PATTERN',
@@ -33,8 +33,7 @@ export const projects = [
     name: 'TIC TAC TOE',
     category: 'WEB',
     color: '#7851A9',
-    description:
-      'A rendition of the classic game, TIC-TAC-TOE.',
+    description: 'A rendition of the classic game, TIC-TAC-TOE.',
     github: '/gitui',
     link: 'netlify',
     projectBg: '/asset/background/uipattern.png'
@@ -54,7 +53,7 @@ export const projects = [
     name: 'ACCOUNT MANAGER',
     category: 'C++',
     color: '#9370DB',
-    
+
     description:
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
@@ -70,7 +69,6 @@ export const projects = [
     link: 'netlify',
     color: '#9966CC',
 
-
     bg: 'https://rare-gallery.com/mocahbig/434051-road-mist-dark-night-rain-nature.jpg'
   },
   {
@@ -80,8 +78,7 @@ export const projects = [
       'A project utilzing an API and fetching that data into a play on envelope',
     github: '/gitui',
     link: 'netlify',
-    color: '#DA70D6',
-
+    color: '#DA70D6'
   },
   {
     name: 'UGLY SOUP',
@@ -90,6 +87,6 @@ export const projects = [
       'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'netlify',
-    color: '#EE82EE',
+    color: '#EE82EE'
   }
 ]

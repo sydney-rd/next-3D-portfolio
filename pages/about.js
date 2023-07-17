@@ -7,12 +7,12 @@ import AboutNavbar from '../components/aboutNavbar'
 export default function About() {
   const responsiveStyles = useBreakpointValue({
     base: {
-      titleFontSize: '1.5rem',
-      textFontSize: '.8rem',
-      maxW: '15rem',
-      secTitleFontSize: '1.2rem',
+      titleFontSize: '1.3rem',
+      textFontSize: '.7rem',
+      maxW: '13rem',
+      secTitleFontSize: '1rem',
       codeDescriptionFontSize: '.7rem',
-      codePaddingTop: '1rem'
+      codePaddingTop: '.7rem',
     },
     md: {
       titleFontSize: '3.5rem',
@@ -20,7 +20,8 @@ export default function About() {
       maxW: '40rem',
       secTitleFontSize: '2rem',
       codeDescriptionFontSize: '.9rem',
-      codePaddingTop: '1rem'
+      codePaddingTop: '1rem',
+
     }
   })
 
@@ -35,7 +36,7 @@ export default function About() {
       <Box
         sx={{
           position: 'absolute',
-          top: '48%',
+          top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           width: '100%',
@@ -56,18 +57,16 @@ export default function About() {
           color='white'
           textAlign='center'
           position='fixed'
-          top='0'
-          left='0'
-          right='0'
-
+          top='.5rem'
+     
         >
-          Events &rarr; Fullstack Developer
+          Events &rarr; Software Developer
         </Box>
         <Box
           color='white'
           fontSize={responsiveStyles?.textFontSize}
           fontFamily='Verdana, Geneva, Tahoma, sans-serif'
-          paddingTop='10'
+          paddingTop='5rem'
           maxW={responsiveStyles?.maxW}
           textAlign='center'
         >
@@ -78,23 +77,11 @@ export default function About() {
             marginRight={{ base: '-1rem', md: '0' }}
           >
             <Text>
-              Hi! My name is Sydney and I am a fullstack developer from NYC. My
-              journey began with a simple HTML/CSS tutorial. Since that moment - I
-              challenged myself to transition my career path to the ever-changing
-              field of tech. I took this path because I wanted to continuously learn
-              new things every day.
+              Hi - my name is Sydney! <br /> <br /> I am a Software Developer from NYC. My journey began with a simple HTML/CSS tutorial. Since that moment, I challenged myself with a career transition to the ever-changing field of tech. I took this path because I wanted to continuously learn new things every day.
               <br />
               <br />
-              A little bit about my background...I have worked in hospitality,
-              planning, creating, and executing events for companies like WeWork and
-              ViacomCBS (Comedy Central, Paramount Network, TVLand). I was able to
-              travel around the US and work on activations such as the World Pride
-              Parade, comic-con, ComplexCon, festivals, conventions, and more.
-              <br />
-              <br />
-              While you will find me coding day to day, I also have a passion for
-              cars, maps, geography, and travel. I am also a cat and pitbull
-              advocate!
+              A little bit about my background...I have worked in hospitality, planning, creating, and executing events for companies like WeWork and ViacomCBS (Comedy Central, Paramount Network, TVLand). I was able to travel around the US and work on activations such as the World Pride Parade, comic-con, ComplexCon, festivals, conventions, and more.
+              While you will find me coding day to day, I also have a passion for cars, maps, geography, and travel. I am also a cat and pitbull advocate!
               <br />
               <br />
             </Text>
@@ -124,9 +111,7 @@ export default function About() {
           <strong>Databases</strong> <br /> MongoDB, SQL
           <br />
           <br />
-          <strong>Web Dev</strong> <br /> React, Next.js, Express,
-          React-Fiber-Three, HTML, <br /> CSS, Tailwind, Chakra-UI, Framer
-          Motion
+          <strong>Web Dev</strong> <br /> React, Next.js, Express, React-Fiber-Three, HTML, <br /> CSS, Tailwind, Chakra-UI, Framer Motion
         </Text>
       </Box>
     </Box>

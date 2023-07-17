@@ -15,7 +15,6 @@ const AnimatedText = ({ text, colors }) => {
 }
 
 
-
 const Title = () => {
   const router = useRouter()
 

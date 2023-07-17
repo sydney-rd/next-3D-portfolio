@@ -16,6 +16,7 @@ export default function Navbar() {
     transitionDelay: '0.8s',
     userSelect: "none"
   }
+
   return (
     <Box
       position="fixed"
