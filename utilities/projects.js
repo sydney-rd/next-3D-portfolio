@@ -87,6 +87,6 @@ export const projects = [
       'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'netlify',
-    color: '#CF9FFF'
+    color: '#CBC3E3'
   }
 ]
