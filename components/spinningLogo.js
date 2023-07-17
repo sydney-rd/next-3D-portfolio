@@ -27,7 +27,7 @@ const SpinningLogo = () => {
     <Canvas>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
-      <OrbitControls autoRotate />
+      <OrbitControls autoRotate enableZoom={false}/>
       <Html position={[0, 0, 0]} transform>
         <div
           style={{
