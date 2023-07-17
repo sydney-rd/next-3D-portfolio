@@ -54,7 +54,7 @@ export default function ProjectPage() {
           />
         )}
         <Canvas
-          camera={{ position: [0, 0, 0] }}
+          camera={{ position: [0, 5, 30] }}
           style={{ width: '100vw', height: '100vh' }}
         >
           <OrbitControls autoRotate autoRotateSpeed={0.3} maxDistance={60} />
