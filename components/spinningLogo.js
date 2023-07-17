@@ -9,15 +9,22 @@ const SpinningLogo = () => {
 
   const responsiveStyles = useBreakpointValue({
     base: {
-      logoPaddingRight: '2rem'
+      logoPaddingRight: '5rem',
+      logoWidth: '80%',
+      logoHeight: '80%',
+      logoPaddingBottom: '5rem'
     },
     md: {
-      logoPaddingRight: '3rem'
+      logoPaddingRight: '3rem',
+      logoWidth: '50%',
+      logoHeight: '40%',
+      logoPaddingBottom: '1rem'
+
     }
   })
 
   return (
-    <Canvas gl={{ style: { width: '100%', height: '70vh' } }}>
+    <Canvas>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <OrbitControls autoRotate />
@@ -35,7 +42,7 @@ const SpinningLogo = () => {
           <img
             src={Logo.src}
             alt='SDLogo'
-            style={{ width: '60%', height: '70%', paddingRight: responsiveStyles?.logoPaddingRight }}
+            style={{ width: responsiveStyles?.logoWidth, height: responsiveStyles?.logoHeight, paddingRight: responsiveStyles?.logoPaddingRight, paddingBottom: responsiveStyles?.logoPaddingBottom }}
           />
         </div>
       </Html>
