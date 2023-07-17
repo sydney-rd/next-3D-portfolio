@@ -45,12 +45,12 @@ const Title = () => {
         <Box display="flex" justifyContent="center" paddingRight="1rem">
           <AnimatedText
             text="SYDNEY"
-            colors={['#DE91BE', '#4B0090', '#DE91BE']}
+            colors={['#4B0090', '#DE91BE', '#4B0090']}
           />
           <Box marginX=".3rem"></Box>
           <AnimatedText
             text="DAVID"
-            colors={['#DE91BE', '#4B0090', '#DE91BE']}
+            colors={['#4B0090', '#DE91BE', '#4B0090']}
           />
         </Box>
 
@@ -63,7 +63,7 @@ const Title = () => {
             <AnimatedText
               text="DEVELOPER"
               colors={['#4B0090', '#DE91BE', '#4B0090']}
-            />
+              />
           </Box>
         </Box>
 
