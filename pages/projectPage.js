@@ -81,7 +81,7 @@ export default function ProjectPage() {
                       fontFamily: 'Ailerons',
                       fontSize: responsiveStyles?.projectFontSize,
                       whiteSpace: 'nowrap',
-                      cursor: 'pointer',
+                      cursor: 'crosshair',
                       filter: 'brightness(150%)',
                       color:
                         hoveredItem === project.name

@@ -14,7 +14,8 @@ export default function Navbar() {
     fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
     filter: 'brightness(150%)',
     transitionDelay: '0.8s',
-    userSelect: "none"
+    userSelect: "none",
+    cursor: 'crosshair'
   }
 
   return (

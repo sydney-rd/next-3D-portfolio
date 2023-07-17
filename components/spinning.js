@@ -1,24 +1,28 @@
-import { useRef } from 'react'
-import * as THREE from 'three'
-import { useLoader } from '@react-three/fiber'
+import React from 'react';
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls, Html } from '@react-three/drei';
+import Logo from '../public/assets/SD-1.png'
 
-export const Planet = ({
-  textureUrl,
-  size,
-  position,
 
-}) => {
-  const texture = useLoader(THREE.TextureLoader, textureUrl)
-  texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-  texture.repeat.set(1, 1)
-  texture.anisotropy = 16
-  const planetMaterial = new THREE.MeshPhongMaterial({ map: texture })
 
-  const meshRef = useRef()
-
+const SpinningLogo = () => {
   return (
-    <mesh ref={meshRef} position={position} material={planetMaterial}>
-      <sphereGeometry args={[size, 64, 64]} />
-    </mesh>
-  )
-}
+    <Canvas style={{ width: '100%', height: '100vh' }}>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <OrbitControls />
+      <mesh rotation={[0, 0, 0]}>
+        <planeBufferGeometry args={[2, 2]} />
+        <meshBasicMaterial>
+          <Html position={[0, 0, 0]} transform>
+            <div style={{ width: '100%', height: '100%' }}>
+              <img src={Logo} alt="Logo" style={{ width: '100%', height: '100%' }} />
+            </div>
+          </Html>
+        </meshBasicMaterial>
+      </mesh>
+    </Canvas>
+  );
+};
+
+export default SpinningLogo;

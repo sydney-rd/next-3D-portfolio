@@ -14,7 +14,6 @@ const AnimatedText = ({ text, colors }) => {
   )
 }
 
-
 const Title = () => {
   const router = useRouter()
 
@@ -30,7 +29,6 @@ const Title = () => {
     md: {
       textFontSize: '1.7rem',
       enterFontSize: '3rem'
-  
     }
   })
 
@@ -59,25 +57,25 @@ const Title = () => {
           <AnimatedText
             text="SOFTWARE"
             colors={['#4B0090', '#DE91BE', '#4B0090']}
-            
           />
           <Box marginX=".7rem">
             <AnimatedText
               text="DEVELOPER"
               colors={['#4B0090', '#DE91BE', '#4B0090']}
-              />
+            />
           </Box>
         </Box>
 
-        <motion.span
-          animate={{ color: ['#9370DB', '#4B0090', '#9370DB'] }}
-          transition={{ duration: 4, repeat: Infinity }}
+        <Text
+          fontFamily="Ailerons"
+          color="white"
+          fontSize={responsiveStyles?.enterFontSize}
+          cursor="crosshair"
+          paddingRight="1rem"
           onClick={navigateToProjectPage}
         >
-          <Text fontFamily="Ailerons" fontSize={responsiveStyles?.enterFontSize} cursor="pointer"  paddingRight="1rem">
-            ENTER
-          </Text>
-        </motion.span>
+          ENTER
+        </Text>
       </Box>
     </Box>
   )
