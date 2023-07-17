@@ -1,41 +1,47 @@
-import React, { useState } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Sky, Stars, Html } from '@react-three/drei';
-import { projects } from '../utilities/projects';
-import { motion } from 'framer-motion';
-import ProjectCategories from '../components/projectCategories';
-import ProjectModal from '../components/projectmodal';
-import NavBar from '../components/navBar';
+import React, { useState } from 'react'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls, Sky, Stars, Html } from '@react-three/drei'
+import { projects } from '../utilities/projects'
+import { motion } from 'framer-motion'
+import ProjectCategories from '../components/projectCategories'
+import ProjectModal from '../components/projectmodal'
+import NavBar from '../components/navBar'
 import {
   Flex,
   useDisclosure,
   VStack,
   Link as ChakraLink,
   useBreakpointValue
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
-const MotionChakraLink = motion(ChakraLink);
+const MotionChakraLink = motion(ChakraLink)
 
 export default function ProjectPage() {
-  const [selectedCategory, setSelectedCategory] = useState('WEB');
-  const [hoveredItem] = useState('');
-  const [selectedProject, setSelectedProject] = useState(null);
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedCategory, setSelectedCategory] = useState('WEB')
+  const [hoveredItem] = useState('')
+  const [selectedProject, setSelectedProject] = useState(null)
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   // Modal
   const handleClick = project => {
-    setSelectedProject(project);
-    onOpen();
-  };
+    setSelectedProject(project)
+    onOpen()
+  }
 
   const filteredProjects = projects.filter(
     project => project.category === selectedCategory
-  );
+  )
 
-  const projectFontSize = useBreakpointValue({
-    base: '7rem',
-    md: '9rem'
-  });
+  const responsiveStyles = useBreakpointValue({
+    base: {
+      projectFontSize: '7rem',
+      projectPaddingRight: '8rem'
+    },
+    md: {
+      projectFontSize: '9rem',
+      projectPaddingRight: '7rem'
+    }
+  })
 
   return (
     <>
@@ -58,7 +64,7 @@ export default function ProjectPage() {
             <VStack
               align="flex-end"
               flexGrow={1}
-              pr="7rem"
+              pr={responsiveStyles?.projectPaddingRight}
               zIndex={0}
               maxH="100vh"
               position="relative"
@@ -73,7 +79,7 @@ export default function ProjectPage() {
                     sx={{
                       opacity: '1',
                       fontFamily: 'Ailerons',
-                      fontSize: projectFontSize,
+                      fontSize: responsiveStyles?.projectFontSize,
                       whiteSpace: 'nowrap',
                       cursor: 'pointer',
                       filter: 'brightness(150%)',
@@ -107,5 +113,5 @@ export default function ProjectPage() {
         )}
       </Flex>
     </>
-  );
+  )
 }
