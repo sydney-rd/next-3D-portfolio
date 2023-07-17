@@ -15,6 +15,7 @@ export default function ProjectCategories({
     base: '2%',
     md: '45%'
   })
+
   return (
     <VStack
       display="flex"
@@ -30,6 +31,8 @@ export default function ProjectCategories({
       fontFamily="Verdana, Geneva, Tahoma, sans-serif"
       fontSize=".7rem"
       fontWeight="bold"
+      filter='brightness(150%)'
+
     >
       {categories.map((category, index) => {
         const categoryColor =

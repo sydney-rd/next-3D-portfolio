@@ -28,6 +28,7 @@ const Title = () => {
         flexDirection="column"
         paddingTop="15rem"
         fontSize="1.7rem"
+        filter='brightness(150%)'
       >
         <Box display="flex" justifyContent="center">
           <AnimatedText
@@ -45,6 +46,7 @@ const Title = () => {
           <AnimatedText
             text="SOFTWARE"
             colors={['#4B0090', '#DE91BE', '#4B0090']}
+            
           />
           <Box marginX=".7rem">
             <AnimatedText
