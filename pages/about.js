@@ -10,13 +10,17 @@ export default function About() {
       titleFontSize: '1.5rem',
       textFontSize: '.8rem',
       maxW: '15rem',
-      secTitleFontSize: '1rem'
+      secTitleFontSize: '1.2rem',
+      codeDescriptionFontSize: '.7rem',
+      codePaddingTop: '1rem'
     },
     md: {
       titleFontSize: '3.5rem',
       textFontSize: '.9rem',
       maxW: '40rem',
-      secTitleFontSize: '2rem'
+      secTitleFontSize: '2rem',
+      codeDescriptionFontSize: '.9rem',
+      codePaddingTop: '1rem'
     }
   })
 
@@ -97,16 +101,17 @@ export default function About() {
           color="white"
           fontWeight="bold"
           textShadow="1px 2px 4px pink"
+          paddingTop="2rem"
         >
           What you&apos;ll find me coding in
         </Text>
         <Text
           color='white'
-          fontSize='.9rem'
+          fontSize={responsiveStyles?.codeDescriptionFontSize}
           fontFamily='verdana, Geneva, Tahoma, sans-serif'
           maxW='40rem'
           textAlign='center'
-          paddingTop='.8rem'
+          paddingTop={responsiveStyles?.codePaddingTop}
         >
           <strong>Languages</strong> <br /> JavaScript, Python, C/C++
           <br />

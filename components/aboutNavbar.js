@@ -1,16 +1,26 @@
 import React from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, useBreakpointValue } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import NavBar from './navBar';
 import { motion } from 'framer-motion';
 
 export default function AboutNavbar() {
+  
+  const responsiveStyles = useBreakpointValue({
+    base: {
+      iconSize: '.8rem'
+    },
+    md: {
+      iconSize: '1.1rem'
+    }
+  })
+  
   const iconStyle = {
-    fontSize: '1.1rem',
+    fontSize: responsiveStyles?.iconSize,
     color: 'white',
     cursor: 'pointer',
   };
-
+  
   return (
     <Box
       position='fixed'
