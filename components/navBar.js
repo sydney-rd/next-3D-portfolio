@@ -28,14 +28,14 @@ export default function Navbar() {
       flexDirection="column"
       justifyContent="flex-start"
       alignItems="flex-end"
-      paddingRight={['.2', '4']}
+      paddingRight='4'
       zIndex="1"
     >
       <Link href="/" passHref>
-        <Image src={Logo.src} alt="Logo" w="100px" style={{ cursor: 'crosshair' }}/>
+        <Image src={Logo.src} alt="Logo" w="90px" style={{ cursor: 'crosshair' }}/>
       </Link>
       <VStack spacing={20} align="flex-end">
-        <Box pr="3" pt="1">
+        <Box pr=".6rem" pt="2">
           <Box transform="rotate(90deg)" whiteSpace="pre">
             <Link href="/about" style={navBarStyle}>
               ABOUT
@@ -43,7 +43,7 @@ export default function Navbar() {
           </Box>
         </Box>
         )
-        <Box pr=".8" pt="2">
+        <Box pt="2">
           <Box transform="rotate(90deg)" whiteSpace="pre">
             <Link href="/projectPage" style={navBarStyle}>
               PROJECTS

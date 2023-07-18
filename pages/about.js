@@ -57,7 +57,7 @@ export default function About() {
           color='white'
           textAlign='center'
           position='fixed'
-          top='.5rem'
+          top='1rem'
      
         >
           Events &rarr; Software Developer
