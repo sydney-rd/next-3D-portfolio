@@ -8,14 +8,14 @@ const SpinningLogo = () => {
   const responsiveStyles = useBreakpointValue({
     base: {
       logoPaddingRight: '4rem',
-      logoWidth: '80%',
-      logoHeight: '80%',
+      logoWidth: '20%',
+      logoHeight: '20%',
       logoPaddingTop: '10rem'
     },
     md: {
       logoPaddingRight: '5rem',
-      logoWidth: '40%',
-      logoHeight: '40%',
+      logoWidth: '30%',
+      logoHeight: '30%',
       logoPaddingTop: '12rem'
     }
   })
