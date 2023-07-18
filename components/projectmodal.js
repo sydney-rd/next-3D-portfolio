@@ -25,7 +25,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       contentFontSize: '.9rem',
       showBorder: true,
       CloseBtnPosTop: '1.5rem',
-      CloseBtnPosRight: '45%'
+      CloseBtnPosRight: '45%',
+      descriptionWidth: '12rem'
     },
     md: {
       titleFontSize: '8rem',
@@ -33,7 +34,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       gifWidth: '45vw',
       contentFontSize: '1rem',
       CloseBtnPosTop: '2rem',
-      CloseBtnPosRight: '50%'
+      CloseBtnPosRight: '50%',
+      descriptionWidth: '40rem'
     }
   });
 
@@ -108,7 +110,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             left: '50%',
             transform: 'translateX(-50%)',
             top: responsiveStyles?.top,
-            bottom: '3rem',
+            bottom: '2.6rem',
             fontSize: responsiveStyles?.contentFontSize,
             color: 'white',
             fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
@@ -123,6 +125,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               ? `1px solid ${color}`
               : 'none',
             padding: responsiveStyles?.showBorder ? '1rem' : 0
+            
           }}
         >
           <Flex flexDirection="row">
@@ -171,7 +174,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               </a>
             </motion.div>
           </Flex>
-          <p style={{ marginTop: '1rem' }}>{description}</p>
+          <p style={{ marginTop: '1rem', width: responsiveStyles?.descriptionWidth }}>{description}</p>
         </Box>
       </MotionModalContent>
     </MotionModal>
