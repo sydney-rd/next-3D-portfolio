@@ -46,7 +46,7 @@ export default function ProjectPage() {
   return (
     <>
       {!isOpen && <NavBar />}
-      <Flex minHeight="100vh" width="100vw" position="relative">
+      <Flex minHeight="100vh" width="100vw" position="relative" overflow="hidden">
         {!isOpen && (
           <ProjectCategories
             selectedCategory={selectedCategory}
