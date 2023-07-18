@@ -3,7 +3,7 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Html } from '@react-three/drei';
 import Logo from '../public/assets/logo/logo.png';
-import { useBreakpointValue } from '@chakra-ui/react';
+import { ChakraProvider, useBreakpointValue } from '@chakra-ui/react';
 
 const SpinningLogo = () => {
 
@@ -12,22 +12,23 @@ const SpinningLogo = () => {
       logoPaddingRight: '5rem',
       logoWidth: '80%',
       logoHeight: '80%',
-      logoPaddingBottom: '5rem'
+      logoPaddingTop: '10rem'
     },
     md: {
-      logoPaddingRight: '3rem',
-      logoWidth: '50%',
+      logoPaddingRight: '5rem',
+      logoWidth: '40%',
       logoHeight: '40%',
-      logoPaddingBottom: '1rem'
+      logoPaddingTop: '12rem'
+
 
     }
   })
 
   return (
-    <Canvas>
-      <ambientLight />
+    <ChakraProvider>
+<Canvas style={{ zIndex: '1', position: 'absolute', top: 0, left: 0 }}>      <ambientLight />
       <pointLight position={[10, 10, 10]} />
-      <OrbitControls autoRotate enableZoom={false}/>
+      <OrbitControls autoRotate />
       <Html position={[0, 0, 0]} transform>
         <div
           style={{
@@ -42,11 +43,12 @@ const SpinningLogo = () => {
           <img
             src={Logo.src}
             alt='SDLogo'
-            style={{ width: responsiveStyles?.logoWidth, height: responsiveStyles?.logoHeight, paddingRight: responsiveStyles?.logoPaddingRight, paddingBottom: responsiveStyles?.logoPaddingBottom }}
+            style={{ width: responsiveStyles?.logoWidth, height: responsiveStyles?.logoHeight, paddingRight: responsiveStyles?.logoPaddingRight, paddingTop: responsiveStyles?.logoPaddingTop }}
           />
         </div>
       </Html>
     </Canvas>
+    </ChakraProvider>
   );
 };
 

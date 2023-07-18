@@ -33,7 +33,8 @@ const Title = () => {
   })
 
   return (
-    <Box placeItems="center" textAlign="center" justifyContent="center">
+    <Box placeItems="center" textAlign="center" justifyContent="center"  position="relative"  
+    zIndex="2"          >
       <Box
         display="flex"
         flexDirection="column"
