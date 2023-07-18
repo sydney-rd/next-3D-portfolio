@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Progress } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Layout from '../components/layouts/main';
 import '../styles.css';
 
 const Website = ({ Component, pageProps, router }) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [countdown, setCountdown] = useState(3);
+  const [loadingProgress, setLoadingProgress] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCountdown(prevCountdown => prevCountdown - 1);
+      setLoadingProgress((prevProgress) => prevProgress + 33.33);
     }, 1000);
 
     setTimeout(() => {
       clearInterval(timer);
       setIsLoading(false);
-    }, 3000); // Adjust the countdown time and delay time as needed
+    }, 3000); 
   }, []);
 
   const pageVariants = {
@@ -50,7 +50,7 @@ const Website = ({ Component, pageProps, router }) => {
             fontSize: '2rem',
           }}
         >
-          {countdown}
+          <Progress value={loadingProgress} size="sm" w="20%" colorScheme="purple"/>
         </div>
       ) : (
         <div style={{ backgroundColor: 'black' }}>

@@ -35,7 +35,7 @@ export default function ProjectPage() {
   const responsiveStyles = useBreakpointValue({
     base: {
       projectFontSize: '7rem',
-      projectPaddingRight: '10rem'
+      projectPaddingRight: '12rem'
     },
     md: {
       projectFontSize: '9rem',
