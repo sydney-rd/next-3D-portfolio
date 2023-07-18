@@ -17,7 +17,7 @@ export default function About() {
     md: {
       titleFontSize: '3.5rem',
       textFontSize: '.9rem',
-      maxW: '40rem',
+      maxW: '35rem',
       secTitleFontSize: '2rem',
       codeDescriptionFontSize: '.9rem',
       codePaddingTop: '1rem',
@@ -77,7 +77,7 @@ export default function About() {
             marginRight={{ base: '-1rem', md: '0' }}
           >
             <Text>
-              Hi - my name is Sydney! <br /> <br /> I am a Software Developer from NYC. My journey began with a simple HTML/CSS tutorial. Since that moment, I challenged myself with a career transition to the ever-changing field of tech. I took this path because I wanted to continuously learn new things every day.
+              Hi - my name is Sydney! I am a Software Developer from NYC. My journey began with a simple HTML/CSS tutorial. Since that moment, I challenged myself with a career transition to the ever-changing field of tech. I took this path because I wanted to continuously learn new things every day.
               <br />
               <br />
               A little bit about my background...I have worked in hospitality, planning, creating, and executing events for companies like WeWork and ViacomCBS (Comedy Central, Paramount Network, TVLand). I was able to travel around the US and work on activations such as the World Pride Parade, comic-con, ComplexCon, festivals, conventions, and more.

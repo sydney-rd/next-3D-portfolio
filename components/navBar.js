@@ -1,9 +1,9 @@
 import React from 'react'
-import { Box, VStack } from '@chakra-ui/react'
+import { Box, VStack, Image } from '@chakra-ui/react'
 import Link from 'next/link'
+import Logo from '../public/assets/logo/logo.png'
 
 export default function Navbar() {
-
   const navBarStyle = {
     color: 'white',
     whiteSpace: 'pre',
@@ -14,14 +14,14 @@ export default function Navbar() {
     fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
     filter: 'brightness(150%)',
     transitionDelay: '0.8s',
-    userSelect: "none",
+    userSelect: 'none',
     cursor: 'crosshair'
   }
 
   return (
     <Box
       position="fixed"
-      top="10"
+      top="2rem"
       right="0"
       h="50vh"
       display="flex"
@@ -31,8 +31,11 @@ export default function Navbar() {
       paddingRight={['.2', '4']}
       zIndex="1"
     >
+      <Link href="/" passHref>
+        <Image src={Logo.src} alt="Logo" w="100px" style={{ cursor: 'crosshair' }}/>
+      </Link>
       <VStack spacing={20} align="flex-end">
-        <Box pr="3.5" pt="12">
+        <Box pr="3" pt="1">
           <Box transform="rotate(90deg)" whiteSpace="pre">
             <Link href="/about" style={navBarStyle}>
               ABOUT
@@ -40,7 +43,7 @@ export default function Navbar() {
           </Box>
         </Box>
         )
-        <Box p="1" pt="2">
+        <Box pr=".8" pt="2">
           <Box transform="rotate(90deg)" whiteSpace="pre">
             <Link href="/projectPage" style={navBarStyle}>
               PROJECTS
@@ -48,7 +51,7 @@ export default function Navbar() {
           </Box>
         </Box>
         )
-        <Box p="3"> 
+        <Box pr="2" pt='4'>
           <Box
             className="navBar"
             transform="rotate(90deg)"

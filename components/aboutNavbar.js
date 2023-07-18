@@ -21,7 +21,7 @@ export default function AboutNavbar() {
       h='50vh'
       display='flex'
       flexDirection='column'
-      paddingRight={['.2', '4']}
+      paddingRight='.7rem'
       zIndex='1'
     >
       <NavBar />
