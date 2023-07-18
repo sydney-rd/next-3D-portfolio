@@ -83,6 +83,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             right: responsiveStyles?.CloseBtnPosRight,
             transform: 'translateY(-50%)',
             size: 'xl',
+            cursor: 'crosshair',
             color: color,
             zIndex: 10,
             '&:focus': {
@@ -107,6 +108,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <Box
           sx={{
             position: 'absolute',
+
             left: '50%',
             transform: 'translateX(-50%)',
             top: responsiveStyles?.top,
@@ -134,7 +136,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               style={{
                 display: 'inline-block',
                 marginRight: '.8rem',
-                paddingBottom: '.5rem'
+                paddingBottom: '.5rem',
+
               }}
             >
               <a
@@ -145,6 +148,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   fontWeight: 'bold',
                   textDecoration: 'none',
                   color: 'white',
+                  cursor: 'crosshair',
                   textShadow: `0px 0px 5px ${color}` // Add text shadow effect
                 }}
               >
@@ -154,6 +158,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             <motion.div
               whileHover={{ scale: 1.1 }} // Scale up on hover
               style={{
+                cursor: 'crosshair',
                 display: 'inline-block',
                 marginRight: '.8rem',
                 paddingBottom: '.5rem'
@@ -166,6 +171,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 style={{
                   fontWeight: 'bold',
                   textDecoration: 'none',
+                  cursor: 'crosshair',
                   color: 'white',
                   textShadow: `0px 0px 5px ${color}` // Add text shadow effect
                 }}
