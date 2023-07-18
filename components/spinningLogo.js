@@ -7,16 +7,16 @@ import { ChakraProvider, useBreakpointValue } from '@chakra-ui/react'
 const SpinningLogo = () => {
   const responsiveStyles = useBreakpointValue({
     base: {
-      logoPaddingRight: '4rem',
-      logoWidth: '20%',
-      logoHeight: '20%',
-      logoPaddingTop: '10rem'
+      logoPaddingRight: '2.5rem',
+      logoWidth: '50%',
+      logoHeight: '50%',
+      logoPaddingTop: '8rem'
     },
     md: {
-      logoPaddingRight: '5rem',
+      logoPaddingRight: '4rem',
       logoWidth: '30%',
       logoHeight: '30%',
-      logoPaddingTop: '12rem'
+      logoPaddingTop: '11rem'
     }
   })
 
