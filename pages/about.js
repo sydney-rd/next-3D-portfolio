@@ -7,12 +7,12 @@ import AboutNavbar from '../components/aboutNavbar'
 export default function About() {
   const responsiveStyles = useBreakpointValue({
     base: {
-      titleFontSize: '1.3rem',
+      titleFontSize: '1.1rem',
       textFontSize: '.7rem',
       maxW: '13rem',
-      secTitleFontSize: '1rem',
+      secTitleFontSize: '1.1rem',
       codeDescriptionFontSize: '.7rem',
-      codePaddingTop: '.7rem',
+      codePaddingTop: '.6rem',
     },
     md: {
       titleFontSize: '3.5rem',
@@ -60,7 +60,7 @@ export default function About() {
           top='1rem'
      
         >
-          Events &rarr; Software Developer
+          Events&rarr;Software Developer
         </Box>
         <Box
           color='white'
@@ -111,7 +111,7 @@ export default function About() {
           <strong>Databases</strong> <br /> MongoDB, SQL
           <br />
           <br />
-          <strong>Web Dev</strong> <br /> React, Next.js, Express, React-Fiber-Three, HTML, <br /> CSS, Tailwind, Chakra-UI, Framer Motion
+          <strong>Web Dev</strong> <br /> React, Next.js, Express,<br/> React-Fiber-Three, HTML, <br /> CSS, Tailwind, Chakra-UI, Framer Motion
         </Text>
       </Box>
     </Box>
