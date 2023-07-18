@@ -67,7 +67,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             fontSize: responsiveStyles?.titleFontSize,
             textAlign: 'center',
             color: color,
-            textShadow: `0px 0px 8px ${color}`
+            textShadow: `0px 0px 6px ${color}`
           }}
         >
           {name}

@@ -53,7 +53,7 @@ export default function About() {
           fontWeight='bold'
           fontFamily='Ailerons'
           fontSize={responsiveStyles?.titleFontSize}
-          textShadow='1px 2px 4px pink'
+          textShadow='1px 2px 3px pink'
           color='white'
           textAlign='center'
           position='fixed'
@@ -80,7 +80,7 @@ export default function About() {
               Hi - my name is Sydney! I am a Software Developer from NYC. My journey began with a simple HTML/CSS tutorial. Since that moment, I challenged myself with a career transition to the ever-changing field of tech. I took this path because I wanted to continuously learn new things every day.
               <br />
               <br />
-              A little bit about my background...I have worked in hospitality, planning, creating, and executing events for companies like WeWork and ViacomCBS (Comedy Central, Paramount Network, TVLand). I was able to travel around the US and work on activations such as the World Pride Parade, comic-con, ComplexCon, festivals, conventions, and more.
+              A little bit about my background...I have worked in Events for companies like WeWork and ViacomCBS (Comedy Central, Paramount Network, TVLand). I was able to travel around the US and work on activations such as the World Pride Parade, comic-con, ComplexCon, festivals, conventions, and more.
               While you will find me coding day to day, I also have a passion for cars, maps, geography, and travel. I am also a cat and pitbull advocate!
               <br />
               <br />
@@ -92,7 +92,7 @@ export default function About() {
           fontFamily="Ailerons"
           color="white"
           fontWeight="bold"
-          textShadow="1px 2px 4px pink"
+          textShadow="1px 2px 3px pink"
           paddingTop="2rem"
         >
           What you&apos;ll find me coding in
