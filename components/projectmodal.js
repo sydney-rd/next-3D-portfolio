@@ -1,4 +1,13 @@
-import { Modal, ModalContent, ModalHeader, Box, ModalCloseButton, ModalBody, ModalOverlay, Flex } from '@chakra-ui/react';
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  Box,
+  ModalCloseButton,
+  ModalOverlay,
+  Flex,
+  useBreakpointValue
+} from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 const MotionModal = motion(Modal);
@@ -6,6 +15,29 @@ const MotionModalContent = motion(ModalContent);
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   const { name, description, projectBg, color, github, link } = project;
+
+  const responsiveStyles = useBreakpointValue({
+    base: {
+      titleFontSize: '4.5rem',
+      gifHeight: '25vh',
+      gifWidth: '70vw',
+      top: '21rem',
+      contentFontSize: '.9rem',
+      showBorder: true,
+      CloseBtnPosTop: '1.5rem',
+      CloseBtnPosRight: '45%',
+      descriptionWidth: '12rem'
+    },
+    md: {
+      titleFontSize: '8rem',
+      gifHeight: '45vh',
+      gifWidth: '45vw',
+      contentFontSize: '1rem',
+      CloseBtnPosTop: '2rem',
+      CloseBtnPosRight: '50%',
+      descriptionWidth: '40rem'
+    }
+  });
 
   return (
     <MotionModal
@@ -26,17 +58,18 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         backgroundColor="transparent"
         border="solid"
         borderColor={color}
-        borderRadius= "2rem"
+        borderRadius="2rem"
         zIndex={1}
         position="relative"
+        userSelect="none"
       >
         <ModalHeader
           sx={{
             fontFamily: 'Ailerons',
-            fontSize: '8rem',
+            fontSize: responsiveStyles?.titleFontSize,
             textAlign: 'center',
             color: color,
-            textShadow: `0px 0px 10px ${color}`
+            textShadow: `0px 0px 6px ${color}`
           }}
         >
           {name}
@@ -46,10 +79,11 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             position: 'absolute',
             display: 'flex',
             alignItems: 'center',
-            top: '2rem',
-            right: '50%',
+            top: responsiveStyles?.CloseBtnPosTop,
+            right: responsiveStyles?.CloseBtnPosRight,
             transform: 'translateY(-50%)',
             size: 'xl',
+            cursor: 'crosshair',
             color: color,
             zIndex: 10,
             '&:focus': {
@@ -64,26 +98,36 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               backgroundImage: `url(${projectBg})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '45vh',
-              width: '45vw',
+              height: responsiveStyles?.gifHeight,
+              width: responsiveStyles?.gifWidth,
               borderRadius: '2rem',
               zIndex: 2
             }}
           />
         </Box>
-        <ModalBody
+        <Box
           sx={{
             position: 'absolute',
+
             left: '50%',
             transform: 'translateX(-50%)',
-            bottom: '2rem',
-            fontSize: '1rem',
+            top: responsiveStyles?.top,
+            bottom: '2.6rem',
+            fontSize: responsiveStyles?.contentFontSize,
             color: 'white',
-            maxW: '40rem',
             fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            overflowY: responsiveStyles?.showBorder ? 'scroll' : 'visible',
+            borderTop: responsiveStyles?.showBorder
+              ? `1px solid ${color}`
+              : 'none',
+            borderBottom: responsiveStyles?.showBorder
+              ? `1px solid ${color}`
+              : 'none',
+            padding: responsiveStyles?.showBorder ? '1rem' : 0
+            
           }}
         >
           <Flex flexDirection="row">
@@ -93,6 +137,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 display: 'inline-block',
                 marginRight: '.8rem',
                 paddingBottom: '.5rem',
+
               }}
             >
               <a
@@ -103,6 +148,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   fontWeight: 'bold',
                   textDecoration: 'none',
                   color: 'white',
+                  cursor: 'crosshair',
                   textShadow: `0px 0px 5px ${color}` // Add text shadow effect
                 }}
               >
@@ -112,9 +158,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             <motion.div
               whileHover={{ scale: 1.1 }} // Scale up on hover
               style={{
+                cursor: 'crosshair',
                 display: 'inline-block',
                 marginRight: '.8rem',
-                paddingBottom: '.5rem',
+                paddingBottom: '.5rem'
               }}
             >
               <a
@@ -124,6 +171,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 style={{
                   fontWeight: 'bold',
                   textDecoration: 'none',
+                  cursor: 'crosshair',
+
                   color: 'white',
                   textShadow: `0px 0px 5px ${color}` // Add text shadow effect
                 }}
@@ -132,8 +181,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               </a>
             </motion.div>
           </Flex>
-          <p style={{ marginTop: '1rem'}}>{description}</p>
-        </ModalBody>
+          <p style={{ marginTop: '1rem', width: responsiveStyles?.descriptionWidth }}>{description}</p>
+        </Box>
       </MotionModalContent>
     </MotionModal>
   );
@@ -141,4 +190,3 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 
 export default ProjectModal;
 
-// higher scale or hoover 
