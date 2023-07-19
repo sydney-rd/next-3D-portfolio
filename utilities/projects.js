@@ -17,7 +17,7 @@ export const projects = [
     github: 'https://github.com/sydney-rd/ui-pattern',
     link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
-      'https://raw.githubusercontent.com/sydney-rd/my_portfolio/main/public/assets/background/ui.gif'
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/ezgif.com-optimize.gif'
   },
   {
     name: 'NASA API',
