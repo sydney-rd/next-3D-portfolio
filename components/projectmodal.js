@@ -7,14 +7,14 @@ import {
   ModalOverlay,
   Flex,
   useBreakpointValue
-} from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+} from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
-const MotionModal = motion(Modal);
-const MotionModalContent = motion(ModalContent);
+const MotionModal = motion(Modal)
+const MotionModalContent = motion(ModalContent)
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
-  const { name, description, projectBg, color, github, link } = project;
+  const { name, description, projectBg, color, github, link } = project
 
   const responsiveStyles = useBreakpointValue({
     base: {
@@ -26,7 +26,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       showBorder: true,
       CloseBtnPosTop: '1.5rem',
       CloseBtnPosRight: '45%',
-      descriptionWidth: '12rem'
+      descriptionWidth: '12.5rem'
     },
     md: {
       titleFontSize: '8rem',
@@ -37,7 +37,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       CloseBtnPosRight: '50%',
       descriptionWidth: '40rem'
     }
-  });
+  })
 
   return (
     <MotionModal
@@ -69,7 +69,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             fontSize: responsiveStyles?.titleFontSize,
             textAlign: 'center',
             color: color,
-            textShadow: `0px 0px 6px ${color}`
+            textShadow: `0px 0px 4px ${color}`
           }}
         >
           {name}
@@ -108,11 +108,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <Box
           sx={{
             position: 'absolute',
-
             left: '50%',
             transform: 'translateX(-50%)',
             top: responsiveStyles?.top,
-            bottom: '2.6rem',
+            bottom: '2rem',
             fontSize: responsiveStyles?.contentFontSize,
             color: 'white',
             fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
@@ -127,17 +126,15 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               ? `1px solid ${color}`
               : 'none',
             padding: responsiveStyles?.showBorder ? '1rem' : 0
-            
           }}
         >
           <Flex flexDirection="row">
             <motion.div
-              whileHover={{ scale: 1.1 }} // Scale up on hover
+              whileHover={{ scale: 1.1 }}
               style={{
                 display: 'inline-block',
                 marginRight: '.8rem',
-                paddingBottom: '.5rem',
-
+                paddingBottom: '.5rem'
               }}
             >
               <a
@@ -149,14 +146,14 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   textDecoration: 'none',
                   color: 'white',
                   cursor: 'crosshair',
-                  textShadow: `0px 0px 5px ${color}` // Add text shadow effect
+                  textShadow: `0px 0px 5px ${color}`
                 }}
               >
                 GITHUB
               </a>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.1 }} // Scale up on hover
+              whileHover={{ scale: 1.1 }}
               style={{
                 cursor: 'crosshair',
                 display: 'inline-block',
@@ -172,21 +169,26 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   fontWeight: 'bold',
                   textDecoration: 'none',
                   cursor: 'crosshair',
-
                   color: 'white',
-                  textShadow: `0px 0px 5px ${color}` // Add text shadow effect
+                  textShadow: `0px 0px 5px ${color}`
                 }}
               >
                 LINK
               </a>
             </motion.div>
           </Flex>
-          <p style={{ marginTop: '1rem', width: responsiveStyles?.descriptionWidth }}>{description}</p>
+          <p
+            style={{
+              marginTop: '1rem',
+              width: responsiveStyles?.descriptionWidth
+            }}
+          >
+            {description}
+          </p>
         </Box>
       </MotionModalContent>
     </MotionModal>
-  );
-};
+  )
+}
 
-export default ProjectModal;
-
+export default ProjectModal

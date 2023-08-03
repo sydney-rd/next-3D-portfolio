@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { projects } from '../utilities/projects'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { ChevronDownIcon } from '@chakra-ui/icons'
 
 const MotionIconButton = motion(IconButton)
 
@@ -41,7 +41,7 @@ export default function ProjectCategories({
       {isMobile && (
         <>
           <MotionIconButton
-            icon={<HamburgerIcon />}
+            icon={<ChevronDownIcon />}
             fontSize="1.2rem"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
