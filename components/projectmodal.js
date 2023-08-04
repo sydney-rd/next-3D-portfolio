@@ -38,7 +38,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       descriptionWidth: '40rem'
     }
   })
-
   return (
     <MotionModal
       isOpen={isOpen}

@@ -19,7 +19,6 @@ const SpinningLogo = () => {
       logoPaddingTop: '11rem'
     }
   })
-
   return (
     <ChakraProvider>
       <Canvas style={{ zIndex: '1', position: 'absolute', top: 0, left: 0 }}>

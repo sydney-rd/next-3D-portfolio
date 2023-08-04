@@ -31,7 +31,6 @@ const Title = () => {
       enterFontSize: '3rem'
     }
   })
-
   return (
     <Box
       placeItems="center"
@@ -59,7 +58,6 @@ const Title = () => {
             colors={['#4B0090', '#DE91BE', '#4B0090']}
           />
         </Box>
-
         <Box display="flex" justifyContent="center">
           <AnimatedText
             text="SOFTWARE"
@@ -72,7 +70,6 @@ const Title = () => {
             />
           </Box>
         </Box>
-
         <Text
           fontFamily="Ailerons"
           userSelect="none"

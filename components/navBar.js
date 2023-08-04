@@ -17,7 +17,6 @@ export default function Navbar() {
     userSelect: 'none',
     cursor: 'crosshair'
   }
-
   return (
     <Box
       position="fixed"

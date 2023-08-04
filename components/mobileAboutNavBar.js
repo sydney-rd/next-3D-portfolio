@@ -30,9 +30,8 @@ export default function MobileAboutNavBar() {
         position="absolute"
         flexDirection="row"
         bottom="1rem"
-        // right="36%"
         zIndex="2"
-        left="50%" // Center horizontally
+        left="50%"
         transform="translateX(-50%)"
       >
         <a
@@ -63,7 +62,6 @@ export default function MobileAboutNavBar() {
           </motion.span>
         </a>
       </VStack>
-
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}

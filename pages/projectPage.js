@@ -42,7 +42,6 @@ export default function ProjectPage() {
       projectPaddingRight: '7rem'
     }
   })
-
   return (
     <>
       {!isOpen && <NavBar />}

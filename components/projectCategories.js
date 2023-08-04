@@ -79,7 +79,6 @@ export default function ProjectCategories({
                     ? projects.find(project => project.category === category)
                         .color
                     : 'white'
-
                 return (
                   <motion.p
                     key={index}
