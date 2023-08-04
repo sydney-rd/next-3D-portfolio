@@ -30,8 +30,10 @@ export default function MobileAboutNavBar() {
         position="absolute"
         flexDirection="row"
         bottom="1rem"
-        right="36%"
+        // right="36%"
         zIndex="2"
+        left="50%" // Center horizontally
+        transform="translateX(-50%)"
       >
         <a
           href="https://www.linkedin.com/in/sydneydavid/"
