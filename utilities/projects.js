@@ -78,8 +78,9 @@ export const projects = [
   {
     name: 'CODE GENERATOR',
     category: 'C++',
-    description: 'A work in progress. This application will track all you',
-    github: 'https://github.com/sydney-rd/todo-manager',
+    description:
+      'A work in progress. This program will track app generated log messages and format them for data analysis purposes.',
+    github: 'https://github.com/sydney-rd/code-generator',
     link: 'netlify',
     color: '#DA70D6',
     bg: ''
