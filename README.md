@@ -1,7 +1,20 @@
-# Sydney's Portfolio 
+# Sydney's Website
 
-Welcome to my page. My portfolio consists of my projects and an about me section. I have experience in building web applications using react and nextjs, as well as C++ and Python. 
+Hi! Thanks for stumbling onto this repo.
 
-This project is deployed on [netlify](https://sydneyrd-portfolio.netlify.app/)
+This is my website below:
 
-..will finish d
+[netlify](https://sydneyrd-portfolio.netlify.app/)
+
+It contain's information about past and current projects that are being worked on, as well as an about me section.
+
+My inspiration for this website was to create something eclectic, unique, and have a few easter eggs.
+If you notice...there are 3D elements in my website. The home page logo is able to be zoomed, rotated, and moved, as well as my project names!
+
+## Tech Stack
+
+- React/Next.js
+- React-three-fiber
+- React-three/drei
+- Chakra-ui/React
+- Framer Motion
