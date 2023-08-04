@@ -9,6 +9,7 @@ export default function About() {
   const responsiveStyles = useBreakpointValue({
     base: {
       titleFontSize: '1.2rem',
+      fontFamily: 'Verdana',
       titleText: 'Software Developer',
       textFontSize: '.7rem',
       maxW: '16rem',
@@ -22,6 +23,7 @@ export default function About() {
       titleFontSize: '3.5rem',
       titleText: 'Events → Software Developer',
       textFontSize: '.9rem',
+      fontFamily: 'Ailerons',
       maxW: '35rem',
       secTitleFontSize: '2rem',
       codeDescriptionFontSize: '.9rem',
@@ -59,7 +61,7 @@ export default function About() {
         <Box
           letterSpacing="1rem"
           fontWeight="bold"
-          fontFamily="Ailerons"
+          fontFamily={responsiveStyles?.fontFamily}
           fontSize={responsiveStyles?.titleFontSize}
           textShadow="1px 2px 3px pink"
           color="white"
