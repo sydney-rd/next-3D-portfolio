@@ -26,7 +26,7 @@ export const projects = [
     category: 'WEB',
     color: '#6F2DA8',
     description:
-      "This one is for Astronomy lovers. This project contains usable data in JSON format that was fetched from NASA's Astronomy Picture of the Day API.  ",
+      "This one is for Astronomy lovers. This project contains usable data in JSON format that was fetched from NASA's Astronomy Picture of the Day API. This data will be used for a new project of mine, Astronomy Trivia.",
     github: 'https://github.com/sydney-rd/NASA-api-project',
     link: 'https://sydney-rd.github.io/NASA-api-project/',
     projectBg:
