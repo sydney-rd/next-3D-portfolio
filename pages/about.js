@@ -63,7 +63,7 @@ export default function About() {
           fontWeight="bold"
           fontFamily="Ailerons"
           fontSize={responsiveStyles?.titleFontSize}
-          textShadow="1px 2px 3px pink"
+          textShadow={responsiveStyles?.textShadow}
           color="white"
           textAlign="center"
           position="fixed"
