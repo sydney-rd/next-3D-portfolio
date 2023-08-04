@@ -11,7 +11,7 @@ export default function About() {
       titleFontSize: '1.5rem',
       titleText: 'Software Developer',
       textFontSize: '.7rem',
-      maxW: '15rem',
+      maxW: '14rem',
       secTitleFontSize: '1.1rem',
       codeDescriptionFontSize: '.8rem',
       codePaddingTop: '.3rem',
