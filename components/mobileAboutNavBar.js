@@ -71,9 +71,16 @@ export default function MobileAboutNavBar() {
           <Link href="/projectPage" style={navBarStyle}>
             PROJECTS
           </Link>
-          <Box className="navBar" style={navBarStyle}>
-            RESUME
-          </Box>
+          <div>
+            <a
+              href="/assets/Sydney-David-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={navBarStyle}
+            >
+              RESUME
+            </a>
+          </div>
         </VStack>
       </Box>
 
