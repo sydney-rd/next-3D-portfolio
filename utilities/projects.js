@@ -22,6 +22,17 @@ export const projects = [
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/ezgif.com-optimize.gif'
   },
   {
+    name: 'NASA API',
+    category: 'WEB',
+    color: '#6F2DA8',
+    description:
+      "This one is for Astronomy lovers. This project contains usable data in JSON format that was fetched from NASA's Astronomy Picture of the Day API.  ",
+    github: 'https://github.com/sydney-rd/NASA-api-project',
+    link: 'https://sydney-rd.github.io/NASA-api-project/',
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
+  },
+  {
     name: 'NASA TRIVIA',
     category: 'WEB',
     color: '#6F2DA8',
@@ -31,15 +42,6 @@ export const projects = [
     link: 'netlify',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
-  },
-  {
-    name: 'TIC TAC TOE',
-    category: 'WEB',
-    color: '#7851A9',
-    description: 'A rendition of the classic game, TIC-TAC-TOE.',
-    github: '/gitui',
-    link: 'netlify',
-    projectBg: '/asset/background/uipattern.png'
   },
   {
     name: 'TEXT ADVENTURE',
@@ -56,32 +58,30 @@ export const projects = [
     name: 'ACCOUNT MANAGER',
     category: 'C++',
     color: '#9370DB',
-
     description:
-      'A project utilzing an API and fetching that data into a play on envelope',
-    github: '/gitui',
-    link: 'netlify',
-    bg: 'https://rare-gallery.com/mocahbig/434051-road-mist-dark-night-rain-nature.jpg'
+      'The Account Manager is a perfect project that allows the user to type in terminal commands to help manage, organize and store finanical data for your company. It can show you things such as sum of total vendor, the vendor with the max sum, or specific vendor by name - to name a few.',
+    github: 'https://github.com/sydney-rd/accounting-database',
+    link: '',
+    bg: ''
   },
   {
     name: 'TO-DO MANAGER',
     category: 'C++',
     description:
-      'A project utilzing an API and fetching that data into a play on envelope',
-    github: '/gitui',
-    link: 'netlify',
+      'Instead of using the traditional pen and paper for your to-do list, this program will let you create notes and save them into your local database. Using specific keywords, you can add new tasks, delete a task, and view all tasks.',
+    github: 'https://github.com/sydney-rd/todo-manager',
+    link: '',
     color: '#9966CC',
-
-    bg: 'https://rare-gallery.com/mocahbig/434051-road-mist-dark-night-rain-nature.jpg'
+    bg: ''
   },
   {
     name: 'CODE GENERATOR',
-    category: 'PYTHON',
-    description:
-      'A project utilzing an API and fetching that data into a play on envelope',
-    github: '/gitui',
+    category: 'C++',
+    description: 'A work in progress. This application will track all you',
+    github: 'https://github.com/sydney-rd/todo-manager',
     link: 'netlify',
-    color: '#DA70D6'
+    color: '#DA70D6',
+    bg: ''
   },
   {
     name: 'UGLY SOUP',
@@ -89,7 +89,8 @@ export const projects = [
     description:
       'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
     github: 'https://github.com/sydney-rd/ugly-soup',
-    link: 'netlify',
-    color: '#EE82EE'
+    link: '',
+    color: '#EE82EE',
+    bg: ''
   }
 ]
