@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, VStack, Image, IconButton, HStack } from '@chakra-ui/react'
+import { Box, VStack, IconButton } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
