@@ -39,8 +39,8 @@ export default function About() {
       secTitleFontSize: '2rem',
       codeDescriptionFontSize: '.9rem',
       codePaddingTop: '1rem',
-      summaryPaddingTop: '7rem',
-      codeTitlePaddingTop: '2rem',
+      summaryPaddingTop: '7.8rem',
+      codeTitlePaddingTop: '1.6rem',
       textShadow: '1px 2px 1px pink'
     }
   })
