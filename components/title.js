@@ -33,15 +33,20 @@ const Title = () => {
   })
 
   return (
-    <Box placeItems="center" textAlign="center" justifyContent="center"  position="relative"  
-    zIndex="2"          >
+    <Box
+      placeItems="center"
+      textAlign="center"
+      justifyContent="center"
+      position="relative"
+      zIndex="2"
+    >
       <Box
         display="flex"
         flexDirection="column"
         paddingTop="15rem"
         fontSize={responsiveStyles?.textFontSize}
-        userSelect='none'
-        filter='brightness(150%)'
+        userSelect="none"
+        filter="brightness(150%)"
       >
         <Box display="flex" justifyContent="center" paddingRight="1rem">
           <AnimatedText
@@ -64,13 +69,13 @@ const Title = () => {
             <AnimatedText
               text="DEVELOPER"
               colors={['#4B0090', '#DE91BE', '#4B0090']}
-              />
+            />
           </Box>
         </Box>
 
         <Text
           fontFamily="Ailerons"
-          userSelect='none'
+          userSelect="none"
           color="white"
           fontSize={responsiveStyles?.enterFontSize}
           cursor="crosshair"
