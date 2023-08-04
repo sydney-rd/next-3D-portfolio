@@ -103,7 +103,7 @@ export default function About() {
           fontFamily="Ailerons"
           color="white"
           fontWeight="bold"
-          textShadow="1px 2px 3px pink"
+          textShadow="1px 2px 1px pink"
           paddingTop={responsiveStyles?.codeTitlePaddingTop}
         >
           What you&apos;ll find me coding in

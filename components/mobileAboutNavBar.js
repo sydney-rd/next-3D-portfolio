@@ -92,7 +92,7 @@ export default function MobileAboutNavBar() {
         position="absolute"
         justifyContent="flex-start"
         top="22rem"
-        left="20rem"
+        left="18.7rem"
         bg="transparent"
         zIndex="2"
         transform="rotate(90deg)"
