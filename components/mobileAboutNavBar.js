@@ -15,7 +15,7 @@ const iconStyle = {
 export default function MobileAboutNavBar() {
   return (
     <div>
-      <Box position="absolute" zIndex="1" top=".5rem" left="19rem">
+      <Box position="fixed" zIndex="1" top=".5rem" left="19rem">
         <Link href="/" passHref>
           <Image
             src={Logo.src}
@@ -29,10 +29,8 @@ export default function MobileAboutNavBar() {
         spacing={8}
         position="absolute"
         flexDirection="row"
-        justifyContent="flex-end"
         bottom="1rem"
-        right="50%"
-        bg="transparent"
+        right="37%"
         zIndex="2"
       >
         <a
