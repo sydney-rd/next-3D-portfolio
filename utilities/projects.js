@@ -49,10 +49,11 @@ export const projects = [
     category: 'WEB',
     color: '#9370DB',
     description:
-      'Inspired by arcade games, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the paths to your journey!',
+      '(Work in progress) Inspired by arcade games, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the paths to your journey!',
     github: 'https://github.com/sydney-rd/text-adventure-game',
     link: 'https://sydney-rd.github.io/text-adventure-game/',
-    projectBg: '../asset/background/uipattern.png'
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AdventureGame.gif'
   },
   {
     name: 'ACCOUNT MANAGER',
