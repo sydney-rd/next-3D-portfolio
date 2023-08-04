@@ -30,7 +30,7 @@ export default function MobileAboutNavBar() {
         position="absolute"
         flexDirection="row"
         bottom="1rem"
-        right="37%"
+        right="36%"
         zIndex="2"
       >
         <a
