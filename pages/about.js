@@ -15,8 +15,9 @@ export default function About() {
       secTitleFontSize: '1.1rem',
       codeDescriptionFontSize: '.8rem',
       codePaddingTop: '.3rem',
-      summaryPaddingTop: '2rem',
-      codeTitlePaddingTop: '.2rem'
+      summaryPaddingTop: '3rem',
+      codeTitlePaddingTop: '.2rem',
+      textShadow: 'none'
     },
     md: {
       titleFontSize: '3.5rem',
@@ -27,7 +28,8 @@ export default function About() {
       codeDescriptionFontSize: '.9rem',
       codePaddingTop: '1rem',
       summaryPaddingTop: '7rem',
-      codeTitlePaddingTop: '2rem'
+      codeTitlePaddingTop: '2rem',
+      textShadow: '1px 2px 1px pink'
     }
   })
 
