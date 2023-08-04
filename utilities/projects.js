@@ -30,7 +30,7 @@ export const projects = [
     github: 'https://github.com/sydney-rd/NASA-api-project',
     link: 'https://sydney-rd.github.io/NASA-api-project/',
     projectBg:
-      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/NASAPI.gif'
   },
   {
     name: 'NASA TRIVIA',
@@ -89,6 +89,16 @@ export const projects = [
     description:
       'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
     github: 'https://github.com/sydney-rd/ugly-soup',
+    link: '',
+    color: '#EE82EE',
+    bg: ''
+  },
+  {
+    name: 'Country Trivia Game',
+    category: 'PYTHON',
+    description:
+      'Back with my love for Geography with this CLI Trivia Game. Answer the multiple choice and fill in questions and see how many questions you can get correct - good luck!',
+    github: 'https://github.com/sydney-rd/country-trivia-game2',
     link: '',
     color: '#EE82EE',
     bg: ''
