@@ -3,7 +3,7 @@ export const projects = [
     name: 'PAWMEETS',
     category: 'WEB',
     description:
-      'With a love for dogs, I created a heartwarming MERN stack application that connects NYC dogs owners, letting them upload their dogs and swipe through eligible furry bachelors and bachelorettes for some companionship.',
+      'With a love for dogs, I created a heartwarming MERN stack application that connects NYC dogs owners, letting them upload their dogs and swipe through eligible furry bachelors and bachelorettes for some companionship. Using React and MongoDB, there is full authentication, validation, and other fun capabilities!',
     github: 'https://github.com/sydney-rd/paw-meets',
     link: 'UPCOMING',
     color: '#4B0082',
@@ -22,10 +22,11 @@ export const projects = [
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/ezgif.com-optimize.gif'
   },
   {
-    name: 'NASA API',
+    name: 'NASA TRIVIA',
     category: 'WEB',
     color: '#6F2DA8',
-    description: '',
+    description:
+      "Astronomy fascinates you? Same. Combining the fetching of NASA's Astronomy Picture of the Day API and creating trivia questions, this MERN stack project is fun and educational. See how many you can get right while seeing out of this world Astronomy pictures!",
     github: '/gitui',
     link: 'netlify',
     projectBg:
