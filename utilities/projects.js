@@ -49,7 +49,7 @@ export const projects = [
     category: 'WEB',
     color: '#9370DB',
     description:
-      '(Work in progress) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the loweset score possible! Using native JavaScript, this project is built using a binary tree data structure and classes.',
+      '(Work in progress/Best viewed on desktop) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the loweset score possible! Using native JavaScript, this project is built using a binary tree data structure and classes.',
     github: 'https://github.com/sydney-rd/text-adventure-game',
     link: 'https://sydney-rd.github.io/text-adventure-game/',
     projectBg:
