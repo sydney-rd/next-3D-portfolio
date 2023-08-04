@@ -4,9 +4,11 @@ export const projects = [
     category: 'WEB',
     description:
       'With a love for dogs, I created a heartwarming MERN stack application that connects NYC dogs owners, letting them upload their dogs and swipe through eligible furry bachelors and bachelorettes for some companionship.',
-    github: '',
-    link: '',
-    color: '#4B0082'
+    github: 'https://github.com/sydney-rd/paw-meets',
+    link: 'UPCOMING',
+    color: '#4B0082',
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/Pawmeets.gif'
   },
   {
     name: 'UI PATTERN',
