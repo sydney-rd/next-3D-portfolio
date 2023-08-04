@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Box, VStack, IconButton } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { Box, VStack, IconButton, Image, Icon } from '@chakra-ui/react'
+import { ChevronDownIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import Logo from '../public/assets/logo/logo.png'
 
 const iconStyle = {
   fontSize: '.9rem',
@@ -34,16 +35,24 @@ export default function MobileAboutNavBar() {
 
   return (
     <div>
-      <Box position="fixed" zIndex="1">
-        <Box
-          as={IconButton}
-          icon={<HamburgerIcon />}
+      <Box position="fixed" zIndex="1" top=".5rem" right=".2rem">
+        <Link href="/" passHref>
+          <Image
+            src={Logo.src}
+            alt="Logo"
+            w="90px"
+            style={{ cursor: 'crosshair' }}
+          />
+        </Link>
+        <IconButton
+          icon={<ChevronDownIcon />}
           onClick={handleToggleDrawer}
           display={['block', 'block', 'none']} // Hide the icon on medium and larger screens
           aria-label="Open mobile menu"
           variant="ghost"
+          paddingLeft="3rem"
+          paddingBottom="3rem"
           size="lg"
-          left="22rem"
           bg="transparent"
           _active={{ bg: 'transparent' }}
           _hover={{ bg: 'transparent' }}
@@ -52,47 +61,45 @@ export default function MobileAboutNavBar() {
           _focusVisible={{ boxShadow: 'none' }}
           color="white"
         />
-
-        <VStack
-          display={isDrawerOpen ? 'flex' : 'none'}
-          spacing={8}
-          flexDirection="row"
-          position="absolute"
-          justifyContent="flex-start"
-          top="10rem"
-          left="15.2rem"
-          bg="transparent"
-          zIndex="2"
-          transform="rotate(90deg)"
-        >
-          <Link href="/about" style={navBarStyle}>
-            ABOUT
-          </Link>
-          <Link href="/projectPage" style={navBarStyle}>
-            PROJECTS
-          </Link>
-          <div>
-            <a
-              href="/assets/Sydney-David-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={navBarStyle}
-            >
-              RESUME
-            </a>
-          </div>
-        </VStack>
       </Box>
+      <VStack
+        display={isDrawerOpen ? 'flex' : 'none'}
+        spacing={8}
+        flexDirection="row"
+        position="absolute"
+        justifyContent="flex-start"
+        top="15rem"
+        left="17.4rem"
+        bg="transparent"
+        zIndex="2"
+        transform="rotate(90deg)"
+      >
+        <Link href="/about" style={navBarStyle}>
+          ABOUT
+        </Link>
+        <Link href="/projectPage" style={navBarStyle}>
+          PROJECTS
+        </Link>
+        <div>
+          <a
+            href="/assets/Sydney-David-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={navBarStyle}
+          >
+            RESUME
+          </a>
+        </div>
+      </VStack>
 
-      {/* Social links */}
       <VStack
         display={isDrawerOpen ? 'flex' : 'none'}
         spacing={6}
         flexDirection="row"
         position="absolute"
         justifyContent="flex-start"
-        top="22rem"
-        left="18.7rem"
+        top="27rem"
+        left="20.7rem"
         bg="transparent"
         zIndex="2"
         transform="rotate(90deg)"
@@ -125,6 +132,25 @@ export default function MobileAboutNavBar() {
           </motion.span>
         </a>
       </VStack>
+
+      <Box
+        display={isDrawerOpen ? 'flex' : 'none'}
+        justifyContent="center"
+        alignItems="center"
+        position="fixed"
+        bottom="1rem"
+        left="50%"
+        transform="translateX(-50%)"
+        zIndex="1"
+      >
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          style={iconStyle}
+        >
+          <Icon as={ChevronDownIcon} />
+        </motion.div>
+      </Box>
     </div>
   )
 }

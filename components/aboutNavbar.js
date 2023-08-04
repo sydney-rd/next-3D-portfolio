@@ -5,7 +5,6 @@ import NavBar from './navBar'
 import { motion } from 'framer-motion'
 
 export default function AboutNavbar() {
-
   const responsiveStyles = useBreakpointValue({
     base: {
       iconFontSize: '.9rem'
@@ -14,7 +13,7 @@ export default function AboutNavbar() {
       iconFontSize: '1.1rem'
     }
   })
-  
+
   const iconStyle = {
     fontSize: responsiveStyles?.iconFontSize,
     color: 'white',
