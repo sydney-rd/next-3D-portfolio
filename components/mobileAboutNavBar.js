@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Box, VStack, IconButton, Image, Icon } from '@chakra-ui/react'
+import React from 'react'
+import { Box, VStack, Image, Icon } from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
@@ -14,28 +14,9 @@ const iconStyle = {
 }
 
 export default function MobileAboutNavBar() {
-  const navBarStyle = {
-    color: 'white',
-    whiteSpace: 'pre',
-    WebkitTextStroke: '1px purple',
-    transition: 'color 0.3s',
-    fontSize: '.6rem',
-    fontWeight: 'bold',
-    fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
-    filter: 'brightness(150%)',
-    transitionDelay: '0.8s',
-    userSelect: 'none'
-  }
-
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-
-  const handleToggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen)
-  }
-
   return (
     <div>
-      <Box position="fixed" zIndex="1" top=".5rem" right=".2rem">
+      <Box position="fixed" zIndex="1" top=".5rem" left="18rem">
         <Link href="/" passHref>
           <Image
             src={Logo.src}
@@ -44,62 +25,14 @@ export default function MobileAboutNavBar() {
             style={{ cursor: 'crosshair' }}
           />
         </Link>
-        <IconButton
-          icon={<ChevronDownIcon />}
-          onClick={handleToggleDrawer}
-          display={['block', 'block', 'none']} // Hide the icon on medium and larger screens
-          aria-label="Open mobile menu"
-          variant="ghost"
-          paddingLeft="3rem"
-          paddingBottom="3rem"
-          size="lg"
-          bg="transparent"
-          _active={{ bg: 'transparent' }}
-          _hover={{ bg: 'transparent' }}
-          _focus={{ boxShadow: 'none' }}
-          _visited={{ boxShadow: 'none' }}
-          _focusVisible={{ boxShadow: 'none' }}
-          color="white"
-        />
       </Box>
       <VStack
-        display={isDrawerOpen ? 'flex' : 'none'}
-        spacing={8}
-        flexDirection="row"
-        position="absolute"
-        justifyContent="flex-start"
-        top="15rem"
-        left="17.4rem"
-        bg="transparent"
-        zIndex="2"
-        transform="rotate(90deg)"
-      >
-        <Link href="/about" style={navBarStyle}>
-          ABOUT
-        </Link>
-        <Link href="/projectPage" style={navBarStyle}>
-          PROJECTS
-        </Link>
-        <div>
-          <a
-            href="/assets/Sydney-David-Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={navBarStyle}
-          >
-            RESUME
-          </a>
-        </div>
-      </VStack>
-
-      <VStack
-        display={isDrawerOpen ? 'flex' : 'none'}
         spacing={6}
         flexDirection="row"
         position="absolute"
         justifyContent="flex-start"
-        top="27rem"
-        left="20.7rem"
+        top="7.5rem"
+        left="18.6rem"
         bg="transparent"
         zIndex="2"
         transform="rotate(90deg)"
@@ -133,24 +66,11 @@ export default function MobileAboutNavBar() {
         </a>
       </VStack>
 
-      <Box
-        display={isDrawerOpen ? 'flex' : 'none'}
-        justifyContent="center"
-        alignItems="center"
-        position="fixed"
-        bottom="1rem"
-        left="50%"
-        transform="translateX(-50%)"
-        zIndex="1"
-      >
-        <motion.div
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.9 }}
-          style={iconStyle}
-        >
-          <Icon as={ChevronDownIcon} />
-        </motion.div>
-      </Box>
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        style={iconStyle}
+      ></motion.div>
     </div>
   )
 }
