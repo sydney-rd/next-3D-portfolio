@@ -44,7 +44,7 @@ export const projects = [
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
   },
   {
-    name: 'TEXT-GAME',
+    name: 'TEXTVENTURE',
     description: 'testing',
     category: 'WEB',
     color: '#9370DB',
