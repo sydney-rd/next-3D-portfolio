@@ -13,9 +13,9 @@ export default function About() {
       textFontSize: '.7rem',
       maxW: '16rem',
       secTitleFontSize: '1.1rem',
-      codeDescriptionFontSize: '.7rem',
+      codeDescriptionFontSize: '.8rem',
       codePaddingTop: '.3rem',
-      summaryPaddingTop: '4rem',
+      summaryPaddingTop: '2rem',
       codeTitlePaddingTop: '.2rem'
     },
     md: {
