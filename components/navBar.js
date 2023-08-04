@@ -64,9 +64,10 @@ export default function Navbar() {
             style={navBarStyle}
           >
             <a
-              href="/assets/SydneyDavidResume.pdf"
+              href="/assets/SydneyDavid-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              style={navBarStyle}
             >
               RESUME
             </a>
