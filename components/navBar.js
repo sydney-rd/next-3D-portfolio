@@ -28,11 +28,16 @@ export default function Navbar() {
       flexDirection="column"
       justifyContent="flex-start"
       alignItems="flex-end"
-      paddingRight='4'
+      paddingRight="4"
       zIndex="1"
     >
       <Link href="/" passHref>
-        <Image src={Logo.src} alt="Logo" w="90px" style={{ cursor: 'crosshair' }}/>
+        <Image
+          src={Logo.src}
+          alt="Logo"
+          w="90px"
+          style={{ cursor: 'crosshair' }}
+        />
       </Link>
       <VStack spacing={20} align="flex-end">
         <Box pr=".6rem" pt="2">
@@ -51,14 +56,20 @@ export default function Navbar() {
           </Box>
         </Box>
         )
-        <Box pr="2" pt='4'>
+        <Box pr="2" pt="4">
           <Box
             className="navBar"
             transform="rotate(90deg)"
             whiteSpace="pre"
             style={navBarStyle}
           >
-            RESUME
+            <a
+              href="/assets/SydneyDavidResume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RESUME
+            </a>
           </Box>
         </Box>
         )
