@@ -27,14 +27,13 @@ export default function MobileAboutNavBar() {
       </Box>
       <VStack
         spacing={8}
-        flexDirection="row"
         position="absolute"
-        justifyContent="flex-start"
-        top="8rem"
-        left="19rem"
+        flexDirection="row"
+        justifyContent="flex-end"
+        bottom="1rem"
+        right="50%"
         bg="transparent"
         zIndex="2"
-        transform="rotate(90deg)"
       >
         <a
           href="https://www.linkedin.com/in/sydneydavid/"
