@@ -26,11 +26,11 @@ export const projects = [
     category: 'WEB',
     color: '#6F2DA8',
     description:
-      "🪐 Astronomy fascinates you? Same ✨ Combining my past project, NASA API, where I fetched data from NASA's Astronomy Picture of the Day API - I created a MERN stack trivia game, with CRUD functionality. See how many you can get right while seeing out-of-this-world Astronomy pictures!",
-    github: '/gitui',
+      "(WORK IN PROGRESS) 🪐 Astronomy fascinates you? Same ✨ Combining my past project, NASA API, where I fetched data from NASA's Astronomy Picture of the Day API - I created a MERN stack trivia game, with CRUD functionality. See how many you can get right while seeing out-of-this-world Astronomy pictures!",
+    github: 'https://github.com/sydney-rd/NASA-Trivia',
     link: 'netlify',
     projectBg:
-      'https://raw.githubusercontent.com/sydney-rd/my_portfolio/main/asset/background/uipattern.png'
+      'https://raw.githttps://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gifhubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
   },
   {
     name: 'TIC TAC TOE',
