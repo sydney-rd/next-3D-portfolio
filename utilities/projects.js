@@ -1,9 +1,9 @@
 export const projects = [
   {
-    name: 'MERN STACK',
+    name: 'PAWMEETS',
     category: 'WEB',
     description:
-      'Looking for a date for your dog? PawMeets finds eligble bachelors and bachelorettes around NYC to match with!',
+      'With a love for dogs, I created a heartwarming MERN stack application that connects NYC dogs owners, letting them upload their dogs and swipe through eligible furry bachelors and bachelorettes for some companionship.',
     github: '',
     link: '',
     color: '#4B0082'
