@@ -19,8 +19,20 @@ export default function About() {
       codeTitlePaddingTop: '.2rem',
       textShadow: 'none'
     },
+    sm: {
+      titleFontSize: '2rem',
+      titleText: 'Software Developer',
+      textFontSize: '.8rem',
+      maxW: '26rem',
+      secTitleFontSize: '1.1rem',
+      codeDescriptionFontSize: '.8rem',
+      codePaddingTop: '.6rem',
+      summaryPaddingTop: '2.8rem',
+      codeTitlePaddingTop: '.6rem',
+      textShadow: 'none'
+    },
     md: {
-      titleFontSize: '3.5rem',
+      titleFontSize: '2.8rem',
       titleText: 'Events → Software Developer',
       textFontSize: '.9rem',
       maxW: '35rem',
