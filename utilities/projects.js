@@ -49,7 +49,7 @@ export const projects = [
     category: 'WEB',
     color: '#9370DB',
     description:
-      '(Work in progress/Best viewed on desktop) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the loweset score possible! Using native JavaScript, this project is built using a binary tree data structure and classes.',
+      '(Work in progress/Best viewed on desktop) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the lowest score possible! Using native JavaScript, this project is built using a binary tree data structure and classes.',
     github: 'https://github.com/sydney-rd/text-adventure-game',
     link: 'https://sydney-rd.github.io/text-adventure-game/',
     projectBg:
@@ -60,7 +60,7 @@ export const projects = [
     category: 'C++',
     color: '#9370DB',
     description:
-      'The Account Manager is a perfect project that allows the user to type in terminal commands to help manage, organize and store finanical data for your company. It can show you things such as sum of total vendor, the vendor with the max sum, or specific vendor by name - to name a few.',
+      'The Account Manager is a perfect project that allows the user to type in terminal commands to help manage, organize and store financial data for your company. It can show you things such as sum of total vendor, the vendor with the max sum, or specific vendor by name - to name a few.',
     github: 'https://github.com/sydney-rd/accounting-database',
     link: '',
     bg: ''
@@ -96,7 +96,7 @@ export const projects = [
     bg: ''
   },
   {
-    name: 'Country Trivia Game',
+    name: 'COUNTRY TRIVIA',
     category: 'PYTHON',
     description:
       'Back with my love for Geography with this CLI Trivia Game. Answer the multiple choice and fill in questions and see how many questions you can get correct - good luck!',

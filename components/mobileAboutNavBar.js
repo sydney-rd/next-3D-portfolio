@@ -43,7 +43,7 @@ export default function MobileAboutNavBar() {
           aria-label="Open mobile menu"
           variant="ghost"
           size="lg"
-          left="20rem"
+          left="22rem"
           bg="transparent"
           _active={{ bg: 'transparent' }}
           _hover={{ bg: 'transparent' }}
