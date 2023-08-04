@@ -26,7 +26,7 @@ export const projects = [
     category: 'WEB',
     color: '#6F2DA8',
     description:
-      "Astronomy fascinates you? Same. Combining the fetching of NASA's Astronomy Picture of the Day API and creating trivia questions, this MERN stack project is fun and educational. See how many you can get right while seeing out of this world Astronomy pictures!",
+      "🪐 Astronomy fascinates you? Same ✨ Combining my past project, NASA API, where I fetched data from NASA's Astronomy Picture of the Day API - I created a MERN stack trivia game, with CRUD functionality. See how many you can get right while seeing out-of-this-world Astronomy pictures!",
     github: '/gitui',
     link: 'netlify',
     projectBg:
