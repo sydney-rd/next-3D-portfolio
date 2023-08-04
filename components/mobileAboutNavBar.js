@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box, VStack, Image, Icon } from '@chakra-ui/react'
-import { ChevronDownIcon } from '@chakra-ui/icons'
+import { Box, VStack, Image } from '@chakra-ui/react'
 import Link from 'next/link'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import { motion } from 'framer-motion'
