@@ -30,7 +30,7 @@ export const projects = [
     github: 'https://github.com/sydney-rd/NASA-Trivia',
     link: 'netlify',
     projectBg:
-      'https://raw.githttps://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gifhubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
   },
   {
     name: 'TIC TAC TOE',
