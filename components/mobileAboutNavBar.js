@@ -15,12 +15,12 @@ const iconStyle = {
 export default function MobileAboutNavBar() {
   return (
     <div>
-      <Box position="fixed" zIndex="1" top=".5rem" left="18rem">
+      <Box position="absolute" zIndex="1" top=".5rem" left="19rem">
         <Link href="/" passHref>
           <Image
             src={Logo.src}
             alt="Logo"
-            w="90px"
+            w="100px"
             style={{ cursor: 'crosshair' }}
           />
         </Link>
@@ -31,7 +31,7 @@ export default function MobileAboutNavBar() {
         position="absolute"
         justifyContent="flex-start"
         top="7.5rem"
-        left="18.6rem"
+        left="19rem"
         bg="transparent"
         zIndex="2"
         transform="rotate(90deg)"
