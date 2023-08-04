@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import Logo from '../public/assets/logo/logo.png'
 
 const iconStyle = {
-  fontSize: '.9rem',
+  fontSize: '1rem',
   cursor: 'pointer',
   color: 'white',
   userSelect: 'none'
@@ -26,11 +26,11 @@ export default function MobileAboutNavBar() {
         </Link>
       </Box>
       <VStack
-        spacing={6}
+        spacing={8}
         flexDirection="row"
         position="absolute"
         justifyContent="flex-start"
-        top="7.5rem"
+        top="8rem"
         left="19rem"
         bg="transparent"
         zIndex="2"
