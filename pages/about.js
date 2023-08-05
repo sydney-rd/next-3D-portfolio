@@ -96,11 +96,13 @@ export default function About() {
         >
           <Box>
             <Text>
-              Hi - my name is Sydney! I am a Software Developer from NYC. My
-              journey began with a simple HTML/CSS tutorial. Since that moment,
-              I challenged myself with a career transition to the ever-changing
-              field of tech. I took this path because I wanted to continuously
-              learn new things every day.
+              Hi - my name is Sydney!
+              <br />
+              <br />
+              I am a Software Developer from NYC. My journey began with a simple
+              HTML/CSS tutorial. Since that moment, I challenged myself with a
+              career transition to the ever-changing field of tech. I took this
+              path because I wanted to continuously learn new things every day.
               <br />
               <br />
               A little bit about my background...I have worked in Events for
