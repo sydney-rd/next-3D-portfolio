@@ -40,9 +40,9 @@ export default function About() {
       secTitleFontSize: '2rem',
       codeDescriptionFontSize: '.9rem',
       codePaddingTop: '1rem',
-      summaryPaddingTop: '7.8rem',
+      summaryPaddingTop: '7.7rem',
       codeTitlePaddingTop: '1.6rem',
-      textShadow: '1px 2px 1px pink',
+      textShadow: '1px 2px 2px pink',
       titleMaxW: '60rem'
     }
   })
