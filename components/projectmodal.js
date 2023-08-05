@@ -32,7 +32,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     sm: {
       titleFontSize: '6rem',
       gifHeight: '45vh',
-      gifWidth: '65vw',
+      gifWidth: '70vw',
       contentFontSize: '1rem',
       descriptionWidth: '29rem'
     },
@@ -108,7 +108,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               backgroundPosition: 'center',
               height: responsiveStyles?.gifHeight,
               width: responsiveStyles?.gifWidth,
-              borderRadius: '2rem',
+              borderRadius: '1.5rem',
               zIndex: 2,
               marginTop: responsiveStyles?.gifMarginTop
             }}
