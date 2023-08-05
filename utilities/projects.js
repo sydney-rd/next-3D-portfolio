@@ -91,9 +91,9 @@ export const projects = [
     description:
       'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
     github: 'https://github.com/sydney-rd/ugly-soup',
-    link: '',
+    link: 'https://github.com/sydney-rd/ugly-soup/blob/main/README.md',
     color: '#EE82EE',
-    bg: ''
+    bg: 'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/uglysoup.gif'
   },
   {
     name: 'CLI TRIVIA',
