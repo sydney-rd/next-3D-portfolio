@@ -25,7 +25,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       contentFontSize: '.9rem',
       showBorder: true,
       descriptionWidth: '12.5rem',
-      linkMarginTop: '1.5rem',
+      linkMarginTop: '1.4rem',
       gifMarginTop: '0rem',
       titlePaddingTop: '1.3rem'
     },
