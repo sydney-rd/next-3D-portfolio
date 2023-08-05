@@ -99,9 +99,9 @@ export const projects = [
     name: 'CLI TRIVIA',
     category: 'PYTHON',
     description:
-      'Continuing to indulge in my geography passion 🌎, I created a Python Trivia game using the Command Line Interface. With features like score-keeping, answer validations, and more, answer the multiple choice and fill-in questions and see how many get correct - good luck!',
+      'Continuing to indulge in my geography passion 🌎, I created a Python Trivia game using the Command Line Interface. With features such as score-keeping, answer validations, and more, answer the multiple choice and fill-in questions and see how many you get correct - good luck!',
     github: 'https://github.com/sydney-rd/country-trivia-game2',
-    // link: '',
+    link: 'https://github.com/sydney-rd/country-trivia-game-python/blob/master/README.md',
     color: '#EE82EE',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/FINALPython.gif'
