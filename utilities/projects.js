@@ -89,11 +89,12 @@ export const projects = [
     name: 'UGLY SOUP',
     category: 'PYTHON',
     description:
-      'Looking to parse through a website and download specific files to your local storage? Use Ugly Soup! Just enter a URL, a file type, and a preferred location',
+      'Looking to parse through a website and download files to your computer? Use Ugly Soup! This program allows the user to enter a URL, a file type (pdf, jpeg, etc), a name for your files, and a preferred location. Check out me downloading Breaking Bad scripts to my project folder!',
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'https://github.com/sydney-rd/ugly-soup/blob/main/README.md',
     color: '#EE82EE',
-    bg: 'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/uglysoup.gif'
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/uglysoup.gif'
   },
   {
     name: 'CLI TRIVIA',
