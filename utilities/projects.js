@@ -19,25 +19,25 @@ export const projects = [
     github: 'https://github.com/sydney-rd/ui-pattern',
     link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
-      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/ezgif.com-optimize.gif'
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/UIPattern.gif'
   },
   {
     name: 'NASA API',
     category: 'WEB',
     color: '#6F2DA8',
     description:
-      "This one is for Astronomy lovers. This API project contains plenty of usable data in JSON format that was fetched from NASA's Astronomy Picture of the Day API. I will be using this data for a new project of mine, Astronomy Trivia.",
+      "This one is for Astronomy lovers. My NASA API contains plenty of usable data in JSON format that was fetched from NASA's Astronomy Picture of the Day API. This data can be used for any project that needs mind-blowing Astronomy pictures, see it in my future project - Space Trivia!",
     github: 'https://github.com/sydney-rd/NASA-api-project',
     link: 'https://sydney-rd.github.io/NASA-api-project/',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/NASAPI.gif'
   },
   {
-    name: 'NASA TRIVIA',
+    name: 'SPACE TRIVIA',
     category: 'WEB',
     color: '#6F2DA8',
     description:
-      "(WORK IN PROGRESS) 🪐 Astronomy fascinates you? Same ✨ Combining my past project, NASA API, where I fetched data from NASA's Astronomy Picture of the Day API - I created a MERN stack trivia game, with CRUD functionality. See how many you can get right while seeing out-of-this-world Astronomy pictures!",
+      "(work in progress) 🪐 Astronomy fascinates you? Same ✨ Combining my past project, NASA API, where I fetched data from NASA's Astronomy Picture of the Day API - I created a MERN stack trivia game, with CRUD functionality. See how many you can get right while seeing out-of-this-world Astronomy pictures!",
     github: 'https://github.com/sydney-rd/NASA-Trivia',
     link: 'netlify',
     projectBg:
@@ -49,7 +49,7 @@ export const projects = [
     category: 'WEB',
     color: '#9370DB',
     description:
-      '(Work in progress/Best viewed on desktop) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the lowest score possible! Using native JavaScript, this project is built using a binary tree data structure.',
+      '(work in progress/view on desktop) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the lowest score possible! Using native JavaScript, this project is built using a binary tree data structure.',
     github: 'https://github.com/sydney-rd/text-adventure-game',
     link: 'https://sydney-rd.github.io/text-adventure-game/',
     projectBg:
@@ -99,7 +99,7 @@ export const projects = [
     name: 'CLI TRIVIA',
     category: 'PYTHON',
     description:
-      'Back with my love for Geography with this CLI Trivia Game. Answer the multiple choice and fill in questions and see how many questions you can get correct - good luck!',
+      'Continuing to indulge in my geography passion 🌎, I created a Python Trivia game using the Command Line Interface. With features like score-keeping, answer validations, and more, answer the multiple choice and fill-in questions and see how many get correct - good luck!',
     github: 'https://github.com/sydney-rd/country-trivia-game2',
     // link: '',
     color: '#EE82EE',
