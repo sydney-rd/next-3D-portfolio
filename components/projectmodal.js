@@ -26,7 +26,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       showBorder: true,
       descriptionWidth: '12.5rem',
       linkMarginTop: '1rem',
-      gifMarginTop: '0rem'
+      gifMarginTop: '0rem',
+      titlePaddingTop: '1.3rem'
     },
     sm: {
       titleFontSize: '6rem',
@@ -36,13 +37,14 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       descriptionWidth: '29rem'
     },
     md: {
-      titleFontSize: '7.8rem',
-      gifHeight: '49vh',
-      gifWidth: '50vw',
+      titleFontSize: '8rem',
+      gifHeight: '52vh',
+      gifWidth: '48vw',
       contentFontSize: '1rem',
       descriptionWidth: '43rem',
       linkMarginTop: '-2.5rem',
-      gifMarginTop: '-.7rem'
+      gifMarginTop: '-.6rem',
+      titlePaddingTop: '-.5rem'
     }
   })
   return (
@@ -75,7 +77,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             fontSize: responsiveStyles?.titleFontSize,
             textAlign: 'center',
             color: color,
-            textShadow: `0px 0px 4px ${color}`
+            textShadow: `0px 0px 4px ${color}`,
+            paddingTop: responsiveStyles?.titlePaddingTop
           }}
         >
           {name}
