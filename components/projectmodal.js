@@ -138,7 +138,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             borderBottom: responsiveStyles?.showBorder
               ? `1px solid ${color}`
               : 'none',
-            padding: responsiveStyles?.showBorder ? '1rem' : 0
+            padding: responsiveStyles?.showBorder ? '.5rem' : 0
           }}
         >
           <Flex flexDirection="row">
