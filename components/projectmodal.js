@@ -24,19 +24,15 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       top: '19.5rem',
       contentFontSize: '.9rem',
       showBorder: true,
-      CloseBtnPosTop: '1.5rem',
-      CloseBtnPosRight: '45%',
       descriptionWidth: '12.5rem',
-      linkMarginTop: '0rem',
-      gifMarginTop: '0rem'
+      linkMarginTop: '1rem',
+      gifMarginTop: '.2rem'
     },
     sm: {
       titleFontSize: '6rem',
       gifHeight: '45vh',
       gifWidth: '65vw',
       contentFontSize: '1rem',
-      CloseBtnPosTop: '2rem',
-      CloseBtnPosRight: '50%',
       descriptionWidth: '29rem'
     },
     md: {
@@ -44,8 +40,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       gifHeight: '49vh',
       gifWidth: '50vw',
       contentFontSize: '1rem',
-      CloseBtnPosTop: '2rem',
-      CloseBtnPosRight: '50%',
       descriptionWidth: '43rem',
       linkMarginTop: '-2.5rem',
       gifMarginTop: '-.7rem'
@@ -91,9 +85,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             position: 'absolute',
             display: 'flex',
             alignItems: 'center',
-            top: responsiveStyles?.CloseBtnPosTop,
-            right: responsiveStyles?.CloseBtnPosRight,
-            transform: 'translateY(-50%)',
+            left: '49.5%',
+            transform: 'translateX(-50%)',
             size: 'xl',
             cursor: 'crosshair',
             color: color,
