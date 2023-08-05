@@ -21,13 +21,14 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       titleFontSize: '3.5rem',
       gifHeight: '25vh',
       gifWidth: '70vw',
-      top: '21rem',
+      top: '19.5rem',
       contentFontSize: '.9rem',
       showBorder: true,
       CloseBtnPosTop: '1.5rem',
       CloseBtnPosRight: '45%',
       descriptionWidth: '12.5rem',
-      linkMarginTop: '0rem'
+      linkMarginTop: '0rem',
+      gifMarginTop: '0rem'
     },
     sm: {
       titleFontSize: '6rem',
@@ -46,7 +47,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       CloseBtnPosTop: '2rem',
       CloseBtnPosRight: '50%',
       descriptionWidth: '43rem',
-      linkMarginTop: '-2.5rem'
+      linkMarginTop: '-2.5rem',
+      gifMarginTop: '-.7rem'
     }
   })
   return (
@@ -112,7 +114,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               width: responsiveStyles?.gifWidth,
               borderRadius: '2rem',
               zIndex: 2,
-              marginTop: '-.7rem'
+              marginTop: responsiveStyles?.gifMarginTop
             }}
           />
         </Box>
