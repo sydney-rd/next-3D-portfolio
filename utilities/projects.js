@@ -103,6 +103,7 @@ export const projects = [
     github: 'https://github.com/sydney-rd/country-trivia-game2',
     // link: '',
     color: '#EE82EE',
-    bg: 'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/FINALPython.gif'
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/FINALPython.gif'
   }
 ]
