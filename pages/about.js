@@ -21,7 +21,7 @@ export default function About() {
     },
     sm: {
       titleFontSize: '2rem',
-      titleText: 'Software Developer',
+      titleText: 'Software\nDeveloper',
       textFontSize: '.8rem',
       maxW: '26rem',
       secTitleFontSize: '1.1rem',
@@ -29,11 +29,12 @@ export default function About() {
       codePaddingTop: '.6rem',
       summaryPaddingTop: '2.8rem',
       codeTitlePaddingTop: '.6rem',
-      textShadow: 'none'
+      textShadow: 'none',
+      titleMaxW: '30rem'
     },
     md: {
-      titleFontSize: '2.8rem',
-      titleText: 'Events → Software Developer',
+      titleFontSize: '2.7rem',
+      titleText: 'Events→Software Developer',
       textFontSize: '.9rem',
       maxW: '35rem',
       secTitleFontSize: '2rem',
@@ -41,7 +42,8 @@ export default function About() {
       codePaddingTop: '1rem',
       summaryPaddingTop: '7.8rem',
       codeTitlePaddingTop: '1.6rem',
-      textShadow: '1px 2px 1px pink'
+      textShadow: '1px 2px 1px pink',
+      titleMaxW: '60rem'
     }
   })
 
@@ -80,6 +82,7 @@ export default function About() {
           textAlign="center"
           position="fixed"
           top="1rem"
+          maxW={responsiveStyles?.titleMaxW}
         >
           {responsiveStyles?.titleText}
         </Box>
