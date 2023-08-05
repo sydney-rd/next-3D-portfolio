@@ -11,11 +11,11 @@ export default function About() {
       titleFontSize: '1.5rem',
       titleText: 'Software Developer',
       textFontSize: '.7rem',
-      maxW: '14rem',
+      maxW: '16rem',
       secTitleFontSize: '1.1rem',
       codeDescriptionFontSize: '.8rem',
       codePaddingTop: '.3rem',
-      summaryPaddingTop: '3rem',
+      summaryPaddingTop: '4rem',
       codeTitlePaddingTop: '.2rem',
       textShadow: 'none'
     },
