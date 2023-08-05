@@ -96,13 +96,13 @@ export const projects = [
     bg: ''
   },
   {
-    name: 'COUNTRY TRIVIA',
+    name: 'TRIVIA',
     category: 'PYTHON',
     description:
       'Back with my love for Geography with this CLI Trivia Game. Answer the multiple choice and fill in questions and see how many questions you can get correct - good luck!',
     github: 'https://github.com/sydney-rd/country-trivia-game2',
-    link: '',
+    // link: '',
     color: '#EE82EE',
-    bg: ''
+    bg: 'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/FINALPython.gif'
   }
 ]
