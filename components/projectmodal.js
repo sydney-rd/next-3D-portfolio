@@ -19,8 +19,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
   const responsiveStyles = useBreakpointValue({
     base: {
       titleFontSize: '3.5rem',
-      gifHeight: '24vh',
-      gifWidth: '70vw',
+      gifHeight: '24.5vh',
+      gifWidth: '72vw',
       top: '19.5rem',
       contentFontSize: '.9rem',
       showBorder: true,
@@ -108,7 +108,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               backgroundPosition: 'center',
               height: responsiveStyles?.gifHeight,
               width: responsiveStyles?.gifWidth,
-              borderRadius: '1.5rem',
+              borderRadius: '2rem',
               zIndex: 2,
               marginTop: responsiveStyles?.gifMarginTop
             }}
