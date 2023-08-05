@@ -26,7 +26,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       showBorder: true,
       CloseBtnPosTop: '1.5rem',
       CloseBtnPosRight: '45%',
-      descriptionWidth: '12.5rem'
+      descriptionWidth: '12.5rem',
+      linkMarginTop: '0rem'
     },
     sm: {
       titleFontSize: '6rem',
@@ -44,7 +45,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       contentFontSize: '1rem',
       CloseBtnPosTop: '2rem',
       CloseBtnPosRight: '50%',
-      descriptionWidth: '43rem'
+      descriptionWidth: '43rem',
+      linkMarginTop: '-2.5rem'
     }
   })
   return (
@@ -144,7 +146,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 display: 'inline-block',
                 marginRight: '.8rem',
                 paddingBottom: '.5rem',
-                marginTop: '-2.5rem'
+                marginTop: responsiveStyles?.linkMarginTop
               }}
             >
               <a
@@ -168,7 +170,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 cursor: 'crosshair',
                 display: 'inline-block',
                 marginRight: '.8rem',
-                marginTop: '-2.5rem'
+                marginTop: responsiveStyles?.linkMarginTop
               }}
             >
               <a
