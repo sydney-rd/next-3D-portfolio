@@ -15,7 +15,7 @@ export const projects = [
     category: 'WEB',
     color: '#551A8B',
     description:
-      "I'm a travel, geography, and map enthusiast. Inspired by a postcard I found from an old friend studying in 🇬🇧 London, I styled my project to emulate just that. Utilzing data from an API, each stamp on the envelope will reveal a country. When you click a stamp, it pulls specific facts about the country in the form of a handwritten note.",
+      "I'm a travel, geography, and map enthusiast. Inspired by a postcard I found from an old friend studying in 🇬🇧 London, I styled my project to emulate just that. Utilzing data from an API, each stamp on the envelope will reveal a country. When you click a stamp, it pulls facts about the country as a handwritten note.",
     github: 'https://github.com/sydney-rd/ui-pattern',
     link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
@@ -26,7 +26,7 @@ export const projects = [
     category: 'WEB',
     color: '#6F2DA8',
     description:
-      "This one is for Astronomy lovers. This project contains usable data in JSON format that was fetched from NASA's Astronomy Picture of the Day API. This data will be used for a new project of mine, Astronomy Trivia.",
+      "This one is for Astronomy lovers. This API project contains plenty of usable data in JSON format that was fetched from NASA's Astronomy Picture of the Day API. I will be using this data for a new project of mine, Astronomy Trivia.",
     github: 'https://github.com/sydney-rd/NASA-api-project',
     link: 'https://sydney-rd.github.io/NASA-api-project/',
     projectBg:
@@ -49,7 +49,7 @@ export const projects = [
     category: 'WEB',
     color: '#9370DB',
     description:
-      '(Work in progress/Best viewed on desktop) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the lowest score possible! Using native JavaScript, this project is built using a binary tree data structure and classes.',
+      '(Work in progress/Best viewed on desktop) Inspired by arcade games and design, Escape the Labirynth takes you on an adventure far and wide. Try to escape the game by choosing the correct paths to finish your journey with the lowest score possible! Using native JavaScript, this project is built using a binary tree data structure.',
     github: 'https://github.com/sydney-rd/text-adventure-game',
     link: 'https://sydney-rd.github.io/text-adventure-game/',
     projectBg:
@@ -96,7 +96,7 @@ export const projects = [
     bg: ''
   },
   {
-    name: 'TRIVIA',
+    name: 'CLI TRIVIA',
     category: 'PYTHON',
     description:
       'Back with my love for Geography with this CLI Trivia Game. Answer the multiple choice and fill in questions and see how many questions you can get correct - good luck!',

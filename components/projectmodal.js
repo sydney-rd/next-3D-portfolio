@@ -30,7 +30,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     },
     sm: {
       titleFontSize: '6rem',
-      gifHeight: '40vh',
+      gifHeight: '45vh',
       gifWidth: '65vw',
       contentFontSize: '1rem',
       CloseBtnPosTop: '2rem',
@@ -39,12 +39,12 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     },
     md: {
       titleFontSize: '7.8rem',
-      gifHeight: '44vh',
-      gifWidth: '44vw',
+      gifHeight: '49vh',
+      gifWidth: '50vw',
       contentFontSize: '1rem',
       CloseBtnPosTop: '2rem',
       CloseBtnPosRight: '50%',
-      descriptionWidth: '40rem'
+      descriptionWidth: '43rem'
     }
   })
   return (
@@ -109,7 +109,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               height: responsiveStyles?.gifHeight,
               width: responsiveStyles?.gifWidth,
               borderRadius: '2rem',
-              zIndex: 2
+              zIndex: 2,
+              marginTop: '-.7rem'
             }}
           />
         </Box>
@@ -119,7 +120,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             left: '50%',
             transform: 'translateX(-50%)',
             top: responsiveStyles?.top,
-            bottom: '1rem',
+            bottom: '.2rem',
             fontSize: responsiveStyles?.contentFontSize,
             color: 'white',
             fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
@@ -142,7 +143,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               style={{
                 display: 'inline-block',
                 marginRight: '.8rem',
-                paddingBottom: '.5rem'
+                paddingBottom: '.5rem',
+                marginTop: '-2.5rem'
               }}
             >
               <a
@@ -165,8 +167,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               style={{
                 cursor: 'crosshair',
                 display: 'inline-block',
-                marginRight: '.8rem'
-                // paddingBottom: '.1rem'
+                marginRight: '.8rem',
+                marginTop: '-2.5rem'
               }}
             >
               <a
@@ -187,8 +189,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           </Flex>
           <p
             style={{
-              marginTop: '1rem',
-              width: responsiveStyles?.descriptionWidth
+              width: responsiveStyles?.descriptionWidth,
+              paddingBottom: '1rem'
             }}
           >
             {description}
