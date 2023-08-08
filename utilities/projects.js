@@ -5,7 +5,7 @@ export const projects = [
     description:
       'With a love for dogs, I created a heartwarming MERN stack application that connects NYC dogs owners, letting them upload their dogs and swipe through eligible furry bachelors and bachelorettes for some companionship. Using React and MongoDB, there is full authentication, validation, and other fun capabilities!',
     github: 'https://github.com/sydney-rd/paw-meets',
-    link: 'UPCOMING',
+    link: 'https://pawmeets.netlify.app',
     color: '#4B0082',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/Pawmeets.gif'
