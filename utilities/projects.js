@@ -32,17 +32,17 @@ export const projects = [
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/NASAPI.gif'
   },
-  {
-    name: 'SPACE TRIVIA',
-    category: 'WEB',
-    color: '#6F2DA8',
-    description:
-      "(work in progress) 🪐 Astronomy fascinates you? Same ✨ Combining my past project, NASA API, where I fetched data from NASA's Astronomy Picture of the Day API - I created a MERN stack trivia game, with CRUD functionality. See how many you can get right while seeing out-of-this-world Astronomy pictures!",
-    github: 'https://github.com/sydney-rd/NASA-Trivia',
-    link: 'netlify',
-    projectBg:
-      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
-  },
+  // {
+  //   name: 'SPACE TRIVIA',
+  //   category: 'WEB',
+  //   color: '#6F2DA8',
+  //   description:
+  //     "(work in progress) 🪐 Astronomy fascinates you? Same ✨ Combining my past project, NASA API, where I fetched data from NASA's Astronomy Picture of the Day API - I created a MERN stack trivia game, with CRUD functionality. See how many you can get right while seeing out-of-this-world Astronomy pictures!",
+  //   github: 'https://github.com/sydney-rd/NASA-Trivia',
+  //   link: 'netlify',
+  //   projectBg:
+  //     'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AstronomyTrivia.gif'
+  // },
   {
     name: 'TEXTVENTURE',
     description: 'testing',
