@@ -62,8 +62,9 @@ export const projects = [
     description:
       'The Account Manager is a perfect project that allows the user to type in terminal commands to help manage, organize and store financial data for your company. It can show you things such as sum of total vendor, the vendor with the max sum, or specific vendor by name - to name a few.',
     github: 'https://github.com/sydney-rd/accounting-database',
-    link: '',
-    bg: ''
+    link: 'https://github.com/sydney-rd/accounting-database/blob/main/README.md',
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AccountManager.gif'
   },
   {
     name: 'TO-DO MANAGER',
