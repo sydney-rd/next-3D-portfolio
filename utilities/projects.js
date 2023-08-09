@@ -15,6 +15,17 @@ export const projects = [
     category: 'WEB',
     color: '#551A8B',
     description:
+      'Playing off my UI Pattern UI, I created a postcard using React and utilzed data from an API. You can enter any region in the world and new stamps from that region will populate. Click a stamp and it will reveal a country and facts as a handwritten note.',
+    github: 'https://github.com/sydney-rd/react-ui-pattern',
+    link: 'https://react-country-project.netlify.app/',
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/UIPattern.gif'
+  },
+  {
+    name: 'REACT PATTERN',
+    category: 'WEB',
+    color: '#551A8B',
+    description:
       "I'm a travel, geography, and map enthusiast. Inspired by a postcard I found from an old friend studying in 🇬🇧 London, I styled my project to emulate just that. Utilzing data from an API, each stamp on the envelope will reveal a country. When you click a stamp, it pulls facts about the country as a handwritten note.",
     github: 'https://github.com/sydney-rd/ui-pattern',
     link: 'https://sydney-rd.github.io/ui-pattern/',
