@@ -15,7 +15,7 @@ export const projects = [
     category: 'WEB',
     color: '#551A8B',
     description:
-      'Playing off my UI Pattern UI, I created a postcard using React and utilzed data from an API. You can enter any region in the world and new stamps from that region will populate. Click a stamp and it will reveal a country and facts as a handwritten note.',
+      'Playing off my UI Pattern project, I re-created the postcard using React with data fetched from aan API. User interactive, you can enter any region in the world and new stamps from that region will populate. Click a stamp and it will reveal a country and facts as a handwritten note.',
     github: 'https://github.com/sydney-rd/react-ui-pattern',
     link: 'https://react-country-project.netlify.app/',
     projectBg:
@@ -30,7 +30,7 @@ export const projects = [
     github: 'https://github.com/sydney-rd/ui-pattern',
     link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
-      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/UIPattern.gif'
+      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/ReactPattern.gif'
   },
   {
     name: 'NASA API',
