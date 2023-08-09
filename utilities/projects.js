@@ -26,7 +26,7 @@ export const projects = [
     category: 'WEB',
     color: '#551A8B',
     description:
-      'Playing off my UI Pattern project, I re-created the postcard using React with data fetched from aan API. User interactive, you can enter any region in the world and new stamps from that region will populate. Click a stamp and it will reveal a country and facts as a handwritten note.',
+      'Playing off my UI Pattern project, I re-created my geography postcard using React with data fetched from an API. This is user interactive, you can enter any region in the world and new stamps from that region will populate. Click a stamp and it will reveal a country and facts as a handwritten note.',
     github: 'https://github.com/sydney-rd/ui-pattern',
     link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
