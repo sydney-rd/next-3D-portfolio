@@ -22,7 +22,7 @@ export const projects = [
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/UIPattern.gif'
   },
   {
-    name: 'REACT PATTERN',
+    name: 'REACT UI',
     category: 'WEB',
     color: '#551A8B',
     description:

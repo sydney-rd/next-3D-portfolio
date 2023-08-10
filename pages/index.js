@@ -1,7 +1,6 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
 import Title from '../components/title'
-
 import SpinningLogo from '../components/spinningLogo.js'
 
 export default function Index() {
