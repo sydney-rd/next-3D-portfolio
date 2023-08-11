@@ -7,7 +7,6 @@ import Logo from '../public/assets/logo/logo.png'
 
 const iconStyle = {
   fontSize: '1rem',
-  cursor: 'pointer',
   color: 'white',
   userSelect: 'none'
 }

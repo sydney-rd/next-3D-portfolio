@@ -106,13 +106,14 @@ export default function About() {
               path because I wanted to continuously learn new things every day.
               <br />
               <br />
-              A little bit about my background...I have worked in Events for
-              companies like WeWork and ViacomCBS (Comedy Central, Paramount
-              Network, TVLand). I was able to travel around the US and work on
-              activations such as the World Pride Parade, comic-con, ComplexCon,
-              festivals, conventions, and more. While you will find me coding
-              day to day, I also have a passion for cars, maps, geography, and
-              travel. I am also a cat and pitbull advocate!
+              A glimpse into my background shows experience in Events and
+              Hospitality. I've worked with companies such as WeWork and
+              ViacomCBS, for Comedy Central, Paramount Network, and TVLand. I
+              was able to travel and work hands on at activations such as the
+              World Pride Parade, Comic-Con, ComplexCon, festivals, conventions,
+              and more. While you will find me coding day to day, I also have a
+              passion for cars, travel, and studying maps and geography. I'm
+              also an animal lover - cats and my Pitbull mix have my heart!
               <br />
               <br />
             </Text>
