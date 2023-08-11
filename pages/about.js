@@ -107,12 +107,12 @@ export default function About() {
               <br />
               <br />
               A glimpse into my background shows experience in Events and
-              Hospitality. I've worked with companies such as WeWork and
+              Hospitality. I&apos;ve worked with companies such as WeWork and
               ViacomCBS, for Comedy Central, Paramount Network, and TVLand. I
               was able to travel and work hands on at activations such as the
               World Pride Parade, Comic-Con, ComplexCon, festivals, conventions,
               and more. While you will find me coding day to day, I also have a
-              passion for cars, travel, and studying maps and geography. I'm
+              passion for cars, travel, and studying maps and geography. I am
               also an animal lover - cats and my Pitbull mix have my heart!
               <br />
               <br />
