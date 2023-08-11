@@ -194,7 +194,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   textShadow: `0px 0px 5px ${color}`
                 }}
               >
-                PROJECT URL
+                PROJ URL
               </a>
             </motion.div>
           </Flex>
