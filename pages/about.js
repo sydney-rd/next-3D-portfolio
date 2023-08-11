@@ -144,7 +144,7 @@ export default function About() {
           <br />
           <br />
           <strong>Web Dev</strong> <br /> React, Next.js, Express,
-          <br /> React-Fiber-Three, HTML, <br /> CSS, Tailwind, Chakra-UI,
+          <br /> React-Three-Fiber, HTML, <br /> CSS, Tailwind, Chakra-UI,
           Framer Motion
         </Text>
       </Box>

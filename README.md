@@ -2,9 +2,7 @@
 
 Hi! Thanks for stumbling onto this repo.
 
-This is my website below:
-
-[netlify](https://sydneyrd-portfolio.netlify.app/)
+Here is my [website](https://sydneyrd-portfolio.netlify.app/)
 
 It contain's information about past and current projects that are being worked on, as well as an about me section.
 
@@ -14,9 +12,9 @@ My inspiration for this website was to create something eclectic, unique, and ha
 
 - React
 - Next.js
-- React-three-fiber
+- React-Three-Fiber
 - React-three/drei
-- Chakra-ui/React
+- Chakra-UI/React
 - Framer Motion
 
 ## Development Dependencies
