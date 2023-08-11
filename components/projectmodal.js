@@ -38,7 +38,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     },
     md: {
       titleFontSize: '7rem',
-      gifHeight: '52vh',
+      gifHeight: '54vh',
       gifWidth: '48vw',
       contentFontSize: '1rem',
       descriptionWidth: '43rem',
