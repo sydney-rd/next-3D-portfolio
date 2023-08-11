@@ -6,6 +6,8 @@ import { Canvas } from '@react-three/fiber'
 import AboutNavbar from '../components/aboutNavbar'
 
 export default function About() {
+  const [isMobile] = useMediaQuery('(max-width: 768px)')
+
   const responsiveStyles = useBreakpointValue({
     base: {
       titleFontSize: '1.5rem',
@@ -27,7 +29,7 @@ export default function About() {
       secTitleFontSize: '1.1rem',
       codeDescriptionFontSize: '.8rem',
       codePaddingTop: '.6rem',
-      summaryPaddingTop: '2.8rem',
+      summaryPaddingTop: '4rem',
       codeTitlePaddingTop: '.6rem',
       textShadow: 'none',
       titleMaxW: '30rem'
@@ -40,14 +42,13 @@ export default function About() {
       secTitleFontSize: '2rem',
       codeDescriptionFontSize: '.9rem',
       codePaddingTop: '1rem',
-      summaryPaddingTop: '7.7rem',
-      codeTitlePaddingTop: '1.6rem',
+      summaryPaddingTop: '5rem',
+      codeTitlePaddingTop: '1rem',
       textShadow: '1px 2px 2px pink',
       titleMaxW: '60rem'
     }
   })
 
-  const [isMobile] = useMediaQuery('(max-width: 768px)')
   return (
     <Box position="relative" height="100vh">
       {!isMobile && <AboutNavbar />}
