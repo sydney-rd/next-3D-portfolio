@@ -30,7 +30,7 @@ export const projects = [
     github: 'https://github.com/sydney-rd/ui-pattern',
     link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
-      'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/ReactPattern.gif'
+      'https://raw.githubusercontent.com/sydney-rd/next-three-portfolio/main/public/assets/ReactPattern.gif'
   },
   {
     name: 'NASA API',
@@ -56,7 +56,6 @@ export const projects = [
   // },
   {
     name: 'TEXTVENTURE',
-    description: 'testing',
     category: 'WEB',
     color: '#9370DB',
     description:
