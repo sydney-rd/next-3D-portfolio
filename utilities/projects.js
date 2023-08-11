@@ -16,8 +16,8 @@ export const projects = [
     color: '#551A8B',
     description:
       'As a passionate traveler, geography buff, and map enthusiast, I drew inspiration from an old postcard sent by a friend studying in 🇬🇧 London. My project is designed to capture that essence. With data sourced from an API, every stamp adorning the envelope represents a different country. Clicking on a stamp unveils a handwritten note with facts about that country.',
-    github: 'https://github.com/sydney-rd/react-ui-pattern',
-    link: 'https://react-country-project.netlify.app/',
+    github: 'https://github.com/sydney-rd/ui-pattern',
+    link: 'https://sydney-rd.github.io/ui-pattern/',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/UIPattern.gif'
   },
@@ -27,8 +27,8 @@ export const projects = [
     color: '#551A8B',
     description:
       "Building upon my UI Pattern project, I've brought to life a geography postcard using React, powered by data fetched from an API. This interactive experience allows users to input any region worldwide, triggering the display of new stamps from that area. Clicking a stamp unveils a handwritten note with information about the country and its facts.",
-    github: 'https://github.com/sydney-rd/ui-pattern',
-    link: 'https://sydney-rd.github.io/ui-pattern/',
+    github: 'https://github.com/sydney-rd/react-ui-pattern',
+    link: 'https://react-country-project.netlify.app/',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next-three-portfolio/main/public/assets/ReactPattern.gif'
   },
