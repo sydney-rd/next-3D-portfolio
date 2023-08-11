@@ -101,7 +101,7 @@ export const projects = [
     name: 'UGLY SOUP',
     category: 'PYTHON',
     description:
-      'Want to parse through a website and download files to your computer? Try out my program, Ugly Soup! This tool enables users to input a URL, select a file type (PDF, JPEG, etc.), specify file names, and choose a preferred location. Check out how I used it to download PDF scripts of my favorite show, Breaking Bad, right into my project folder!',
+      'Want to parse through a website and download files to your computer? Try Ugly Soup! This tool enables users to input a URL, select a file type (PDF, JPEG, etc.), specify file names, and choose a preferred location. Use it to download PDF scripts of your favorite shows to perform to your friends and family!',
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'https://github.com/sydney-rd/ugly-soup/blob/main/README.md',
     color: '#EE82EE',
