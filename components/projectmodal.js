@@ -159,9 +159,20 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   textShadow: `0px 0px 5px ${color}`
                 }}
               >
-                GITHUB
+                CODE
               </a>
             </motion.div>
+            <span
+              style={{
+                color: 'white',
+                fontWeight: 'bold',
+                marginRight: '.8rem',
+                marginTop: responsiveStyles?.linkMarginTop
+              }}
+            >
+              |
+            </span>
+
             <motion.div
               whileHover={{ scale: 1.1 }}
               style={{
@@ -183,7 +194,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   textShadow: `0px 0px 5px ${color}`
                 }}
               >
-                LINK
+                SITE
               </a>
             </motion.div>
           </Flex>
