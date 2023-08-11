@@ -83,9 +83,10 @@ export const projects = [
     description:
       'Instead of using the traditional pen and paper for your to-do list, this program will let you create notes and save them into your local database. Using specific keywords, you can add new tasks, delete a task, and view all tasks.',
     github: 'https://github.com/sydney-rd/todo-manager',
-    link: '',
+    link: 'https://github.com/sydney-rd/todo-manager/blob/main/README.md',
     color: '#9966CC',
-    bg: ''
+    projectBg:
+      'https://raw.githubusercontent.com/sydney-rd/next-three-portfolio/main/public/assets/TodoManager.gif'
   },
   // {
   //   name: 'CODE GENERATOR',
