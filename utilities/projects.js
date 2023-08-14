@@ -61,7 +61,7 @@ export const projects = [
     description:
       "(This is a work in progress, please view on desktop) Drawing inspiration from arcade games, 'Escape the Labyrinth' invites you on an expansive adventure. Navigate through the game by making the right choices to complete your journey with the lowest possible score! Crafted using native JavaScript, this project is constructed using a binary tree data structure.",
     github: 'https://github.com/sydney-rd/text-adventure-game',
-    link: 'https://sydney-rd.github.io/text-adventure-game/',
+    link: 'https://sydney-rd.github.io/text-adventure-game-javascript/',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AdventureGame.gif'
   },
