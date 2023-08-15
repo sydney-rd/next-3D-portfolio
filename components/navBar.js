@@ -23,7 +23,7 @@ export default function Navbar() {
 
   const activeLinkStyle = {
     ...navBarStyle,
-    borderBottom: '1px solid white'
+    borderBottom: '.6px solid white'
   }
 
   const isLinkActive = href => router.pathname === href
