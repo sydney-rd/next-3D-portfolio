@@ -115,7 +115,7 @@ export const projects = [
       "Continuing to indulge my passion for geography 🌎, I've created a Python Trivia game using the Command Line Interface. It includes features like scorekeeping, answer validation, and more. Test your knowledge with multiple-choice and fill-in questions to see how many you can answer correctly. Good luck!",
     github: 'https://github.com/sydney-rd/country-trivia-game2',
     link: 'https://github.com/sydney-rd/country-trivia-game-python/blob/master/README.md',
-    color: '#EE82EE',
+    color: '#EE78EE',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/FINALPython.gif'
   }
