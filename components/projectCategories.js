@@ -42,7 +42,7 @@ export default function ProjectCategories({
         <>
           <MotionIconButton
             icon={<ChevronDownIcon />}
-            fontSize="1.4rem"
+            fontSize="1.7rem"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0 }}
