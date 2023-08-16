@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, VStack, Image } from '@chakra-ui/react'
 import Link from 'next/link'
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaEnvelope, FaPaperclip } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Logo from '../public/assets/logo/logo.png'
 
@@ -58,6 +58,15 @@ export default function MobileAboutNavBar() {
         >
           <motion.span whileHover={{ color: 'pink' }} style={iconStyle}>
             <FaEnvelope />
+          </motion.span>
+        </a>
+        <a
+          href="/assets/Sydney-David-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.span whileHover={{ color: 'pink' }} style={iconStyle}>
+            <FaPaperclip />
           </motion.span>
         </a>
       </VStack>
