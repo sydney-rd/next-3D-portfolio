@@ -3,7 +3,7 @@ export const projects = [
     name: 'PAWMEETS',
     category: 'WEB',
     description:
-      'Fueled by my affection for dogs, I crafted a MERN stack application that unites dog owners across NYC. This platform allows them to upload profiles of their beloved canines and browse through eligible companions. Developed with React and MongoDB, the application features comprehensive authentication, validation, and a host of other functionalities!',
+      'Fueled by my love for dogs, I crafted a MERN stack application that unites dog owners across NYC. This platform allows them to upload profiles of their beloved canines and browse through eligible companions. Developed with React and MongoDB, the application features comprehensive authentication, validation, and a host of other functionalities!',
     github: 'https://github.com/sydney-rd/paw-meets',
     link: 'https://pawmeets.netlify.app',
     color: '#4B0082',
