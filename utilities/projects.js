@@ -6,14 +6,14 @@ export const projects = [
       'Fueled by my love for dogs, I crafted a MERN stack application that unites dog owners across NYC. This platform allows them to upload profiles of their beloved canines and browse through eligible companions. Developed with React and MongoDB, the application features comprehensive authentication, validation, and a host of other functionalities!',
     github: 'https://github.com/sydney-rd/paw-meets',
     link: 'https://pawmeets.netlify.app',
-    color: '#4B0082',
+    color: '#5F1DA9',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/Pawmeets.gif'
   },
   {
     name: 'UI PATTERN',
     category: 'WEB',
-    color: '#551A8B',
+    color: '#5F1DA9',
     description:
       'As a passionate traveler, geography buff, and map enthusiast, I drew inspiration from an old postcard sent by a friend studying in 🇬🇧 London. My project is designed to capture that essence. With data sourced from an API, every stamp adorning the envelope represents a different country. Clicking on a stamp unveils a handwritten note with facts about that country.',
     github: 'https://github.com/sydney-rd/ui-pattern',
@@ -24,7 +24,7 @@ export const projects = [
   {
     name: 'REACT UI',
     category: 'WEB',
-    color: '#551A8B',
+    color: '#5F2DA9',
     description:
       "Building upon my UI Pattern project, I've brought to life a geography postcard using React, powered by data fetched from an API. This interactive experience allows users to input any region worldwide, triggering the display of new stamps from that area. Clicking a stamp unveils a handwritten note with information about the country and its facts.",
     github: 'https://github.com/sydney-rd/react-ui-pattern',
@@ -35,7 +35,7 @@ export const projects = [
   {
     name: 'NASA API',
     category: 'WEB',
-    color: '#6F2DA8',
+    color: '#5F3DA9',
     description:
       "Calling all astronomy enthusiasts 🪐! Introducing my NASA API, containing data in JSON format sourced from NASA's Astronomy Picture of the Day API. This data is perfect for any project requiring astronomy images and facts. You can catch a glimpse of it in action in my upcoming project - 'Space Trivia!'",
     github: 'https://github.com/sydney-rd/NASA-api-project',
@@ -46,9 +46,9 @@ export const projects = [
   {
     name: 'SPACE TRIVIA',
     category: 'WEB',
-    color: '#6F2DA8',
+    color: '#5F3DA0',
     description:
-      "🌌 Astronomy fascinates you? Same ✨ Space Trivia fetches data from my NASA API project which was created using data from NASA's Astronomy Picture of the Day API (APOD). This project showcases 10 Astronomy-based trivia questions that I have sourced, along with an Astronomy Picture of the Day information card for each question. Test your knowledge while admiring data sourced from NASA",
+      "🌌 Astronomy fascinates you? ✨ Space Trivia fetches data from my NASA API project which was created using data from NASA's Astronomy Picture of the Day API. This project showcases 10 Astronomy-based trivia questions that I have sourced, along with an Astronomy Picture of the Day information card for each question. Test your knowledge while admiring data sourced from NASA.",
     github: 'https://github.com/sydney-rd/space-trivia-react',
     link: 'https://space-trivia-react.netlify.app/',
     projectBg:
@@ -57,7 +57,7 @@ export const projects = [
   {
     name: 'TEXTVENTURE',
     category: 'WEB',
-    color: '#9370DB',
+    color: '#8470DB',
     description:
       "(This is a work in progress, please view on desktop) Drawing inspiration from arcade games, 'Escape the Labyrinth' invites you on an expansive adventure. Navigate through the game by making the right choices to complete your journey with the lowest possible score! Crafted using native JavaScript, this project is constructed using a binary tree data structure.",
     github: 'https://github.com/sydney-rd/text-adventure-game',
@@ -104,7 +104,7 @@ export const projects = [
       'Want to parse through a website and download files to your computer? Try Ugly Soup! This tool enables users to input a URL, select a file type (PDF, JPEG, etc.), specify file names, and choose a preferred location. Use it to download PDF scripts of your favorite shows to perform to your friends and family!',
     github: 'https://github.com/sydney-rd/ugly-soup',
     link: 'https://github.com/sydney-rd/ugly-soup/blob/main/README.md',
-    color: '#EE82EE',
+    color: '#EE78EE',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/uglysoup.gif'
   },
@@ -115,7 +115,7 @@ export const projects = [
       "Continuing to indulge my passion for geography 🌎, I've created a Python Trivia game using the Command Line Interface. It includes features like scorekeeping, answer validation, and more. Test your knowledge with multiple-choice and fill-in questions to see how many you can answer correctly. Good luck!",
     github: 'https://github.com/sydney-rd/country-trivia-game2',
     link: 'https://github.com/sydney-rd/country-trivia-game-python/blob/master/README.md',
-    color: '#EE78EE',
+    color: '#EE82EE',
     projectBg:
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/FINALPython.gif'
   }

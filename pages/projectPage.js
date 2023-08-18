@@ -67,14 +67,12 @@ export default function ProjectPage() {
           <Html fullscreen transform>
             <VStack
               align="flex-end"
-              flexGrow={1}
               pr={responsiveStyles?.projectPaddingRight}
               zIndex={0}
-              maxH="100vh"
+              maxH="130vh"
               position="relative"
               visibility={isOpen ? 'hidden' : 'visible'}
               userSelect="none"
-              marginTop="-30vh"
             >
               {!isOpen &&
                 filteredProjects.map((project, index) => (
