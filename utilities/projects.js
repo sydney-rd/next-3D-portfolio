@@ -67,7 +67,7 @@ export const projects = [
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AdventureGame.gif'
   },
   {
-    name: 'ACCOUNT MANAGER',
+    name: 'ACCOUNT MGR',
     category: 'C++',
     color: '#9370DB',
     description:
@@ -78,7 +78,7 @@ export const projects = [
       'https://raw.githubusercontent.com/sydney-rd/next_three_portfolio/main/public/assets/AccountManager.gif'
   },
   {
-    name: 'TO-DO MANAGER',
+    name: 'TO-DO MGR',
     category: 'C++',
     description:
       'Built with C++. Put away the traditional pen and paper 📝 for your to-do list—try this simple to-do manager instead! This program allows you to create tasks and save them onto your local database. With specific keywords, you can add new tasks, view all tasks, and delete tasks by number.',
