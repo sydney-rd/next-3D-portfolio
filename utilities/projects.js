@@ -16,7 +16,7 @@ export const projects = [
     category: 'WEB',
     color: '#5F1DA9',
     description:
-      'As a passionate traveler and map enthusiast, I drew inspiration from an old postcard sent by a friend. With data sourced from an API, click on a stamp to reveal a handwritten note with facts about that country.',
+      'JavaScript, HTML, CSS. \n \n As a passionate traveler and map enthusiast, I drew inspiration from an old postcard sent by a friend. With data sourced from an API, click on a stamp to reveal a handwritten note with facts about that country.',
     github: 'https://github.com/sydney-rd/ui-pattern',
     langs: 'JavaScript, HTML, CSS',
     link: 'https://sydney-rd.github.io/ui-pattern/',

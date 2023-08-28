@@ -14,7 +14,7 @@ const MotionModal = motion(Modal)
 const MotionModalContent = motion(ModalContent)
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
-  const { name, description, projectBg, langs, color, github, link } = project
+  const { name, description, projectBg, color, github, link } = project
 
   const responsiveStyles = useBreakpointValue({
     base: {
@@ -172,7 +172,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             >
               |
             </span>
-
             <motion.div
               whileHover={{ scale: 1.1 }}
               style={{
@@ -197,15 +196,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 PROJ
               </a>
             </motion.div>
-          </Flex>
-          <Flex
-            flexDirection="row"
-            fontWeight="bold"
-            color="white"
-            fontSize=".9rem"
-            marginBottom="1rem"
-          >
-            <p>{langs}</p>
           </Flex>
           <p
             style={{
