@@ -27,7 +27,7 @@ export const projects = [
     category: 'WEB',
     color: '#5F2DA9',
     description:
-      "Built with React, HTML, and CSS. I've brought to life a geography postcard using React, powered by data fetched from an API. This interactive experience allows users to input any region worldwide, triggering the display of new stamps from that area.",
+      "Built with React, HTML, and CSS. Replicating my UI Pattern project with an interactive twist, I've brought to life a geography postcard, powered by data fetched from an API. This experience allows a user to input any region worldwide, triggering a display of new stamps from that chosen region.",
     github: 'https://github.com/sydney-rd/react-ui-pattern',
     link: 'https://react-country-project.netlify.app/',
     projectBg:
