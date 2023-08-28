@@ -15,7 +15,7 @@ export const projects = [
     category: 'WEB',
     color: '#5F1DA9',
     description:
-      'Built with JavaScript, HTML, and CSS. As a passionate traveler and map enthusiast, I drew inspiration from an old postcard sent by a friend. With data sourced from an API, click on a stamp to reveal a handwritten note with facts about that country.',
+      'Built with JavaScript, HTML, and CSS. As a passionate traveler and map enthusiast, I drew inspiration from an old postcard sent by a friend. With data sourced from an API, every stamp adorning the envelope represents a different country. Clicking on a stamp unveils a handwritten note with facts about that country.',
     github: 'https://github.com/sydney-rd/ui-pattern',
     langs: 'JavaScript, HTML, CSS',
     link: 'https://sydney-rd.github.io/ui-pattern/',
@@ -38,7 +38,7 @@ export const projects = [
     category: 'WEB',
     color: '#5F3DA9',
     description:
-      "Built with HTML, CSS, MongoDB, and Express. Calling all astronomy enthusiasts 🪐! This API contains data in JSON format sourced from NASA's Astronomy Picture of the Day API. You can catch a glimpse of it in action in my project - 'Space Trivia!'",
+      "Built with HTML, CSS, MongoDB, and Express. Calling all astronomy enthusiasts 🪐! This API contains data in JSON format sourced from NASA's Astronomy Picture of the Day API. Perfect addition to any Astronomy-based project, you can catch a glimpse of it in action in my 'Space Trivia' project!",
     github: 'https://github.com/sydney-rd/NASA-api-project',
     link: 'https://sydney-rd.github.io/NASA-api-project/',
     projectBg:
@@ -60,7 +60,7 @@ export const projects = [
     category: 'WEB',
     color: '#8470DB',
     description:
-      "Built with JavaScript, HTML, and CSS. (This is a work in progress, please view on desktop) Drawing inspiration from arcade games, 'Escape the Labyrinth' invites you on an expansive adventure. Navigate through the game by making the right choices to complete your journey with the lowest possible score! Crafted using native JavaScript, this project is constructed using a binary tree data structure.",
+      'Built with JavaScript, HTML, and CSS. (WIP/view on desktop) Drawing inspiration from arcade games, navigate through the game by making the right choices to complete your journey with the lowest possible score! This project is constructed using a binary tree data structure.',
     github: 'https://github.com/sydney-rd/text-adventure-game',
     link: 'https://sydney-rd.github.io/text-adventure-game-javascript/',
     projectBg:
