@@ -71,7 +71,7 @@ export const projects = [
     category: 'C++',
     color: '#9370DB',
     description:
-      'Built with C++. The Account Manager is an ideal project that enables users to utilize terminal commands for managing, organizing, and storing financial data for your company. It can provide insights like the total sum of vendors, the vendor with the highest sum, and specific vendor details by name - just to name a few.',
+      'Built with C++. The Account Manager enables users to utilize terminal commands for managing, organizing, and storing financial data for your company. It can provide insights like the total sum of vendors, the vendor with the highest sum, and specific vendor details by name - just to name a few.',
     github: 'https://github.com/sydney-rd/accounting-database',
     link: 'https://github.com/sydney-rd/accounting-database/blob/main/README.md',
     projectBg:
