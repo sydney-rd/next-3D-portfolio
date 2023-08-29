@@ -60,7 +60,7 @@ export const projects = [
     category: 'WEB',
     color: '#8470DB',
     description:
-      'Built with JavaScript, HTML, and CSS. (WIP/view on desktop) Drawing inspiration from arcade games, navigate through the game by making the right choices to complete your journey with the lowest possible score! This project is constructed using a binary tree data structure.',
+      'Built with JavaScript, HTML, and CSS. Drawing inspiration from arcade games, navigate through the game by making the right choices to complete your journey with the lowest possible score! This project is constructed using a binary tree data structure.',
     github: 'https://github.com/sydney-rd/text-adventure-game',
     link: 'https://sydney-rd.github.io/text-adventure-game-javascript/',
     projectBg:
