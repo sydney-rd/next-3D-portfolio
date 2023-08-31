@@ -103,7 +103,7 @@ export default function About() {
               with a career transition to the ever-changing field of tech. I
               took this path because I wanted to continuously learn new things
               every day. I am self-taught and have recently graduated General
-              Assembly's Software Engineering Bootcamp as of May 2023!
+              Assembly&apos;s Software Engineering Bootcamp as of May 2023!
               <br />
               <br />
               My background is in Events and Hospitality. I&apos;ve worked with
