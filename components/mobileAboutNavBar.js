@@ -28,7 +28,7 @@ export default function MobileAboutNavBar() {
         spacing={8}
         position="absolute"
         flexDirection="row"
-        bottom="1rem"
+        bottom=".5rem"
         zIndex="2"
         left="50%"
         transform="translateX(-50%)"
