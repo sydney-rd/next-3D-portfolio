@@ -97,23 +97,23 @@ export default function About() {
         >
           <Box>
             <Text>
-              Hi - my name is Sydney!
+              <br />
+              Hi! I am a Software Developer from NYC. My journey began with a
+              simple HTML tutorial and since that moment, I challenged myself
+              with a career transition to the ever-changing field of tech. I
+              took this path because I wanted to continuously learn new things
+              every day. I am self-taught and have recently graduated General
+              Assembly's Software Engineering Bootcamp as of May 2023!
               <br />
               <br />
-              I am a Software Developer from NYC. My journey began with a simple
-              HTML/CSS tutorial. Since that moment, I challenged myself with a
-              career transition to the ever-changing field of tech. I took this
-              path because I wanted to continuously learn new things every day.
-              <br />
-              <br />
-              A glimpse into my background shows experience in Events and
-              Hospitality. I&apos;ve worked with companies such as WeWork and
-              ViacomCBS, for Comedy Central, Paramount Network, and TVLand. I
-              was able to travel and work hands on at activations such as the
-              World Pride Parade, Comic-Con, ComplexCon, festivals, conventions,
-              and more. While you will find me coding day to day, I also have a
-              passion for cars, travel, and studying maps and geography. I am
-              also an animal lover - cats and my Pitbull mix have my heart!
+              My background is in Events and Hospitality. I&apos;ve worked with
+              companies such as WeWork and ViacomCBS, for Comedy Central,
+              Paramount Network, and TVLand. I have worked hands on at
+              activations such as the World Pride Parade, Comic-Con, festivals,
+              conventions, and more. While you will find me coding day to day, I
+              also have a passion for cars, travel, and studying maps and
+              geography. I am also an animal lover - cats and my Pitbull mix
+              have my heart!
               <br />
               <br />
             </Text>
