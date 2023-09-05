@@ -98,7 +98,7 @@ export default function About() {
           <Box>
             <Text>
               <br />
-              Hi! I am a Software Developer from NYC. My journey began with a
+              Hi - I am a Software Developer from NYC. My journey began with a
               simple HTML tutorial and since that moment, I challenged myself
               with a career transition to the ever-changing field of tech. I
               took this path because I wanted to continuously learn new things
