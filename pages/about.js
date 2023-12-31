@@ -139,7 +139,7 @@ export default function About() {
           textAlign="center"
           paddingTop={responsiveStyles?.codePaddingTop}
         >
-          <strong>Languages</strong> <br /> JavaScript, Python, C/C++
+          <strong>Languages</strong> <br /> JavaScript, Python, C/C++, Flutter
           <br />
           <br />
           <strong>Databases</strong> <br /> MongoDB, SQL
