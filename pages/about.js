@@ -99,11 +99,13 @@ export default function About() {
             <Text>
               <br />
               Hi - I am a Software Developer from NYC. My journey began with a
-              simple HTML tutorial and since that moment, I challenged myself
-              with a career transition to the ever-changing field of tech. I
-              took this path because I wanted to continuously learn new things
-              every day. I am self-taught and have recently graduated General
-              Assembly&apos;s Software Engineering Bootcamp as of May 2023!
+              simple HTML tutorial and since that moment, I became enamored with
+              the tech world. I co-founded Kalyani, a wellness tech company, as
+              a way to bring our community access to personal growth and enjoy
+              new experiences. Here, I spearheaded the business development
+              side, while diving into the realm of coding. This newfound passion
+              for tech leads me to cultivate a polished and adaptable set of
+              transferable skills.
               <br />
               <br />
               My background is in Events and Hospitality. I&apos;ve worked with
